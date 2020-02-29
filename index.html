@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+            rel="stylesheet">
+        <style>
+
+            body {
+                background-color: #000;
+            }
+
+    
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 0.4;
+                }
+
+                60% {
+                    opacity: 0.6;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            p {
+                display: block;
+                color: #6A6869;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 1.7em;
+                margin-top: 10px;
+            }
+
+            .gap {
+                padding-top: 14%;
+            }
+            .center {
+                max-height: cover;
+                margin: auto;
+
+            }
+
+            body,
+            html {
+                height: 100%;
+                overflow: hidden;
+            }
+
+            body {
+                font-family: 'Montserrat', sans-serif;
+                /*display: flex;*/
+                align-items: center;
+                /*justify-content: center;*/
+                text-align: center;
+            }
+
+            .star {
+                width: 120px;
+                height: 120px;
+                margin: auto;
+                /*animation: fadeIn 2s 2s, pulsate 1s 3.5s ease 1;*/
+                animation: fadeIn 1s ease-in-out 1.5s , pulsate 1s 2s ease 1;
+                visibility: hidden;
+                animation-fill-mode: forwards;
+
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform-origin: center;
+                    transform: scale(0.99);
+                    visibility: visible;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform-origin: center;
+                    transform: scale(1);
+                    visibility: visible;
+                }
+            }
+            @keyframes pulsate {
+
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.5;
+                }
+                100% {
+                    opacity: 1;
+                }
+                100% {
+                    visibility: visible;
+                }
+
+            }
+            
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.3);
+                }
+                100% {
+                    transform: scale(1);
+                }
+                100% {
+                    visibility: visible;
+                }
+            }
+
+            .text {
+               visibility: hidden;
+                -webkit-animation: fadeIn 2s 1.5s;
+                animation-fill-mode: forwards;  
+            }
+
+             @keyframes left-top-animation {
+                 0% {
+                -webkit-transform:translate(-20rem ,-12rem);
+                transform: translate(-20rem ,-12rem);
+                }
+
+                100%  {
+                -webkit-transform: translate( 5.625rem, -4.25rem);
+                /*transform: translate(-20rem ,-12rem);*/
+                transform: translate( 5.625rem, -4.25rem);
+                }
+             }
+
+             @keyframes right-top-animation {
+                 0% { 
+                -webkit-transform:translate(30rem ,-12rem);
+                transform: translate(30rem ,-12rem);
+                }
+
+                100%  {
+                -webkit-transform: translate(6.4375rem, -4.25rem);
+                /*transform: translate(30rem ,-12rem);*/
+                transform: translate(6.4375rem, -4.25rem);
+                }
+             }
+
+            @keyframes left-bottom-animation {
+                   0% { 
+                -webkit-transform:translate(-32rem ,12rem);
+                transform: translate(-32rem ,12rem);
+                }
+
+                100%  {
+                -webkit-transform: (-6.4375rem, -1.3125rem);
+                /*transform: translate(-20rem ,12rem);*/
+                transform: translate(-6.4375rem, -1.3125rem);
+                }
+             }
+
+             @keyframes right-bottom-animation {
+                   0% { 
+                -webkit-transform:translate(20rem ,12rem);
+                transform: translate(20rem ,12rem);
+                }
+
+                100%  {
+                -webkit-transform: (-5.625rem, -1.3125rem);
+                /*transform: translate(-20rem ,12rem);*/
+                 transform: translate(-5.625rem, -1.3125rem);
+                }
+             }
+
+            .left-top {
+                width: 30px;
+                height: 30px;
+                /*transform: translate(90px, -68px);*/
+                transform: translate( 5.625rem, -4.25rem);
+                /*transform: translate(-20rem ,-12rem);*/
+                -webkit-animation: left-top-animation 2s;
+            }
+            .right-top {
+                width: 30px;
+                height: 30px;
+                /*transform: translate(103px, -68px);*/
+                transform: translate(6.4375rem, -4.25rem);
+                -webkit-animation: right-top-animation 2s;
+            }
+            .left-bottom {
+                width: 30px;
+                height: 30px;
+                transform: translate(-6.4375rem, -1.3125rem);
+                /*transform: translate(-20rem ,12rem);*/
+                -webkit-animation: left-bottom-animation 2s;
+            }
+            .right-bottom {
+                width: 30px;
+                height: 30px;
+                transform: translate(-5.625rem, -1.3125rem);
+                -webkit-animation: right-bottom-animation 2s;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="gap">
+            <div class="center">
+                
+                    <div>
+                        
+                        <img class="left-top" src="assets/images/left-top.svg">
+                        <img class="right-top" src="assets/images/right-top.svg">
+                         <img class="star" src="assets/images/star.svg">
+                        <img class="left-bottom" src="assets/images/left-bottom.svg">
+                        <img class="right-bottom" src="assets/images/right-bottom.svg">
+                       
+                    </div>
+
+
+                <img
+                    class="text tracking-in-contract-bck-bottom"
+                    src="assets/images/logo.png"
+                    height="75"
+                    style="padding-top: 20px;"/>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script>
+            // function pageRedirect() {
+            //     window
+            //         .location
+            //         .replace("landing.html");
+            // }
+            // setTimeout("pageRedirect()", 5000);
+        </script>
+    </body>
+</html>
