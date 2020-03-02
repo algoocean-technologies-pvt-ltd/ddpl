@@ -1169,7 +1169,21 @@ picture.object-fit-polyfill {
     -o-object-fit: cover;
     object-fit: cover
 }
-
+.sc-footer-address{
+    width:65%!important;
+}
+.sc-font-11{
+    font-size:11px;
+}
+.sc-margin-top-15{
+    margin-top: 15px;
+}
+.sc-margin-right-10{
+    margin-right: 10px;
+}
+.sc-font-27{
+    font-size: 27px!important;
+}
 .footer {
     position: relative;
     display: -webkit-box;
@@ -4908,6 +4922,15 @@ footer {
 }
 .footer-area-top .rightWidget .widget ul li.mail a {
     color: #acacac;
+}
+.sc-line-height-20{
+    line-height:20px;
+}
+.footer-area-top .rightWidget .widget ul li.location {
+    font-weight: 400;
+    line-height: 50px;
+    background: url('../images/img_342749.png') no-repeat;
+    padding-left: 44px;
 }
 .footer-area-top .rightWidget .widget ul li.phone {
     font-weight: 400;

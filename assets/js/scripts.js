@@ -3384,6 +3384,7 @@
                         }), this.nav.on("show", this.onNavShow.bind(this)), this.nav.on("hide", this.onNavHide.bind(this))
                     }
                     initNavToggle() {
+                        this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
                         const e = this.element.querySelector(".home__nav-toggle");
                         this.navToggle = new X({
                             element: e
@@ -3522,7 +3523,10 @@
                     }
                     gotoNextScreen() {
                         let e = this.currentScreenIndex + 1;
+                        if(e < this.screenElements.length){
+                        
                         e > this.screenElements.length - 1 && (e = 0), this.gotoScreen(e)
+                        }
                     }
                     gotoPrevScreen() {
                         let e = this.currentScreenIndex - 1;
@@ -3576,6 +3580,9 @@
                     }
                     onScrollCtaClick() {
                         this.gotoNextScreen()
+                    }
+                    OnFooterButtonClick(){
+                        this.gotoScreen(this.screenElements.length-1)
                     }
                 },
                 service: class extends P {
@@ -4365,7 +4372,7 @@
         function at(e) {
             e.isVisible ? (Xe = Ae.color, ze = Te.color, Ae.setColor("light"), Te.setColor("light")) : (Xe && Ae.setColor(Xe), ze && Te.setColor(ze))
         }
-
+        
         function lt() {
             Ve && !Ve.isLoadingAssets && setTimeout(() => Ye(), 100)
         }! function() {
