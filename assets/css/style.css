@@ -4779,7 +4779,7 @@ span.nav__link__label {
 .event-area .box:hover .layer{display: block;}
 .event-area .box .layer .book_appointment{line-height: 1;font-size: 18px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-transform: uppercase;}
 
-.event-slider-wrap .box:hover{border: 1px solid #c6910d; font-weight: bold;}
+.event-slider-wrap .box:hover{border: 1px solid #c6910d; font-weight: bold; cursor: pointer;}
 
 .event-area .box .info {
     display: table-cell;
