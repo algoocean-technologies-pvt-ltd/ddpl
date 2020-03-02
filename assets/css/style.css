@@ -4968,6 +4968,8 @@ footer {
     width: 50%
 }
 
+.footer-area-bottom{margin-top: 10px;}
+
 .wid{width: 25%;display: flex;float: none;}
 .wid img{max-width: 100%;max-height: 100%;}
 
