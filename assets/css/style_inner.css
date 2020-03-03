@@ -1,4 +1,3 @@
-
 .page-id-home  {
   font-family: 'Montserrat', sans-serif;
   position: relative;
@@ -33,6 +32,13 @@ blockquote {
 width: 65%;
 margin: auto;
 padding-top: 9rem;
+}
+
+
+.Container66 {
+    width: 66%;
+    margin: auto;
+    padding-top: 9rem;
 }
 
 .heading2 {
@@ -70,6 +76,16 @@ top: 24rem;
     text-underline-position: under;
 }
 
+.Container65 .vertical_nav{position: absolute;top: 24rem;left: 6.5vw;transform: rotate(-90deg);transform-origin: 0;}
+.Container65 .vertical_nav ul li{margin-right: 20px;position: relative;}
+.Container65 .vertical_nav ul li:last-child{margin-right: 0;}
+.Container65 .vertical_nav ul li:after{content: "";display: block;width: 1.5px;height: 100%;background-color: #fff;position: absolute;top: 0;right: -10px;}
+.Container65 .vertical_nav ul li:last-child:after{display: none;}
+.Container65 .vertical_nav ul li a{font-size: 9px;text-transform: uppercase;line-height: 1;font-weight: 600;display: inline-flex;position: relative;}
+.Container65 .vertical_nav ul li a:after{content: "";display: block;width: 0;height: 1px;background-color: #fff;position: absolute;bottom: -1px;left: 0;transition: 0.5s all;}
+.Container65 .vertical_nav ul li.active a:after{width: 100%;}
+.Container65 .vertical_nav ul li a:hover:after{width: 100%;}
+.Container65 .vertical_nav ul li h3 {font-size: 0.55rem;text-transform: uppercase;display:inline-flex;}
 
 
 
@@ -229,9 +245,11 @@ transition: all 0.2s ease-in-out;
 
 .divider{
   
-  border: 1px solid #ACACAC;
-  opacity: 0.5;
-  text-align: center;
+    border: 1px solid #ACACAC; 
+    opacity: 0.5;
+    text-align: center;
+    padding-top: 1px;
+    background-color: #acacac;
 }
 .divider:first-child { 
   margin-top: 1.5rem !important;
@@ -246,11 +264,12 @@ table.table {
   height: 100%;
   
   color: #fff;
-  font-size: 1rem;
+  font-size: 16px;
 }
 table.table td, table.table th {
   border: 1px solid #C6910D;
   padding: 10px 10px;
+  vertical-align:middle;
   line-height:1.8rem;
 }
 
@@ -289,41 +308,51 @@ table.table td, table.table th {
 table.table_carat{
   border: 1px solid #C6910D;
   width: 100%;
-  font-size: 1rem;
+  font-size: 14px;
   height: 100%;
   text-align: center;
 }
 table.table_carat td, table.table_carat th {
   border: 1px solid #C6910D;
   padding: 10px 10px;
-  text-align: left;
+  text-align: center;
   align-content:center;
   line-height:1.8rem;
 }
 
+table.table_carat .td-img{
+    margin:auto;
+}
 table.table_clarity{
   border: 1px solid #C6910D;
   width: 100%;
-  font-size: 1rem;
+  font-size: 14px;
   height: 100%;
   text-align: left;
 }
 table.table_clarity td, table.table_clarity th {
   border: 1px solid #C6910D;
   padding: 10px 10px 10px 10px;
-}
-table.table_clarity td:first-child { 
-  width:5rem;
-  text-align: center;
-}
-table.table_clarity td:nth-child(2) { 
-  width:12rem;
   line-height:1.8rem;
 }
+table.table_clarity td { 
+  
+  text-align: center;
+}
+table.table_clarity td:first-child { 
+  
+  text-align: center;
+}
+
+table.table_clarity p { 
+ text-align:center;
+}
+
 .td_img{
   text-align: center;
   align-content: center;
   padding: auto;
+  margin:auto;
 }
 
 
@@ -331,6 +360,7 @@ table.table_clarity td:nth-child(2) {
         text-align:center;
         align-content:center;
         width:100px;
+        font-size:18px;
         vertical-align:middle;
 }
 
@@ -348,19 +378,35 @@ table.table_clarity td:nth-child(2) {
 
 
 .accordion:after {
-  content: '\f078';
-  font-family: 'FontAwesome';
-  color: #777;
-  font-weight: bold;
+  /*content: '\f078';*/
+  /*font-family: 'FontAwesome';*/
+  /*color: #777;*/
+  /*font-weight: 100;*/
   float: right;
   margin-left: 5px;
+  margin-top:5px;
+  /*font-size:1em;*/
+  
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-color: #777;
+    border-width: 0 0 1.5px 1.5px;
+    
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*right: 0;*/
+    transform: translateY(-50%) rotate(-45deg) translateX(-20px);
 }
 
 .accordion:hover,
 .active {}
 .active:after {
-  content: '\f077';
-  font-family: 'FontAwesome';
+  /*content: '\f077';*/
+  /*font-family: 'FontAwesome';*/
+    transform: translateY(-50%) rotate(-225deg) translateX(20px);
 }
 
 

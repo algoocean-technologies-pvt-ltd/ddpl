@@ -693,7 +693,7 @@ html:not(.touch) .logo:hover .logo__line {
 .nav-toggle__label__close,
 .nav-toggle__label__open {
     display: block;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     height: 100%;
     white-space: nowrap;
     -webkit-transition: opacity .3s, -webkit-transform .8s cubic-bezier(.165, .84, .44, 1);
@@ -974,7 +974,6 @@ html:not(.touch) .nav-toggle:hover .nav-toggle__picto__point:last-child {
             font-size: 1.9rem;
             text-transform: none;
             color:#acacac;
-            
         }
        
        .menu-1 span.nav__link__label {
@@ -1040,6 +1039,7 @@ html:not(.touch) .nav-toggle:hover .nav-toggle__picto__point:last-child {
 }
 #hhcol1 .nav-toggle__label {
     line-height: 30px;
+     transform: translateY(1px);
 }
 #hhcol2 a.logo {
     display: none!important;
