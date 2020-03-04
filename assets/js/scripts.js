@@ -1225,44 +1225,44 @@
             
             createAnimInLeftRight(e) {
                 if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
-                        onComplete: e
-                    }), !this.owner.previousItemId) return;
+                    onComplete: e
+                }), !this.owner.previousItemId) return;
                 const t = this.index > this.owner.previousScreen.index ? 1 : -1,
-                    i = this.figure.getBoundingClientRect();
+                i = this.figure.getBoundingClientRect();
                 this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
-                    opacity: 1
+                opacity: 1
                 }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
-                    this.navigationEnabled = !0
+                this.navigationEnabled = !0
                 }, 2).fromTo(this.figure, 1, {
-                    x: 1 === t ? i.height : -(app.windowHeight + this.figure.offsetTop)
+                x: 1 === t ? i.width : -(app.windowWidth + this.figure.offsetLeft)
                 }, {
-                    x: 0,
-                    ease: o.g.easeOut
+                x: 0,
+                ease: o.g.easeOut
                 }, .5).fromTo(this.figureInner, 1, {
-                    x: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
+                x: 1 === t ? -i.width + this.figure.offsetTop : app.windowHeight
                 }, {
-                    x: 0,
-                    ease: o.g.easeOut
+                x: 0,
+                ease: o.g.easeOut
                 }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
-                    opacity: 0
+                opacity: 0
                 }, {
-                    opacity: 1
+                opacity: 1
                 }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
-                    rotationY: -70,
-                    opacity: 0
+                rotationY: -70,
+                opacity: 0
                 }, {
-                    rotationY: 0,
-                    opacity: 1,
-                    ease: o.g.easeOut
+                rotationY: 0,
+                opacity: 1,
+                ease: o.g.easeOut
                 }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
-                    x: this.title.rect.x - this.title.lineRect.x,
-                    opacity: 0,
-                    ease: o.f.easeInOut,
-                    onComplete: () => {
-                        this.title.rollEnabled = !0, this.title.hovered && this.showBody()
-                    }
+                x: this.title.rect.x - this.title.lineRect.x,
+                opacity: 0,
+                ease: o.f.easeInOut,
+                onComplete: () => {
+                    this.title.rollEnabled = !0, this.title.hovered && this.showBody()
+                }
                 }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, {opacity:1, ease:Power2.easeIn}).to(".bigtxt", .2, {opacity:1, ease:Power2.easeIn}).to(".service-title__cta", .2, {opacity:1, ease:Power2.easeIn}).from(this.title.textElements[1], .6, {
-                    opacity: 0
+                opacity: 0
                 }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
             }
 
@@ -1277,10 +1277,10 @@
                 }).to(".service_alt_txt", .01, {opacity:0}).to(".bigtxt", .01, {opacity:0}).to(".service-title__cta", .2, {opacity:0}).to(this.title.element, 1, {
                     opacity: 0
                 }).to(this.figure, 1, {
-                    x: 1 === i ? -(app.windowHeight + this.figure.offsetTop) : t.height + this.figure.offsetTop,
+                    x: 1 === i ? -(app.windowWidth + this.figure.offsetLeft) : t.width + this.figure.offsetLeft,
                     ease: o.g.easeInOut
                 }, 0).to(this.figureInner, 1, {
-                    x: 1 === i ? app.windowHeight : -t.height,
+                    x: 1 === i ? app.windowWidth : -t.width,
                     ease: o.g.easeInOut
                 }, 0).set(this.element, {
                     clearProps: "visibility"
@@ -1289,48 +1289,58 @@
 
 
             createAnimIn(e) {
+                if(this.owner.currentScreen.index % 2 === 1){
+                    this.createAnimInLeftRight(e)
+                }
+                else{
                 if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
-                        onComplete: e
-                    }), !this.owner.previousItemId) return;
-                const t = this.index > this.owner.previousScreen.index ? 1 : -1,
-                    i = this.figure.getBoundingClientRect();
-                this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
-                    opacity: 1
-                }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
-                    this.navigationEnabled = !0
-                }, 2).fromTo(this.figure, 1, {
-                    y: 1 === t ? i.height : -(app.windowHeight + this.figure.offsetTop)
-                }, {
-                    y: 0,
-                    ease: o.g.easeOut
-                }, .5).fromTo(this.figureInner, 1, {
-                    y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
-                }, {
-                    y: 0,
-                    ease: o.g.easeOut
-                }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
-                    opacity: 0
-                }, {
-                    opacity: 1
-                }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
-                    rotationY: -70,
-                    opacity: 0
-                }, {
-                    rotationY: 0,
-                    opacity: 1,
-                    ease: o.g.easeOut
-                }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
-                    x: this.title.rect.x - this.title.lineRect.x,
-                    opacity: 0,
-                    ease: o.f.easeInOut,
-                    onComplete: () => {
-                        this.title.rollEnabled = !0, this.title.hovered && this.showBody()
-                    }
-                }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, {opacity:1, ease:Power2.easeIn}).to(".bigtxt", .2, {opacity:1, ease:Power2.easeIn}).to(".service-title__cta", .2, {opacity:1, ease:Power2.easeIn}).from(this.title.textElements[1], .6, {
-                    opacity: 0
-                }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
+                    onComplete: e
+                }), !this.owner.previousItemId) return;
+            const t = this.index > this.owner.previousScreen.index ? 1 : -1,
+                i = this.figure.getBoundingClientRect();
+            this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
+                opacity: 1
+            }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
+                this.navigationEnabled = !0
+            }, 2).fromTo(this.figure, 1, {
+                y: 1 === t ? i.height : -(app.windowHeight + this.figure.offsetTop)
+            }, {
+                y: 0,
+                ease: o.g.easeOut
+            }, .5).fromTo(this.figureInner, 1, {
+                y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
+            }, {
+                y: 0,
+                ease: o.g.easeOut
+            }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
+                opacity: 0
+            }, {
+                opacity: 1
+            }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
+                rotationY: -70,
+                opacity: 0
+            }, {
+                rotationY: 0,
+                opacity: 1,
+                ease: o.g.easeOut
+            }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
+                x: this.title.rect.x - this.title.lineRect.x,
+                opacity: 0,
+                ease: o.f.easeInOut,
+                onComplete: () => {
+                    this.title.rollEnabled = !0, this.title.hovered && this.showBody()
+                }
+            }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, {opacity:1, ease:Power2.easeIn}).to(".bigtxt", .2, {opacity:1, ease:Power2.easeIn}).to(".service-title__cta", .2, {opacity:1, ease:Power2.easeIn}).from(this.title.textElements[1], .6, {
+                opacity: 0
+            }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
+        }
+                
             }
             createAnimOut(e) {
+                if(this.owner.currentScreen.index % 2 === 1){
+                    this.createAnimOutLeftRight(e)
+                }
+                else{
                 const t = this.figure.getBoundingClientRect(),
                     i = this.index < this.owner.currentScreen.index ? 1 : -1;
                 this.title.rollEnabled = !1, this.timeline && this.timeline.kill(), this.hideBody(), this.timeline = new r.a({
@@ -1348,6 +1358,7 @@
                 }, 0).set(this.element, {
                     clearProps: "visibility"
                 })
+            }
             }
             showBody() {
                 !this.bodyIsVisible && this.title.rollEnabled && (this.bodyIsVisible = !0, this.bodyTimeline && this.bodyTimeline.kill(), this.title.collapse(), this.bodyTimeline = new r.a({
@@ -3453,8 +3464,7 @@
                     }
                     initNavToggle() {
                         this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
-                        this.element.querySelector("#rightArrow").addEventListener("click", this.OnRightButtonClick.bind(this));
-                        
+                        this.element.querySelector("#rightArrow").addEventListener("click", this.gotoLeft.bind(this));
                         const e = this.element.querySelector(".home__nav-toggle");
                         this.navToggle = new X({
                             element: e
@@ -3593,13 +3603,20 @@
                         e !== this.currentScreenIndex && this.screenNavigator.currentScreen.navigationEnabled && (this.previousScreenIndex = this.currentScreenIndex, this.currentScreenIndex = e, this.showScreen(e))
                     }
                     gotoNextScreen() {
-                        let e = this.currentScreenIndex + 1;
-                        if(e < this.screenElements.length-1){
-                        
+                        let e = this.currentScreenIndex + 2;
+                        if(e < this.screenElements.length){
                         e > this.screenElements.length - 1 && (e = 0), this.gotoScreen(e)
                         }
                     }
                     gotoPrevScreen() {
+                        let e = this.currentScreenIndex - 2;
+                        e < 0 && (e = 0), this.gotoScreen(e)
+                    }
+                    gotoLeft(){
+                        let e = this.currentScreenIndex + 1;
+                        e < 0 && (e = 0), this.gotoScreen(e)
+                    }
+                    gotoRight(){
                         let e = this.currentScreenIndex - 1;
                         e < 0 && (e = 0), this.gotoScreen(e)
                     }
