@@ -57,6 +57,7 @@
     <div id="hhcontainer" style="opacity: 1;">
         <div class="hhcol" >
             <button class="nav-toggle visible">
+                <!-- <span class="nav-toggle__circle"></span> -->
                 <span class="nav-toggle__picto">
                     <span class="nav-toggle__picto__point"></span>
                     <span class="nav-toggle__picto__point"></span>
@@ -67,7 +68,7 @@
                     <span class="nav-toggle__label__open">MENU</span>
                     <span class="nav-toggle__label__close">CLOSE</span>
                 </span>
-                <span class="nav-toggle__circle"></span>
+                
             </button>
         </div>
 
@@ -1164,7 +1165,63 @@
                         </button>
                     </div>
                 </section>
+
+                <section class="home__screen">
+                    <div class="home__screen__inner">
+                        <h1 class="service-title ">
+                            <a class="service-title__inner" href="#">
+                                <span class="service-title__text">
+                                    <span style="color:#C6910D; ">Right Slide</span>
+                                    <span></span>
+                                </span>
+
+                                <span class="service-title__line">
+                                    <img class="" src="assets/images/staricon1.png" alt="" width="60" height="60"
+                                        data-object-fit="data-object-fit">
+                                </span>
+                                <p class="service_alt_txt" style="">that leads to earning the trust of customers
+                                    globally.</p>
+                                <p class="bigtxt" style="">By following highly ethical standards, implementing
+                                    the Best Practices Principles along with the Kimberly Process Certification, we
+                                    ensure our diamonds are natural and conflict free, traceable to the origin,
+                                    which makes us the first choice for brands globally.
+                                </p>
+                            </a>
+                            <a class="service-title__cta" href="#">Learn More</a>
+                        </h1>
+
+                        <a class="home__screen__figure-link" href="#">
+                            <div class="home__screen__figure">
+                                <div class="home__screen__figure__inner">
+                                    <div class="image-wrapper image-wrapper--cover home__screen__image-wrapper">
+                                        <picture>
+                                            <source srcset="assets/images/transparency.jpg" media="(max-width: 900px)">
+                                            <source srcset="assets/images/transparency.jpg" media="(max-width: 1440px)">
+                                            <img class="image home__screen__image" src="assets/images/transparency.jpg"
+                                                alt="" width="1920" height="1200" data-object-fit="data-object-fit">
+                                        </picture>
+                                        <div class="image-filter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="home__screen__body-wrapper">
+                            <div class="home__screen__body">
+                                <p></p>
+                                <a class="home__screen__cta" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
+
+            <button class="arrow-button arrow-button--down home__scroll-cta" style="bottom: 12vh!important;right: 4vh!important;" id="rightArrow">
+                <span class="arrow-button__border" id="testStuff">
+                    <img src="assets/images/Path-11@2x.png" class="Path_11 arrow-button__picto1"
+                        style="width:37px;height:37px;transform: rotate(270deg);">
+                </span>
+            </button>
 
             <button class="arrow-button arrow-button--down home__scroll-cta" id="footerArrow">
                 <span class="arrow-button__border" id="testStuff">
@@ -1279,15 +1336,15 @@
 
     <script>
         localStorage.setItem("skipIntro", "1");
-        jQuery(document).ready(function () {
-            setTimeout(function () {
-                var tl = new TimelineLite();
+        // jQuery(document).ready(function () {
+        //     setTimeout(function () {
+        //         var tl = new TimelineLite();
 
-                tl
-                    .to("#hhcontainer", 1, { opacity: 0 })
-                    .to("#hhcontainer", 1, { opacity: 1 });
-            }, 3500);
-        });
+        //         tl
+        //             .to("#hhcontainer", 1, { opacity: 0 })
+        //             .to("#hhcontainer", 1, { opacity: 1 });
+        //     }, 3500);
+        // });
 
                 // jQuery(document).ready(function() {     setTimeout(function() { var tl = new
                 // TimelineLite(); var introtextsplit = new SplitText(".service_alt_txt",

@@ -2721,12 +2721,13 @@
             }, {
                 key: "animateIn",
                 value: function() {
+                    debugger;
                     var t = this,
                         e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     return this.emit("animateIn", {
                         cancelTransition: e
                     }), new Promise(function(i) {
-                        e ? t.cancelAnimIn(i) : t.createAnimIn(i)
+                        e ? t.cancelAnimIn(i) : t.createAnimInLeftRight(i)
                     }).then(this.onAnimateInComplete.bind(this, e)).catch(function(t) {
                         console.log(t)
                     })
@@ -2749,7 +2750,7 @@
                     return this.emit("animateOut", {
                         cancelTransition: e
                     }), new Promise(function(i) {
-                        e ? t.cancelAnimOut(i) : t.createAnimOut(i)
+                        e ? t.cancelAnimOut(i) : t.createAnimOutLeftRight(i)
                     }).then(this.onAnimateOutComplete.bind(this, e)).catch(function(t) {
                         console.log(t)
                     })

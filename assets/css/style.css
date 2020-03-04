@@ -678,7 +678,9 @@ html:not(.touch) .logo:hover .logo__line {
 
 .nav-toggle__label {
     display: inline-block;
-    line-height: 50px
+    line-height: 34px;
+    font-size: 12px
+
 }
 
 .nav-toggle__label__close,

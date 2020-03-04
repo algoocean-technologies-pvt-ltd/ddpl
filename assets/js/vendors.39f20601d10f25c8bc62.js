@@ -1928,6 +1928,8 @@
             dispose() {}
             animateIn() {
                 let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+                debugger;
+
                 return this.emit("animateIn", {
                     cancelTransition: t
                 }), new Promise(e => {
