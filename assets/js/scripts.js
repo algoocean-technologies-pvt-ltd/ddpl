@@ -3619,6 +3619,7 @@
                     e !== this.currentScreenIndex && this.screenNavigator.currentScreen.navigationEnabled && (this.previousScreenIndex = this.currentScreenIndex, this.currentScreenIndex = e, this.showScreen(e))
                 }
                 gotoNextScreen() {
+                    debugger;
                     if(this.currentScreenIndex === 0){
                         this.gotoScreen(2)
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
@@ -3763,7 +3764,26 @@
                     this.gotoNextScreen()
                 }
                 OnFooterButtonClick() {
-                    this.gotoScreen(this.screenElements.length - 1)
+                    if(this.currentScreenIndex === 0){
+                        this.gotoScreen(2)
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        
+                    } else if(this.currentScreenIndex === 2){
+                        this.gotoScreen(4)
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                    } else if(this.currentScreenIndex === 4){
+                        this.gotoScreen(6)
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                    }else if(this.currentScreenIndex === 6){
+                        this.gotoScreen(8)
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                    }else {
+
+                    }
                 }
                 OnRightButtonClick() {
                     this.gotoScreen(this.screenElements.length - 1);
