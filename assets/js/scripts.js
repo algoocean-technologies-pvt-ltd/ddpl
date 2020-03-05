@@ -1133,6 +1133,7 @@
                     y: 1.2 * this.image.scale.y,
                     ease: o.f.easeInOut
                 }, 0)
+                debugger;
             }
             render() {
                 this.renderer.render(this.stage)
@@ -1347,6 +1348,7 @@
 
             }
             createAnimOut(e) {
+                debugger;
                 if (this.owner.currentScreen.index % 2 === 1 || this.owner.previousScreen.index % 2 === 1) {
                     this.createAnimOutLeftRight(e)
                 }
@@ -3618,21 +3620,24 @@
                 }
                 gotoNextScreen() {
                     if(this.currentScreenIndex === 0){
-                        this.element.querySelector("#leftArrow").style.display = "none";
-                        this.element.querySelector("#rightArrow").style.display = "block";
                         this.gotoScreen(2)
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
                     } else if (this.currentScreenIndex === 2) {
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
                         this.gotoScreen(4)
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        
                     } else if (this.currentScreenIndex === 4) {
-                        this.element.querySelector("#leftArrow").style.display = "none";
-                        this.element.querySelector("#rightArrow").style.display = "block";
                         this.gotoScreen(6)
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
                     } else if (this.currentScreenIndex === 6) {
-                        this.element.querySelector("#leftArrow").style.display = "block";
-                        this.element.querySelector("#rightArrow").style.display = "none";
                         this.gotoScreen(8)
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
                     } else {
 
                     }
@@ -3641,23 +3646,23 @@
                 gotoPrevScreen() {
                     debugger;
                     if(this.currentScreenIndex === 0){
-                        this.element.querySelector("#rightArrow").style.display = "block";
-                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
                     } else if (this.currentScreenIndex === 2) {
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
                         this.gotoScreen(0)
                     } else if (this.currentScreenIndex === 4) {
-                        this.element.querySelector("#rightArrow").style.display = "block";
-                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.gotoScreen(2)
                     } else if (this.currentScreenIndex === 6) {
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
                         this.gotoScreen(4)
                     } else if(this.currentScreenIndex === 8){
-                        this.element.querySelector("#rightArrow").style.display = "block";
-                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.gotoScreen(6)
                     }
 
@@ -3667,30 +3672,45 @@
                 gotoLeft() {
 
                     if(this.currentScreenIndex === 0){
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
                         this.gotoScreen(1);
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        
                     } else if(this.currentScreenIndex == 3){
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
                         this.gotoScreen(2);
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
                     } else if(this.currentScreenIndex === 4){
-                        this.element.querySelector("#rightArrow").style.display = "none";
-                        this.element.querySelector("#leftArrow").style.display = "block";
                         this.gotoScreen(5);
-                    }else {
-
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                    }else if(this.currentScreenIndex === 7){
+                        this.gotoScreen(6);
+                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility ="visible"
                     }
                 }
                 gotoRight() {
                     if(this.currentScreenIndex === 1){
-                        this.element.querySelector("#leftArrow").style.display = "none";
-                        this.element.querySelector("#rightArrow").style.display = "block";
                         this.gotoScreen(0);
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
                     }else if(this.currentScreenIndex === 2){
-                        this.element.querySelector("#leftArrow").style.display = "none";
-                        this.element.querySelector("#rightArrow").style.display = "block";
                         this.gotoScreen(3);
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
+                    } else if(this.currentScreenIndex === 5){
+                        this.gotoScreen(4);
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
+                    } else if(this.currentScreenIndex === 6){
+                        this.gotoScreen(7);
+                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility ="visible"
+                        
                     }
                 }
                 swipe(e) {
@@ -3743,7 +3763,7 @@
                     this.gotoNextScreen()
                 }
                 OnFooterButtonClick() {
-                    this.gotoScreen(this.screenElements.length - 2)
+                    this.gotoScreen(this.screenElements.length - 1)
                 }
                 OnRightButtonClick() {
                     this.gotoScreen(this.screenElements.length - 1);

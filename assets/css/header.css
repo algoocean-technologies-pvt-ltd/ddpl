@@ -1023,7 +1023,7 @@ html:not(.touch) .nav-toggle:hover .nav-toggle__picto__point:last-child {
     position: fixed;
     left: 0;
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     padding-top: 1.5vh;  align-items: center;z-index: 99;font-size: 16px;
 }
 
