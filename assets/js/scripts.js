@@ -1,4 +1,4 @@
-! function(e) {
+! function (e) {
     function t(t) {
         for (var s, r, a = t[0], l = t[1], h = t[2], d = 0, m = []; d < a.length; d++) r = a[d], n[r] && m.push(n[r][0]), n[r] = 0;
         for (s in l) Object.prototype.hasOwnProperty.call(l, s) && (e[s] = l[s]);
@@ -31,37 +31,37 @@
         };
         return e[t].call(i.exports, i, i.exports, r), i.l = !0, i.exports
     }
-    r.m = e, r.c = s, r.d = function(e, t, i) {
+    r.m = e, r.c = s, r.d = function (e, t, i) {
         r.o(e, t) || Object.defineProperty(e, t, {
             enumerable: !0,
             get: i
         })
-    }, r.r = function(e) {
+    }, r.r = function (e) {
         "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
         }), Object.defineProperty(e, "__esModule", {
             value: !0
         })
-    }, r.t = function(e, t) {
+    }, r.t = function (e, t) {
         if (1 & t && (e = r(e)), 8 & t) return e;
         if (4 & t && "object" == typeof e && e && e.__esModule) return e;
         var i = Object.create(null);
         if (r.r(i), Object.defineProperty(i, "default", {
-                enumerable: !0,
-                value: e
-            }), 2 & t && "string" != typeof e)
-            for (var s in e) r.d(i, s, function(t) {
+            enumerable: !0,
+            value: e
+        }), 2 & t && "string" != typeof e)
+            for (var s in e) r.d(i, s, function (t) {
                 return e[t]
             }.bind(null, s));
         return i
-    }, r.n = function(e) {
-        var t = e && e.__esModule ? function() {
+    }, r.n = function (e) {
+        var t = e && e.__esModule ? function () {
             return e.default
-        } : function() {
+        } : function () {
             return e
         };
         return r.d(t, "a", t), t
-    }, r.o = function(e, t) {
+    }, r.o = function (e, t) {
         return Object.prototype.hasOwnProperty.call(e, t)
     }, r.p = "/";
     var a = window.webpackJsonp = window.webpackJsonp || [],
@@ -71,7 +71,7 @@
     var c = l;
     o.push([178, 1]), i()
 }({
-    172: function(e) {
+    172: function (e) {
         e.exports = [{
             elementType: "geometry",
             stylers: [{
@@ -143,16 +143,16 @@
             }]
         }]
     },
-    178: function(e, t, i) {
+    178: function (e, t, i) {
         i(403), e.exports = i(402)
     },
-    402: function(e, t, i) {},
-    403: function(e, t, i) {
+    402: function (e, t, i) { },
+    403: function (e, t, i) {
         "use strict";
         i.r(t);
         i(105);
         var s = i(9),
-            n = function(e) {
+            n = function (e) {
                 const t = document.createElement("div");
                 return t.innerHTML = e, t.firstElementChild
             },
@@ -171,9 +171,9 @@
          * 
          * @author: Jack Doyle, jack@greensock.com
          */
-        ! function(e) {
+        ! function (e) {
             var t = e.GreenSockGlobals || e,
-                i = function(e) {
+                i = function (e) {
                     var i, s = e.split("."),
                         n = t;
                     for (i = 0; i < s.length; i++) n[s[i]] = n = n[s[i]] || {};
@@ -181,40 +181,40 @@
                 }("com.greensock.utils"),
                 s = o.l.document || {},
                 n = void 0 !== e ? e : s.defaultView || {
-                    getComputedStyle: function() {}
+                    getComputedStyle: function () { }
                 },
-                r = function(e) {
+                r = function (e) {
                     return n.getComputedStyle(e)
                 },
                 a = /([A-Z])/g,
-                l = function(e, t, i, s) {
+                l = function (e, t, i, s) {
                     var n;
                     return (i = i || r(e)) ? n = (e = i.getPropertyValue(t.replace(a, "-$1").toLowerCase())) || i.length ? e : i[t] : e.currentStyle && (n = (i = e.currentStyle)[t]), s ? n : parseInt(n, 10) || 0
                 },
-                h = function(e) {
+                h = function (e) {
                     return !!(e.length && e[0] && (e[0].nodeType && e[0].style && !e.nodeType || e[0].length && e[0][0]))
                 },
-                c = function(e, t) {
+                c = function (e, t) {
                     for (var i, s = t.length; --s > -1;)
                         if (i = t[s], e.substr(0, i.length) === i) return i.length
                 },
                 d = /(?:\r|\n|\t\t)/g,
                 m = /(?:\s\s+)/g,
-                u = function(e) {
+                u = function (e) {
                     return (e.charCodeAt(0) - 55296 << 10) + (e.charCodeAt(1) - 56320) + 65536
                 },
                 p = " style='position:relative;display:inline-block;" + (s.all && !s.addEventListener ? "*display:inline;*zoom:1;'" : "'"),
-                g = function(e, t) {
+                g = function (e, t) {
                     var i = -1 !== (e = e || "").indexOf("++"),
                         s = 1;
                     return i && (e = e.split("++").join("")),
-                        function() {
+                        function () {
                             return "<" + t + p + (e ? " class='" + e + (i ? s++ : "") + "'>" : ">")
                         }
                 },
-                _ = i.SplitText = t.SplitText = function(e, t) {
+                _ = i.SplitText = t.SplitText = function (e, t) {
                     if ("string" == typeof e && (e = _.selector(e)), !e) throw "cannot split a null element.";
-                    this.elements = h(e) ? function(e) {
+                    this.elements = h(e) ? function (e) {
                         var t, i, s, n = [],
                             o = e.length;
                         for (t = 0; t < o; t++)
@@ -230,16 +230,16 @@
                         for (t = t.firstChild; t; t = t.nextSibling) e(t, i, s);
                     else 3 !== n && 4 !== n || (t.nodeValue = t.nodeValue.split(i).join(s))
                 },
-                y = function(e, t) {
+                y = function (e, t) {
                     for (var i = t.length; --i > -1;) e.push(t[i])
                 },
-                f = function(e) {
+                f = function (e) {
                     var t, i = [],
                         s = e.length;
                     for (t = 0; t !== s; i.push(e[t++]));
                     return i
                 },
-                b = function(e, t, i) {
+                b = function (e, t, i) {
                     for (var s; e && e !== t;) {
                         if (s = e._next || e.nextSibling) return s.textContent.charAt(0) === i;
                         e = e.parentNode || e._parent
@@ -251,7 +251,7 @@
                         o = n.length;
                     for (i = 0; i < o; i++)(s = n[i])._isSplit ? e(s) : (i && 3 === s.previousSibling.nodeType ? s.previousSibling.nodeValue += 3 === s.nodeType ? s.nodeValue : s.firstChild.nodeValue : 3 !== s.nodeType && t.insertBefore(s.firstChild, s), t.removeChild(s))
                 },
-                S = function(e, t, i, n, o, a, h) {
+                S = function (e, t, i, n, o, a, h) {
                     var c, d, m, u, p, g, _, f, S, x, C, I, k = r(e),
                         T = l(e, "paddingLeft", k),
                         P = -999,
@@ -295,8 +295,8 @@
                         g = "absolute" === i.position || !0 === i.absolute;
                     if (3 !== t.nodeType || p > 1) {
                         for (i.absolute = !1, r = 0; r < p; r++)(3 !== (a = h[r]).nodeType || /\S+/.test(a.nodeValue)) && (g && 3 !== a.nodeType && "inline" === l(a, "display", null, !0) && (a.style.display = "inline-block", a.style.position = "relative"), a._isSplit = !0, e(a, i, n, o));
-                        return i.absolute = g, void(t._isSplit = !0)
-                    }! function(e, t, i, n) {
+                        return i.absolute = g, void (t._isSplit = !0)
+                    } ! function (e, t, i, n) {
                         var o, r, a, l, h, p, g, _, y, f, b = t.tag ? t.tag : t.span ? "span" : "div",
                             w = -1 !== (t.type || t.split || "chars,words,lines").indexOf("chars"),
                             S = "absolute" === t.position || !0 === t.absolute,
@@ -308,32 +308,32 @@
                             P = s.createElement("div"),
                             L = e.parentNode;
                         for (L.insertBefore(P, e), P.textContent = e.nodeValue, L.removeChild(e), g = -1 !== (o = function e(t) {
-                                var i = t.nodeType,
-                                    s = "";
-                                if (1 === i || 9 === i || 11 === i) {
-                                    if ("string" == typeof t.textContent) return t.textContent;
-                                    for (t = t.firstChild; t; t = t.nextSibling) s += e(t)
-                                } else if (3 === i || 4 === i) return t.nodeValue;
-                                return s
-                            }(e = P)).indexOf("<"), !1 !== t.reduceWhiteSpace && (o = o.replace(m, " ").replace(d, "")), g && (o = o.split("<").join("{{LT}}")), h = o.length, r = (" " === o.charAt(0) ? C : "") + i(), a = 0; a < h; a++)
+                            var i = t.nodeType,
+                                s = "";
+                            if (1 === i || 9 === i || 11 === i) {
+                                if ("string" == typeof t.textContent) return t.textContent;
+                                for (t = t.firstChild; t; t = t.nextSibling) s += e(t)
+                            } else if (3 === i || 4 === i) return t.nodeValue;
+                            return s
+                        }(e = P)).indexOf("<"), !1 !== t.reduceWhiteSpace && (o = o.replace(m, " ").replace(d, "")), g && (o = o.split("<").join("{{LT}}")), h = o.length, r = (" " === o.charAt(0) ? C : "") + i(), a = 0; a < h; a++)
                             if (p = o.charAt(a), T && (f = T(o.substr(a), t.specialChars))) p = o.substr(a, f || 1), r += w && " " !== p ? n() + p + "</" + b + ">" : p, a += f - 1;
                             else if (p === x && o.charAt(a - 1) !== x && a) {
-                            for (r += k ? I : "", k = !1; o.charAt(a + 1) === x;) r += C, a++;
-                            a === h - 1 ? r += C : ")" !== o.charAt(a + 1) && (r += C + i(), k = !0)
-                        } else "{" === p && "{{LT}}" === o.substr(a, 6) ? (r += w ? n() + "{{LT}}</" + b + ">" : "{{LT}}", a += 5) : p.charCodeAt(0) >= 55296 && p.charCodeAt(0) <= 56319 || o.charCodeAt(a + 1) >= 65024 && o.charCodeAt(a + 1) <= 65039 ? (_ = u(o.substr(a, 2)), y = u(o.substr(a + 2, 2)), l = _ >= 127462 && _ <= 127487 && y >= 127462 && y <= 127487 || y >= 127995 && y <= 127999 ? 4 : 2, r += w && " " !== p ? n() + o.substr(a, l) + "</" + b + ">" : o.substr(a, l), a += l - 1) : r += w && " " !== p ? n() + p + "</" + b + ">" : p;
+                                for (r += k ? I : "", k = !1; o.charAt(a + 1) === x;) r += C, a++;
+                                a === h - 1 ? r += C : ")" !== o.charAt(a + 1) && (r += C + i(), k = !0)
+                            } else "{" === p && "{{LT}}" === o.substr(a, 6) ? (r += w ? n() + "{{LT}}</" + b + ">" : "{{LT}}", a += 5) : p.charCodeAt(0) >= 55296 && p.charCodeAt(0) <= 56319 || o.charCodeAt(a + 1) >= 65024 && o.charCodeAt(a + 1) <= 65039 ? (_ = u(o.substr(a, 2)), y = u(o.substr(a + 2, 2)), l = _ >= 127462 && _ <= 127487 && y >= 127462 && y <= 127487 || y >= 127995 && y <= 127999 ? 4 : 2, r += w && " " !== p ? n() + o.substr(a, l) + "</" + b + ">" : o.substr(a, l), a += l - 1) : r += w && " " !== p ? n() + p + "</" + b + ">" : p;
                         e.outerHTML = r + (k ? I : ""), g && v(L, "{{LT}}", "<")
                     }(t, i, n, o)
                 },
                 C = _.prototype;
-            C.split = function(e) {
+            C.split = function (e) {
                 this.isSplit && this.revert(), this.vars = e = e || this.vars, this._originals.length = this.chars.length = this.words.length = this.lines.length = 0;
                 for (var t, i, s, n = this.elements.length, o = e.tag ? e.tag : e.span ? "span" : "div", r = g(e.wordsClass, o), a = g(e.charsClass, o); --n > -1;) s = this.elements[n], this._originals[n] = s.innerHTML, t = s.clientHeight, i = s.clientWidth, x(s, e, r, a), S(s, e, this.chars, this.words, this.lines, i, t);
                 return this.chars.reverse(), this.words.reverse(), this.lines.reverse(), this.isSplit = !0, this
-            }, C.revert = function() {
+            }, C.revert = function () {
                 if (!this._originals) throw "revert() call wasn't scoped properly.";
                 for (var e = this._originals.length; --e > -1;) this.elements[e].innerHTML = this._originals[e];
                 return this.chars = [], this.words = [], this.lines = [], this.isSplit = !1, this
-            }, _.selector = e.$ || e.jQuery || function(t) {
+            }, _.selector = e.$ || e.jQuery || function (t) {
                 var i = e.$ || e.jQuery;
                 return i ? (_.selector = i, i(t)) : "undefined" == typeof document ? t : document.querySelectorAll ? document.querySelectorAll(t) : document.getElementById("#" === t.charAt(0) ? t.substr(1) : t)
             }, _.version = "0.7.0"
@@ -421,7 +421,7 @@
                     delay: .8
                 }), this.button.addEventListener("mouseenter", this.onButtonRollOver.bind(this)), this.button.addEventListener("mouseleave", this.onButtonRollOut.bind(this))
             }
-            resize() {}
+            resize() { }
             onButtonClick() {
                 this.emit("complete")
             }
@@ -451,7 +451,7 @@
                     ease: o.f.easeInOut
                 })
             }
-        }            
+        }
 
         class d extends s.a {
             constructor(e) {
@@ -523,7 +523,7 @@
                     clearProps: "visibility"
                 })
             }
-            resize() {}
+            resize() { }
             onAnimateInComplete(e) {
                 super.onAnimateInComplete(e), window.scrollTo(0, 0), this.anim.play()
             }
@@ -573,7 +573,7 @@
                     });
                     " " === t && (n.alpha = 0), n.x = e ? e.x + e.width : 0, e && " " !== t && (n.x += this.letterSpacing), s.addChild(n), this.chars.push(n), e = n
                 });
-                
+
                 const t = new _.a;
                 t.blur = 0, t.resolution = this.renderer.resolution;
                 const i = new u.a;
@@ -631,7 +631,7 @@
                     autoAlpha: 0
                 })
             }
-            resize() {}
+            resize() { }
             start() {
                 this.isRunning || (this.isRunning = !0, TweenLite.ticker.addEventListener("tick", this.tickCallback))
             }
@@ -683,8 +683,8 @@
                         "X-Requested-With": "XMLHttpRequest",
                         credentials: "same-origin"
                     }
-                }).then(function(t) {
-                    return t.text().then(function(i) {
+                }).then(function (t) {
+                    return t.text().then(function (i) {
                         return {
                             url: e,
                             text: i,
@@ -703,7 +703,7 @@
             }
             gotoHref(e) {
                 const t = new URL(e);
-                if (t.pathname === window.location.pathname) return void(t.hash !== window.location.hash && (window.location.hash = t.hash));
+                if (t.pathname === window.location.pathname) return void (t.hash !== window.location.hash && (window.location.hash = t.hash));
                 this.keepSearch && window.location.search && (t.search = window.location.search, e = t.href);
                 const i = {
                     href: e
@@ -750,7 +750,7 @@
                     originalEvent: e,
                     state: e.state,
                     defaultPrevented: !1,
-                    preventDefault: function() {
+                    preventDefault: function () {
                         this.defaultPrevented = !0
                     }
                 };
@@ -763,15 +763,15 @@
                 t && this.loadPage(t)
             }
         }
-        var w = function(e) {
-                const t = new Image;
-                return t.src = e, new Promise(function(e, i) {
-                    function s() {
-                        t.naturalWidth ? e(t) : i(t), t.removeEventListener("load", s), t.removeEventListener("error", s)
-                    }
-                    t.naturalWidth || t.complete ? e(t) : (t.addEventListener("load", s), t.addEventListener("error", s))
-                })
-            },
+        var w = function (e) {
+            const t = new Image;
+            return t.src = e, new Promise(function (e, i) {
+                function s() {
+                    t.naturalWidth ? e(t) : i(t), t.removeEventListener("load", s), t.removeEventListener("error", s)
+                }
+                t.naturalWidth || t.complete ? e(t) : (t.addEventListener("load", s), t.addEventListener("error", s))
+            })
+        },
             S = i(104);
         class x extends f.a {
             constructor(e) {
@@ -864,7 +864,7 @@
             onEnter() {
                 this.observer.unobserve(this.element), this.animateIn()
             }
-            onLeave() {}
+            onLeave() { }
         }
         const I = 200,
             k = .1;
@@ -999,8 +999,8 @@
                     i = w(t);
                 this.addAssetToLoad(i)
             }
-            abortLoadAssets() {}
-            populateAssetPromises() {}
+            abortLoadAssets() { }
+            populateAssetPromises() { }
             resize(e) {
                 e && (this.resizeColorObservers(), this.resizeRevealTexts(), this.resizeParallaxImages())
             }
@@ -1044,7 +1044,7 @@
                     this.emit("showHeader")
                 }, this.showHeaderDelay), Promise.all(this.animInPromises).then(e), !this.isAjax && app.skipIn && setTimeout(() => this.timeline.progress(1)), this.emit("animInStart")
             }
-            populateAnimIn() {}
+            populateAnimIn() { }
             createAnimOut(e) {
                 this.isVisible = !1, this.timeline = new r.a;
                 const t = new Promise(e => {
@@ -1052,7 +1052,7 @@
                 });
                 this.animOutPromises.push(t), this.populateAnimOut(), Promise.all(this.animOutPromises).then(e)
             }
-            populateAnimOut() {}
+            populateAnimOut() { }
             onAnimateInComplete(e) {
                 var t, i;
                 (super.onAnimateInComplete(e), e) || (this.initParallaxImages(), this.initRevealTexts(), this.isAjax && (t = app.googleAnalyticsId, i = {
@@ -1072,7 +1072,7 @@
             onLoadAssetsError() {
                 this.onLoadAssetsComplete()
             }
-            onPopState(e) {}
+            onPopState(e) { }
             onLogoColorChange(e) {
                 this.emit("setLogoColor", {
                     color: e.color
@@ -1097,7 +1097,7 @@
                 }), this.stage = new u.a, this.initImage()
             }
             initImage() {
-                const e = "0x" + getComputedStyle(document.documentElement).getPropertyValue("background-color").split("(")[1].split(")")[0].split(",").map(function(e) {
+                const e = "0x" + getComputedStyle(document.documentElement).getPropertyValue("background-color").split("(")[1].split(")")[0].split(",").map(function (e) {
                     return 1 === (e = parseInt(e).toString(16)).length ? "0" + e : e
                 }).join("");
                 this.blurFilter = new _.a, this.blurFilter.blur = 0, this.imageWrapper = new u.a, this.imageWrapper.filters = [this.blurFilter], this.stage.addChild(this.imageWrapper), this.image = p.a.from(this.imageUrl, {
@@ -1106,12 +1106,12 @@
                     }
                 }), this.image.anchor.set(.5), this.image.texture.baseTexture.realWidth ? this.resizeImage() : this.image.texture.baseTexture.once("loaded", this.onImageTextureLoaded.bind(this)), this.image.position.set(.5 * this.renderer.width, .5 * this.renderer.height), this.imageWrapper.addChild(this.image), this.foreground1 = p.a.from(m.d.WHITE), this.foreground1.width = this.renderer.width, this.foreground1.height = this.renderer.height, this.foreground1.tint = e, this.foreground1.alpha = .5, this.imageWrapper.addChild(this.foreground1), this.foreground2 = p.a.from(this.foreground1.texture), this.foreground2.width = this.renderer.width, this.foreground2.height = this.renderer.height, this.foreground2.tint = e, this.foreground2.blendMode = L.a.SCREEN, this.imageWrapper.addChild(this.foreground2)
             }
-            dispose() {}
+            dispose() { }
             createAnimIn() {
                 return new r.a(
                     {
-                    onUpdate: this.render.bind(this)
-                });
+                        onUpdate: this.render.bind(this)
+                    });
                 // .from(this.imageWrapper, 2, {
                 //     alpha: 0,
                 //     ease: o.d.easeNone
@@ -1143,7 +1143,7 @@
         var A = i(128);
         class E extends f.a {
             constructor(e) {
-                super(), this.element = e.element, this.collapsed = !1, this.hovered = !1, this.rollEnabled = !0, this.textElements1 = this.element.querySelectorAll(".service_alt_txt"),this.textElements = this.element.querySelectorAll(".service-title__text span"), this.line = this.element.querySelector(".service-title__line"), this.resize(), this.timeline = null, this.element.addEventListener("mouseenter", this.onRollOver.bind(this)), this.element.addEventListener("mouseleave", this.onRollOut.bind(this))
+                super(), this.element = e.element, this.collapsed = !1, this.hovered = !1, this.rollEnabled = !0, this.textElements1 = this.element.querySelectorAll(".service_alt_txt"), this.textElements = this.element.querySelectorAll(".service-title__text span"), this.line = this.element.querySelector(".service-title__line"), this.resize(), this.timeline = null, this.element.addEventListener("mouseenter", this.onRollOver.bind(this)), this.element.addEventListener("mouseleave", this.onRollOut.bind(this))
             }
             resize() {
                 app.windowWidth >= app.screenS && (this.rect = this.element.getBoundingClientRect(), this.lineRect = this.line.getBoundingClientRect(), this.splitText || (this.splitText = new a(this.textElements[0], {
@@ -1222,47 +1222,47 @@
             resize() {
                 this.title.resize()
             }
-            
+
             createAnimInLeftRight(e) {
                 if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
                     onComplete: e
                 }), !this.owner.previousItemId) return;
                 const t = this.index > this.owner.previousScreen.index ? 1 : -1,
-                i = this.figure.getBoundingClientRect();
+                    i = this.figure.getBoundingClientRect();
                 this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
-                opacity: 1
+                    opacity: 1
                 }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
-                this.navigationEnabled = !0
+                    this.navigationEnabled = !0
                 }, 2).fromTo(this.figure, 1, {
-                x: 1 === t ? i.width : -(app.windowWidth + this.figure.offsetLeft)
+                    x: 1 === t ? i.width : -(app.windowWidth + this.figure.offsetLeft)
                 }, {
-                x: 0,
-                ease: o.g.easeOut
+                    x: 0,
+                    ease: o.g.easeOut
                 }, .5).fromTo(this.figureInner, 1, {
-                x: 1 === t ? -i.width + this.figure.offsetTop : app.windowHeight
+                    x: 1 === t ? -i.width + this.figure.offsetTop : app.windowHeight
                 }, {
-                x: 0,
-                ease: o.g.easeOut
+                    x: 0,
+                    ease: o.g.easeOut
                 }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
-                opacity: 0
+                    opacity: 0
                 }, {
-                opacity: 1
+                    opacity: 1
                 }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
-                rotationY: -70,
-                opacity: 0
+                    rotationY: -70,
+                    opacity: 0
                 }, {
-                rotationY: 0,
-                opacity: 1,
-                ease: o.g.easeOut
+                    rotationY: 0,
+                    opacity: 1,
+                    ease: o.g.easeOut
                 }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
-                x: this.title.rect.x - this.title.lineRect.x,
-                opacity: 0,
-                ease: o.f.easeInOut,
-                onComplete: () => {
-                    this.title.rollEnabled = !0, this.title.hovered && this.showBody()
-                }
-                }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, {opacity:1, ease:Power2.easeIn}).to(".bigtxt", .2, {opacity:1, ease:Power2.easeIn}).to(".service-title__cta", .2, {opacity:1, ease:Power2.easeIn}).from(this.title.textElements[1], .6, {
-                opacity: 0
+                    x: this.title.rect.x - this.title.lineRect.x,
+                    opacity: 0,
+                    ease: o.f.easeInOut,
+                    onComplete: () => {
+                        this.title.rollEnabled = !0, this.title.hovered && this.showBody()
+                    }
+                }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn }).to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn }).to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn }).from(this.title.textElements[1], .6, {
+                    opacity: 0
                 }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
             }
 
@@ -1274,7 +1274,7 @@
                     onComplete: e
                 }).set(this.element, {
                     visibility: "inherit"
-                }).to(".service_alt_txt", .01, {opacity:0}).to(".bigtxt", .01, {opacity:0}).to(".service-title__cta", .2, {opacity:0}).to(this.title.element, 1, {
+                }).to(".service_alt_txt", .01, { opacity: 0 }).to(".bigtxt", .01, { opacity: 0 }).to(".service-title__cta", .2, { opacity: 0 }).to(this.title.element, 1, {
                     opacity: 0
                 }).to(this.figure, 1, {
                     x: 1 === i ? -(app.windowWidth + this.figure.offsetLeft) : t.width + this.figure.offsetLeft,
@@ -1289,76 +1289,76 @@
 
 
             createAnimIn(e) {
-                if(this.owner.currentScreen.index % 2 === 1){
+                if (this.owner.currentScreen.index % 2 === 1 || this.owner.previousScreen.index % 2 === 1) {
                     this.createAnimInLeftRight(e)
                 }
-                else{
-                if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
-                    onComplete: e
-                }), !this.owner.previousItemId) return;
-            const t = this.index > this.owner.previousScreen.index ? 1 : -1,
-                i = this.figure.getBoundingClientRect();
-            this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
-                opacity: 1
-            }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
-                this.navigationEnabled = !0
-            }, 2).fromTo(this.figure, 1, {
-                y: 1 === t ? i.height : -(app.windowHeight + this.figure.offsetTop)
-            }, {
-                y: 0,
-                ease: o.g.easeOut
-            }, .5).fromTo(this.figureInner, 1, {
-                y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
-            }, {
-                y: 0,
-                ease: o.g.easeOut
-            }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
-                opacity: 0
-            }, {
-                opacity: 1
-            }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
-                rotationY: -70,
-                opacity: 0
-            }, {
-                rotationY: 0,
-                opacity: 1,
-                ease: o.g.easeOut
-            }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
-                x: this.title.rect.x - this.title.lineRect.x,
-                opacity: 0,
-                ease: o.f.easeInOut,
-                onComplete: () => {
-                    this.title.rollEnabled = !0, this.title.hovered && this.showBody()
+                else {
+                    if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
+                        onComplete: e
+                    }), !this.owner.previousItemId) return;
+                    const t = this.index > this.owner.previousScreen.index ? 1 : -1,
+                        i = this.figure.getBoundingClientRect();
+                    this.navigationEnabled = !1, this.title.rollEnabled = !1, this.timeline.set(this.title.element, {
+                        opacity: 1
+                    }).add("title", this.owner.previousScreen ? .9 : .3).add(() => {
+                        this.navigationEnabled = !0
+                    }, 2).fromTo(this.figure, 1, {
+                        y: 1 === t ? i.height : -(app.windowHeight + this.figure.offsetTop)
+                    }, {
+                        y: 0,
+                        ease: o.g.easeOut
+                    }, .5).fromTo(this.figureInner, 1, {
+                        y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
+                    }, {
+                        y: 0,
+                        ease: o.g.easeOut
+                    }, .5), app.windowWidth < app.screenS ? this.timeline.fromTo(this.title.element, 1, {
+                        opacity: 0
+                    }, {
+                        opacity: 1
+                    }, "title") : this.timeline.staggerFromTo(this.title.splitText.chars, 2, {
+                        rotationY: -70,
+                        opacity: 0
+                    }, {
+                        rotationY: 0,
+                        opacity: 1,
+                        ease: o.g.easeOut
+                    }, .13, "title").from(this.title.line, .3 * this.title.splitText.chars.length, {
+                        x: this.title.rect.x - this.title.lineRect.x,
+                        opacity: 0,
+                        ease: o.f.easeInOut,
+                        onComplete: () => {
+                            this.title.rollEnabled = !0, this.title.hovered && this.showBody()
+                        }
+                    }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn }).to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn }).to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn }).from(this.title.textElements[1], .6, {
+                        opacity: 0
+                    }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
                 }
-            }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, {opacity:1, ease:Power2.easeIn}).to(".bigtxt", .2, {opacity:1, ease:Power2.easeIn}).to(".service-title__cta", .2, {opacity:1, ease:Power2.easeIn}).from(this.title.textElements[1], .6, {
-                opacity: 0
-            }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
-        }
-                
+
             }
             createAnimOut(e) {
-                if(this.owner.currentScreen.index % 2 === 1){
+                if (this.owner.currentScreen.index % 2 === 1 || this.owner.previousScreen.index % 2 === 1) {
                     this.createAnimOutLeftRight(e)
                 }
-                else{
-                const t = this.figure.getBoundingClientRect(),
-                    i = this.index < this.owner.currentScreen.index ? 1 : -1;
-                this.title.rollEnabled = !1, this.timeline && this.timeline.kill(), this.hideBody(), this.timeline = new r.a({
-                    onComplete: e
-                }).set(this.element, {
-                    visibility: "inherit"
-                }).to(".service_alt_txt", .01, {opacity:0}).to(".bigtxt", .01, {opacity:0}).to(".service-title__cta", .2, {opacity:0}).to(this.title.element, 1, {
-                    opacity: 0
-                }).to(this.figure, 1, {
-                    y: 1 === i ? -(app.windowHeight + this.figure.offsetTop) : t.height + this.figure.offsetTop,
-                    ease: o.g.easeInOut
-                }, 0).to(this.figureInner, 1, {
-                    y: 1 === i ? app.windowHeight : -t.height,
-                    ease: o.g.easeInOut
-                }, 0).set(this.element, {
-                    clearProps: "visibility"
-                })
-            }
+                else {
+                    const t = this.figure.getBoundingClientRect(),
+                        i = this.index < this.owner.currentScreen.index ? 1 : -1;
+                    this.title.rollEnabled = !1, this.timeline && this.timeline.kill(), this.hideBody(), this.timeline = new r.a({
+                        onComplete: e
+                    }).set(this.element, {
+                        visibility: "inherit"
+                    }).to(".service_alt_txt", .01, { opacity: 0 }).to(".bigtxt", .01, { opacity: 0 }).to(".service-title__cta", .2, { opacity: 0 }).to(this.title.element, 1, {
+                        opacity: 0
+                    }).to(this.figure, 1, {
+                        y: 1 === i ? -(app.windowHeight + this.figure.offsetTop) : t.height + this.figure.offsetTop,
+                        ease: o.g.easeInOut
+                    }, 0).to(this.figureInner, 1, {
+                        y: 1 === i ? app.windowHeight : -t.height,
+                        ease: o.g.easeInOut
+                    }, 0).set(this.element, {
+                        clearProps: "visibility"
+                    })
+                }
             }
             showBody() {
                 !this.bodyIsVisible && this.title.rollEnabled && (this.bodyIsVisible = !0, this.bodyTimeline && this.bodyTimeline.kill(), this.title.collapse(), this.bodyTimeline = new r.a({
@@ -1470,9 +1470,9 @@
             }
         }
         const V = {
-                OPEN: "open",
-                CLOSE: "close"
-            },
+            OPEN: "open",
+            CLOSE: "close"
+        },
             B = "js-home__nav-toggle--close";
         class X extends f.a {
             constructor(e) {
@@ -1567,7 +1567,7 @@
             constructor(e) {
                 super(), this.element = e.element, this.owner = e.owner, this.sectionIndex = e.sectionIndex, this.sectionTransitionDirection = 1
             }
-            resize() {}
+            resize() { }
             complete() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1;
                 this.emit("complete", {
@@ -1582,7 +1582,7 @@
                     visibility: "inherit"
                 }, 0), this.populateAnimIn()
             }
-            populateAnimIn() {}
+            populateAnimIn() { }
             createAnimOut(e) {
                 this.timeline && 1 !== this.timeline.progress() && this.timeline.kill(), this.timeline = new TimelineLite({
                     onComplete: e
@@ -1590,7 +1590,7 @@
                     clearProps: "visibility"
                 })
             }
-            populateAnimOut() {}
+            populateAnimOut() { }
         }
         class Y extends W {
             constructor(e) {
@@ -1686,9 +1686,9 @@
             for (var t = 1; t < arguments.length; t++) {
                 var i = null != arguments[t] ? arguments[t] : {},
                     s = Object.keys(i);
-                "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(e) {
+                "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function (e) {
                     return Object.getOwnPropertyDescriptor(i, e).enumerable
-                }))), s.forEach(function(t) {
+                }))), s.forEach(function (t) {
                     G(e, t, i[t])
                 })
             }
@@ -2274,10 +2274,10 @@
                     h = i.querySelector(".about__team__details__item__description"),
                     c = i.querySelector(".about__team__details__item__social");
                 if (this.currentItemIndex = e, this.portrait.setImage(a), n && n.classList.remove("about__team__details__item--current"), i.classList.add("about__team__details__item--current"), this.gotoItemTimeline && this.gotoItemTimeline.kill(), o.m.set(this.items, {
-                        clearProps: "visibility"
-                    }), this.gotoItemTimeline = new r.a({
-                        onComplete: this.onGotoItemComplete.bind(this)
-                    }), n && this.isVisible) {
+                    clearProps: "visibility"
+                }), this.gotoItemTimeline = new r.a({
+                    onComplete: this.onGotoItemComplete.bind(this)
+                }), n && this.isVisible) {
                     const e = n.querySelector(".about__team__details__item__heading"),
                         i = n.querySelector(".about__team__details__item__description"),
                         s = n.querySelector(".about__team__details__item__social");
@@ -2628,8 +2628,8 @@
                     ease: o.e.easeOut
                 }, 0);
                 const l = new Promise(e => {
-                        this.timeline.eventCallback("onComplete", e)
-                    }),
+                    this.timeline.eventCallback("onComplete", e)
+                }),
                     h = {
                         properties: {
                             sectionTransitionDirection: a,
@@ -2733,23 +2733,23 @@
                 })
             }
         }
-        var de = function(e) {
+        var de = function (e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2e3;
-            const i = new Promise(function(t, i) {
-                    function s() {
-                        e.removeEventListener("canplaythrough", n), e.removeEventListener("error", o)
-                    }
+            const i = new Promise(function (t, i) {
+                function s() {
+                    e.removeEventListener("canplaythrough", n), e.removeEventListener("error", o)
+                }
 
-                    function n() {
-                        s(), t(e)
-                    }
+                function n() {
+                    s(), t(e)
+                }
 
-                    function o() {
-                        s(), i(e)
-                    }
-                    4 === e.readyState ? t(e) : (e.addEventListener("canplaythrough", n), e.addEventListener("error", o))
-                }),
-                s = new Promise(function(i, s) {
+                function o() {
+                    s(), i(e)
+                }
+                4 === e.readyState ? t(e) : (e.addEventListener("canplaythrough", n), e.addEventListener("error", o))
+            }),
+                s = new Promise(function (i, s) {
                     setTimeout(() => {
                         s(e)
                     }, t)
@@ -2792,10 +2792,10 @@
             }
             createAnimIn(e) {
                 if (this.timeline && this.timeline.kill(), this.timeline = new r.a({
-                        onComplete: e
-                    }).set(this.element, {
-                        visibility: "inherit"
-                    }), this.owner.previousScreen) this.timeline.fromTo(this.element, .9, {
+                    onComplete: e
+                }).set(this.element, {
+                    visibility: "inherit"
+                }), this.owner.previousScreen) this.timeline.fromTo(this.element, .9, {
                     opacity: 0
                 }, {
                     opacity: 1
@@ -3077,10 +3077,10 @@
          * 
          * @author: Jack Doyle, jack@greensock.com
          */
-        o.l._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function(e) {
-            var t, i, s, n, r = function(e, t) {
-                    o.k.call(this, "throwProps"), this._overwriteProps.length = 0
-                },
+        o.l._gsDefine("plugins.ThrowPropsPlugin", ["utils.VelocityTracker", "plugins.TweenPlugin", "TweenLite", "easing.Ease"], function (e) {
+            var t, i, s, n, r = function (e, t) {
+                o.k.call(this, "throwProps"), this._overwriteProps.length = 0
+            },
                 a = 999999999999999,
                 l = o.l._gsDefine.globals,
                 h = !1,
@@ -3100,7 +3100,7 @@
                     xPercent: 1,
                     yPercent: 1
                 },
-                d = function(e, t, i, s, n) {
+                d = function (e, t, i, s, n) {
                     var o, r, l, h, c = t.length,
                         d = 0,
                         m = a;
@@ -3114,7 +3114,7 @@
                         for (; --c > -1;)(r = (o = t[c]) - e) < 0 && (r = -r), r < m && o >= s && o <= i && (d = c, m = r);
                     return t[d]
                 },
-                m = function(e, t, i, s, n, o) {
+                m = function (e, t, i, s, n, o) {
                     if ("auto" === e.end) return e;
                     var r, l, h = e.end;
                     if (i = isNaN(i) ? a : i, s = isNaN(s) ? -a : s, "object" == typeof t) {
@@ -3130,19 +3130,19 @@
                         unitFactor: e.unitFactor
                     }
                 },
-                u = function(e, t, i) {
+                u = function (e, t, i) {
                     for (var s in t) void 0 === e[s] && s !== i && (e[s] = t[s]);
                     return e
                 },
-                p = r.calculateChange = function(e, t, i, s) {
+                p = r.calculateChange = function (e, t, i, s) {
                     return null == s && (s = .05), i * s * e / (t instanceof o.b ? t : t ? new o.b(t) : o.j.defaultEase).getRatio(s)
                 },
-                g = r.calculateDuration = function(e, t, i, s, n) {
+                g = r.calculateDuration = function (e, t, i, s, n) {
                     n = n || .05;
                     var r = s instanceof o.b ? s : s ? new o.b(s) : o.j.defaultEase;
                     return Math.abs((t - e) * r.getRatio(n) / i / n)
                 },
-                _ = r.calculateTweenDuration = function(t, i, s, n, a, l) {
+                _ = r.calculateTweenDuration = function (t, i, s, n, a, l) {
                     if ("string" == typeof t && (t = o.j.selector(t)), !t) return 0;
                     null == s && (s = 10), null == n && (n = .2), null == a && (a = 1), t.length && (t = t[0] || t);
                     var c, d, _, v, y, f, b, w, S, x, C, I, k, T = 0,
@@ -3153,27 +3153,27 @@
                         E = isNaN(L.resistance) ? r.defaultResistance : Number(L.resistance);
                     if (L.linkedProps)
                         for (I = L.linkedProps.split(","), C = {}, k = 0; k < I.length; k++)(d = L[c = I[k]]) && (_ = (v = void 0 !== d.velocity && "number" == typeof d.velocity ? Number(d.velocity) || 0 : (S = S || e.getByTarget(t)) && S.isTrackingProp(c) ? S.getVelocity(c) : 0) * (y = isNaN(d.resistance) ? E : Number(d.resistance)) > 0 ? v / y : v / -y, f = "function" == typeof t[c] ? t[c.indexOf("set") || "function" != typeof t["get" + c.substr(3)] ? c : "get" + c.substr(3)]() : t[c] || 0, C[c] = f + p(v, O, _, A));
-                    for (c in L) "resistance" !== c && "checkpoint" !== c && "preventOvershoot" !== c && "linkedProps" !== c && "radius" !== c && ("object" != typeof(d = L[c]) && ((S = S || e.getByTarget(t)) && S.isTrackingProp(c) ? d = "number" == typeof d ? {
+                    for (c in L) "resistance" !== c && "checkpoint" !== c && "preventOvershoot" !== c && "linkedProps" !== c && "radius" !== c && ("object" != typeof (d = L[c]) && ((S = S || e.getByTarget(t)) && S.isTrackingProp(c) ? d = "number" == typeof d ? {
                         velocity: d
                     } : {
-                        velocity: S.getVelocity(c)
-                    } : _ = (v = Number(d) || 0) * E > 0 ? v / E : v / -E), "object" == typeof d && (_ = (v = void 0 !== d.velocity && "number" == typeof d.velocity ? Number(d.velocity) || 0 : (S = S || e.getByTarget(t)) && S.isTrackingProp(c) ? S.getVelocity(c) : 0) * (y = isNaN(d.resistance) ? E : Number(d.resistance)) > 0 ? v / y : v / -y, b = (f = "function" == typeof t[c] ? t[c.indexOf("set") || "function" != typeof t["get" + c.substr(3)] ? c : "get" + c.substr(3)]() : t[c] || 0) + p(v, O, _, A), void 0 !== d.end && (d = m(d, C && c in C ? C : b, d.max, d.min, c, L.radius), (l || h) && (L[c] = u(d, L[c], "end"))), void 0 !== d.max && b > Number(d.max) + 1e-10 ? (x = d.unitFactor || r.defaultUnitFactors[c] || 1, (w = f > d.max && d.min !== d.max || v * x > -15 && v * x < 45 ? n + .1 * (s - n) : g(f, d.max, v, O, A)) + a < P && (P = w + a)) : void 0 !== d.min && b < Number(d.min) - 1e-10 && (x = d.unitFactor || r.defaultUnitFactors[c] || 1, (w = f < d.min && d.min !== d.max || v * x > -45 && v * x < 15 ? n + .1 * (s - n) : g(f, d.min, v, O, A)) + a < P && (P = w + a)), w > T && (T = w)), _ > T && (T = _));
+                            velocity: S.getVelocity(c)
+                        } : _ = (v = Number(d) || 0) * E > 0 ? v / E : v / -E), "object" == typeof d && (_ = (v = void 0 !== d.velocity && "number" == typeof d.velocity ? Number(d.velocity) || 0 : (S = S || e.getByTarget(t)) && S.isTrackingProp(c) ? S.getVelocity(c) : 0) * (y = isNaN(d.resistance) ? E : Number(d.resistance)) > 0 ? v / y : v / -y, b = (f = "function" == typeof t[c] ? t[c.indexOf("set") || "function" != typeof t["get" + c.substr(3)] ? c : "get" + c.substr(3)]() : t[c] || 0) + p(v, O, _, A), void 0 !== d.end && (d = m(d, C && c in C ? C : b, d.max, d.min, c, L.radius), (l || h) && (L[c] = u(d, L[c], "end"))), void 0 !== d.max && b > Number(d.max) + 1e-10 ? (x = d.unitFactor || r.defaultUnitFactors[c] || 1, (w = f > d.max && d.min !== d.max || v * x > -15 && v * x < 45 ? n + .1 * (s - n) : g(f, d.max, v, O, A)) + a < P && (P = w + a)) : void 0 !== d.min && b < Number(d.min) - 1e-10 && (x = d.unitFactor || r.defaultUnitFactors[c] || 1, (w = f < d.min && d.min !== d.max || v * x > -45 && v * x < 15 ? n + .1 * (s - n) : g(f, d.min, v, O, A)) + a < P && (P = w + a)), w > T && (T = w)), _ > T && (T = _));
                     return T > P && (T = P), T > s ? s : T < n ? n : T
                 },
                 v = r.prototype = new o.k("throwProps");
             return v.constructor = r, r.version = "0.11.2", r.API = 2, r._autoCSS = !0, r.defaultResistance = 100, r.defaultUnitFactors = {
                 time: 1e3,
                 totalTime: 1e3
-            }, r.track = function(t, i, s) {
+            }, r.track = function (t, i, s) {
                 return e.track(t, i, s)
-            }, r.untrack = function(t, i) {
+            }, r.untrack = function (t, i) {
                 e.untrack(t, i)
-            }, r.isTracking = function(t, i) {
+            }, r.isTracking = function (t, i) {
                 return e.isTracking(t, i)
-            }, r.getVelocity = function(t, i) {
+            }, r.getVelocity = function (t, i) {
                 var s = e.getByTarget(t);
                 return s ? s.getVelocity(i) : NaN
-            }, r._cssRegister = function() {
+            }, r._cssRegister = function () {
                 var s = l.com.greensock.plugins.CSSPlugin;
                 if (s) {
                     var n = s._internals,
@@ -3181,7 +3181,7 @@
                         a = n._setPluginRatio,
                         h = n.CSSPropTween;
                     n._registerComplexSpecialProp("throwProps", {
-                        parser: function(s, n, l, d, m, u) {
+                        parser: function (s, n, l, d, m, u) {
                             u = new r;
                             var p, g, _, v, y = {},
                                 f = {},
@@ -3189,7 +3189,7 @@
                                 w = {},
                                 S = {},
                                 x = {};
-                            for (g in i = {}, n) "resistance" !== g && "preventOvershoot" !== g && "linkedProps" !== g && "radius" !== g && ("object" == typeof(p = n[g]) ? (void 0 !== p.velocity && "number" == typeof p.velocity ? y[g] = Number(p.velocity) || 0 : (v = v || e.getByTarget(s), y[g] = v && v.isTrackingProp(g) ? v.getVelocity(g) : 0), void 0 !== p.end && (w[g] = p.end), void 0 !== p.min && (f[g] = p.min), void 0 !== p.max && (b[g] = p.max), p.preventOvershoot && (x[g] = !0), void 0 !== p.resistance && (!0, S[g] = p.resistance)) : "number" == typeof p ? y[g] = p : (v = v || e.getByTarget(s)) && v.isTrackingProp(g) ? y[g] = v.getVelocity(g) : y[g] = p || 0, c[g] && d._enableTransforms(2 === c[g]));
+                            for (g in i = {}, n) "resistance" !== g && "preventOvershoot" !== g && "linkedProps" !== g && "radius" !== g && ("object" == typeof (p = n[g]) ? (void 0 !== p.velocity && "number" == typeof p.velocity ? y[g] = Number(p.velocity) || 0 : (v = v || e.getByTarget(s), y[g] = v && v.isTrackingProp(g) ? v.getVelocity(g) : 0), void 0 !== p.end && (w[g] = p.end), void 0 !== p.min && (f[g] = p.min), void 0 !== p.max && (b[g] = p.max), p.preventOvershoot && (x[g] = !0), void 0 !== p.resistance && (!0, S[g] = p.resistance)) : "number" == typeof p ? y[g] = p : (v = v || e.getByTarget(s)) && v.isTrackingProp(g) ? y[g] = v.getVelocity(g) : y[g] = p || 0, c[g] && d._enableTransforms(2 === c[g]));
                             for (g in _ = o(s, y, d, m, u), t = _.proxy, y = _.end, t) i[g] = {
                                 velocity: y[g],
                                 min: f[g],
@@ -3202,7 +3202,7 @@
                         }
                     })
                 }
-            }, r.to = function(e, r, a, l, c) {
+            }, r.to = function (e, r, a, l, c) {
                 r.throwProps || (r = {
                     throwProps: r
                 }), 0 === c && (r.throwProps.preventOvershoot = !0), h = !0;
@@ -3211,7 +3211,7 @@
                     throwProps: i,
                     ease: r.ease
                 }, a, l, c)), d._delay && !d.vars.immediateRender ? d.invalidate() : s._onInitTween(t, n, d), h = !1, d) : (d.kill(), d = new o.j(e, _(e, r, a, l, c), r), h = !1, d)
-            }, v._onInitTween = function(t, i, o, r) {
+            }, v._onInitTween = function (t, i, o, r) {
                 this.target = t, this._props = [], s = this, n = i;
                 var a, l, c, d, g, _, v, y, f, b, w, S, x = o._ease,
                     C = isNaN(i.checkpoint) ? .05 : Number(i.checkpoint),
@@ -3222,7 +3222,7 @@
                     for (w = i.linkedProps.split(","), b = {}, S = 0; S < w.length; S++)(l = i[a = w[S]]) && (g = void 0 !== l.velocity && "number" == typeof l.velocity ? Number(l.velocity) || 0 : (f = f || e.getByTarget(t)) && f.isTrackingProp(a) ? f.getVelocity(a) : 0, c = "function" == typeof t[a] ? t[a.indexOf("set") || "function" != typeof t["get" + a.substr(3)] ? a : "get" + a.substr(3)]() : t[a] || 0, b[a] = c + p(g, x, I, C));
                 for (a in i)
                     if ("resistance" !== a && "checkpoint" !== a && "preventOvershoot" !== a && "linkedProps" !== a && "radius" !== a) {
-                        if ("function" == typeof(l = i[a]) && (l = l(r, t)), "number" == typeof l) g = Number(l) || 0;
+                        if ("function" == typeof (l = i[a]) && (l = l(r, t)), "number" == typeof l) g = Number(l) || 0;
                         else if ("object" != typeof l || isNaN(l.velocity)) {
                             if (!(f = f || e.getByTarget(t)) || !f.isTrackingProp(a)) throw "ERROR: No velocity was defined in the throwProps tween of " + t + " property: " + a;
                             g = f.getVelocity(a)
@@ -3237,15 +3237,15 @@
                         }
                     }
                 return !0
-            }, v._kill = function(e) {
+            }, v._kill = function (e) {
                 for (var t = this._props.length; --t > -1;) null != e[this._props[t].p] && this._props.splice(t, 1);
                 return o.k.prototype._kill.call(this, e)
-            }, v._mod = function(e) {
-                for (var t, i = this._props, s = i.length; --s > -1;) "function" == typeof(t = e[i[s].p] || e.throwProps) && (i[s].m = t)
-            }, v.setRatio = function(e) {
+            }, v._mod = function (e) {
+                for (var t, i = this._props, s = i.length; --s > -1;) "function" == typeof (t = e[i[s].p] || e.throwProps) && (i[s].m = t)
+            }, v.setRatio = function (e) {
                 for (var t, i, s = this._props.length; --s > -1;) i = (t = this._props[s]).s + t.c1 * e + t.c2 * e * e, t.m ? i = t.m(i, this.target) : 1 === e && (i = (1e4 * i + (i < 0 ? -.5 : .5) | 0) / 1e4), t.f ? this.target[t.p](i) : this.target[t.p] = i
             }, o.k.activate([r]), r
-        }, !0), o.l._gsDefine("utils.VelocityTracker", ["TweenLite"], function() {
+        }, !0), o.l._gsDefine("utils.VelocityTracker", ["TweenLite"], function () {
             var e, t, i, s = /([A-Z])/g,
                 n = {},
                 r = o.l.document,
@@ -3266,17 +3266,17 @@
                     yPercent: 1
                 },
                 l = "undefined" != typeof window ? window : r.defaultView || {
-                    getComputedStyle: function() {}
+                    getComputedStyle: function () { }
                 },
-                h = function(e, t, i) {
+                h = function (e, t, i) {
                     var o, r = (e._gsTransform || n)[t];
                     return r || 0 === r ? r : (e.style[t] ? r = e.style[t] : (i = i || (o = e, l.getComputedStyle(o))) ? r = i[t] || i.getPropertyValue(t) || i.getPropertyValue(t.replace(s, "-$1").toLowerCase()) : e.currentStyle && (r = e.currentStyle[t]), parseFloat(r) || 0)
                 },
                 c = o.j.ticker,
-                d = function(e, t, i) {
+                d = function (e, t, i) {
                     this.p = e, this.f = t, this.v1 = this.v2 = 0, this.t1 = this.t2 = c.time, this.css = !1, this.type = "", this._prev = null, i && (this._next = i, i._prev = this)
                 },
-                m = function() {
+                m = function () {
                     var t, s, n = e,
                         o = c.time;
                     if (o - i >= .03)
@@ -3285,17 +3285,17 @@
                             n = n._next
                         }
                 },
-                u = function(s) {
+                u = function (s) {
                     this._lookup = {}, this.target = s, this.elem = !(!s.style || !s.nodeType), t || (c.addEventListener("tick", m, null, !1, -100), i = c.time, t = !0), e && (this._next = e, e._prev = this), e = this
                 },
-                p = u.getByTarget = function(t) {
+                p = u.getByTarget = function (t) {
                     for (var i = e; i;) {
                         if (i.target === t) return i;
                         i = i._next
                     }
                 },
                 g = u.prototype;
-            return g.addProp = function(e, t) {
+            return g.addProp = function (e, t) {
                 if (!this._lookup[e]) {
                     var i = this.target,
                         s = "function" == typeof i[e],
@@ -3306,33 +3306,33 @@
                         overwrite: !1
                     }), r.type = t || r.css && 0 === e.indexOf("rotation") ? "deg" : "", r.v1 = r.v2 = r.css ? h(i, r.p) : s ? i[r.p]() : i[r.p]
                 }
-            }, g.removeProp = function(e) {
+            }, g.removeProp = function (e) {
                 var t = this._lookup[e];
                 t && (t._prev ? t._prev._next = t._next : t === this._firstVP && (this._firstVP = t._next), t._next && (t._next._prev = t._prev), this._lookup[e] = 0, t.f && (this._lookup[this._altProp(e)] = 0))
-            }, g.isTrackingProp = function(e) {
+            }, g.isTrackingProp = function (e) {
                 return this._lookup[e] instanceof d
-            }, g.getVelocity = function(e) {
+            }, g.getVelocity = function (e) {
                 var t, i, s = this._lookup[e],
                     n = this.target;
                 if (!s) throw "The velocity of " + e + " is not being tracked.";
                 return t = (s.css ? h(n, s.p) : s.f ? n[s.p]() : n[s.p]) - s.v2, "rad" !== s.type && "deg" !== s.type || (t %= i = "rad" === s.type ? 2 * Math.PI : 360) !== t % (i / 2) && (t = t < 0 ? t + i : t - i), t / (c.time - s.t2)
-            }, g._altProp = function(e) {
+            }, g._altProp = function (e) {
                 var t = e.substr(0, 3),
                     i = ("get" === t ? "set" : "set" === t ? "get" : t) + e.substr(3);
                 return "function" == typeof this.target[i] ? i : e
-            }, u.getByTarget = function(t) {
+            }, u.getByTarget = function (t) {
                 var i = e;
                 for ("string" == typeof t && (t = o.j.selector(t)), t.length && t !== window && t[0] && t[0].style && !t.nodeType && (t = t[0]); i;) {
                     if (i.target === t) return i;
                     i = i._next
                 }
-            }, u.track = function(e, t, i) {
+            }, u.track = function (e, t, i) {
                 var s = p(e),
                     n = t.split(","),
                     o = n.length;
                 for (i = (i || "").split(","), s || (s = new u(e)); --o > -1;) s.addProp(n[o], i[o] || i[0]);
                 return s
-            }, u.untrack = function(t, i) {
+            }, u.untrack = function (t, i) {
                 var s = p(t),
                     n = (i || "").split(","),
                     o = n.length;
@@ -3340,7 +3340,7 @@
                     for (; --o > -1;) s.removeProp(n[o]);
                     s._firstVP && i || (s._prev ? s._prev._next = s._next : s === e && (e = s._next), s._next && (s._next._prev = s._prev))
                 }
-            }, u.isTracking = function(e, t) {
+            }, u.isTracking = function (e, t) {
                 var i = p(e);
                 return !!i && (!(t || !i._firstVP) || i.isTrackingProp(t))
             }, u
@@ -3444,712 +3444,775 @@
             }
         }
         var xe = {
-                default: P,
-                home: class extends P {
-                    initPage() {
-                        super.initPage(), this.screenElements = this.element.querySelectorAll(".home__screen"), this.showHeaderDelay = app.skipIn ? 0 : 4.8, this.initNavToggle(), this.initScreenNavigator(), this.initCurrentScreen(), this.initNavListeners(), this.initNav(), this.isAjax || this.initIntro()
+            default: P,
+            home: class extends P {
+                initPage() {
+                    super.initPage(), this.screenElements = this.element.querySelectorAll(".home__screen"), this.showHeaderDelay = app.skipIn ? 0 : 4.8, this.initNavToggle(), this.initScreenNavigator(), this.initCurrentScreen(), this.initNavListeners(), this.initNav(), this.isAjax || this.initIntro()
+                }
+                initCurrentScreen() {
+                    const e = this.element.querySelector("." + z);
+                    this.previousScreenIndex = -1, this.currentScreenIndex = [...this.screenElements].indexOf(e), this.showScreen(this.currentScreenIndex)
+                }
+                initScreenNavigator() {
+                    this.screenNavigator = new s.d, this.screenNavigator.transitionType = s.c.OutAndIn, this.screenNavigator.on("transitionStart", this.onScreenNavigatorTransitionStart.bind(this))
+                }
+                initNav() {
+                    const e = this.element.querySelector(".home__nav");
+                    this.nav = new R({
+                        element: e
+                    }), this.nav.on("show", this.onNavShow.bind(this)), this.nav.on("hide", this.onNavHide.bind(this))
+                }
+                initNavToggle() {
+                    // document.getElementById('leftArrow').style.display = none;
+                    //  document.getElementById('rightArrow').style.display = block;
+                    this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
+                    this.element.querySelector("#rightArrow").addEventListener("click", this.gotoLeft.bind(this));
+                    this.element.querySelector("#leftArrow").addEventListener("click", this.gotoRight.bind(this));
+                    // this.element.querySelector("#rightArrow")
+                    const e = this.element.querySelector(".home__nav-toggle");
+                    this.navToggle = new X({
+                        element: e
+                    }), this.navToggle.on("click", this.onNavToggleClick.bind(this))
+                }
+                initNavListeners() {
+                    this.element.querySelector(".home__scroll-cta").addEventListener("click", this.onScrollCtaClick.bind(this)), this.onKeyUpCallback = this.onKeyUp.bind(this), this.onScrollCallback = this.onScroll.bind(this), window.addEventListener("keyup", this.onKeyUpCallback), window.addEventListener("wheel", this.onScrollCallback, {
+                        passive: !1
+                    }), app.hasTouch && (this.touchStartCallback = this.onTouchStart.bind(this), this.touchEndCallback = this.onTouchEnd.bind(this), window.addEventListener("touchstart", this.touchStartCallback), window.addEventListener("touchend", this.touchEndCallback))
+                }
+                initIntro() {
+                    const e = this.screenNavigator.currentScreen.element.querySelector(".home__screen__image"),
+                        t = this.element.querySelector(".home__intro"),
+                        i = e.src;
+                    this.intro = new O({
+                        element: t,
+                        imageUrl: i
+                    })
+                }
+                dispose() {
+                    super.dispose(), this.disposeScreenNavigator(), this.disposeNav(), this.disposeNavToggle(), this.disposeNavListeners(), this.disposeIntro()
+                }
+                disposeScreenNavigator() {
+                    this.screenNavigator && (this.screenNavigator.off("transitionStart"), this.screenNavigator.dispose())
+                }
+                disposeNav() {
+                    this.nav.off("show"), this.nav.off("hide")
+                }
+                disposeNavToggle() {
+                    this.navToggle.off("click")
+                }
+                disposeNavListeners() {
+                    window.removeEventListener("keyup", this.onKeyUpCallback), window.removeEventListener("wheel", this.onScrollCallback, {
+                        passive: !1
+                    }), app.hasTouch && (window.removeEventListener("touchstart", this.touchStartCallback), window.removeEventListener("touchend", this.touchEndCallback))
+                }
+                disposeIntro() {
+                    this.intro && this.intro.dispose()
+                }
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".".concat(z, " .home__screen__image")),
+                        t = new Promise(t => {
+                            m.d.from(e.src).baseTexture.once("loaded", t)
+                        });
+                    this.addAssetToLoad(t)
+                }
+                populateAnimIn() {
+                    const e = this.screenNavigator.currentScreen,
+                        t = e.figure.getBoundingClientRect(),
+                        i = this.element.querySelector(".home__scroll-cta");
+                    if (!this.isAjax) {
+                        const e = this.intro.createAnimIn();
+                        this.timeline.add(e, 0)
                     }
-                    initCurrentScreen() {
-                        const e = this.element.querySelector("." + z);
-                        this.previousScreenIndex = -1, this.currentScreenIndex = [...this.screenElements].indexOf(e), this.showScreen(this.currentScreenIndex)
-                    }
-                    initScreenNavigator() {
-                        this.screenNavigator = new s.d, this.screenNavigator.transitionType = s.c.OutAndIn, this.screenNavigator.on("transitionStart", this.onScreenNavigatorTransitionStart.bind(this))
-                    }
-                    initNav() {
-                        const e = this.element.querySelector(".home__nav");
-                        this.nav = new R({
-                            element: e
-                        }), this.nav.on("show", this.onNavShow.bind(this)), this.nav.on("hide", this.onNavHide.bind(this))
-                    }
-                    initNavToggle() {
-                        this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
-                        this.element.querySelector("#rightArrow").addEventListener("click", this.gotoLeft.bind(this));
-                        const e = this.element.querySelector(".home__nav-toggle");
-                        this.navToggle = new X({
-                            element: e
-                        }), this.navToggle.on("click", this.onNavToggleClick.bind(this))
-                    }
-                    initNavListeners() {
-                        this.element.querySelector(".home__scroll-cta").addEventListener("click", this.onScrollCtaClick.bind(this)), this.onKeyUpCallback = this.onKeyUp.bind(this), this.onScrollCallback = this.onScroll.bind(this), window.addEventListener("keyup", this.onKeyUpCallback), window.addEventListener("wheel", this.onScrollCallback, {
-                            passive: !1
-                        }), app.hasTouch && (this.touchStartCallback = this.onTouchStart.bind(this), this.touchEndCallback = this.onTouchEnd.bind(this), window.addEventListener("touchstart", this.touchStartCallback), window.addEventListener("touchend", this.touchEndCallback))
-                    }
-                    initIntro() {
-                        const e = this.screenNavigator.currentScreen.element.querySelector(".home__screen__image"),
-                            t = this.element.querySelector(".home__intro"),
-                            i = e.src;
-                        this.intro = new O({
-                            element: t,
-                            imageUrl: i
-                        })
-                    }
-                    dispose() {
-                        super.dispose(), this.disposeScreenNavigator(), this.disposeNav(), this.disposeNavToggle(), this.disposeNavListeners(), this.disposeIntro()
-                    }
-                    disposeScreenNavigator() {
-                        this.screenNavigator && (this.screenNavigator.off("transitionStart"), this.screenNavigator.dispose())
-                    }
-                    disposeNav() {
-                        this.nav.off("show"), this.nav.off("hide")
-                    }
-                    disposeNavToggle() {
-                        this.navToggle.off("click")
-                    }
-                    disposeNavListeners() {
-                        window.removeEventListener("keyup", this.onKeyUpCallback), window.removeEventListener("wheel", this.onScrollCallback, {
-                            passive: !1
-                        }), app.hasTouch && (window.removeEventListener("touchstart", this.touchStartCallback), window.removeEventListener("touchend", this.touchEndCallback))
-                    }
-                    disposeIntro() {
-                        this.intro && this.intro.dispose()
-                    }
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".".concat(z, " .home__screen__image")),
-                            t = new Promise(t => {
-                                m.d.from(e.src).baseTexture.once("loaded", t)
-                            });
-                        this.addAssetToLoad(t)
-                    }
-                    populateAnimIn() {
-                        const e = this.screenNavigator.currentScreen,
-                            t = e.figure.getBoundingClientRect(),
-                            i = this.element.querySelector(".home__scroll-cta");
-                        if (!this.isAjax) {
-                            const e = this.intro.createAnimIn();
-                            this.timeline.add(e, 0)
-                        }
-                        this.timeline.fromTo(e.figure, .4, {
+                    this.timeline.fromTo(e.figure, .4, {
+                        opacity: 0
+                    }, {
+                        opacity: 1,
+                        ease: o.d.easeNone
+                    }).add(() => {
+                        this.intro && (this.intro.element.style.visibility = "hidden")
+                    }).addLabel("position").from(e.figureInner, 2, {
+                        x: t.x,
+                        y: t.y,
+                        ease: o.g.easeInOut
+                    }, "position").from(e.figure, 2, {
+                        x: -t.x,
+                        y: -t.y,
+                        ease: o.g.easeInOut
+                    }, "position").from(i, .7, {
+                        opacity: 0
+                    }, "position+=1").set(this.element.querySelector(".home__overlay"), {
+                        visibility: "hidden"
+                    }, "-=.8"), app.windowWidth < app.screenS ? this.timeline.from(e.title.element, .9, {
+                        opacity: 0
+                    }, "position+=.9") : this.timeline.staggerFromTo(e.title.splitText.chars, 2, {
+                        rotationY: 0,
+                        opacity: 0
+                    }, {
+                        rotationY: 0,
+                        opacity: 1,
+                        ease: o.g.easeOut
+                    }, .13, "position+=1.4").from(e.title.line, 1.5, {
+                        x: e.title.rect.x - e.title.lineRect.x,
+                        opacity: 0,
+                        ease: o.g.easeInOut
+                    }, "position+=.9").from(e.title.textElements[1], .9, {
+                        opacity: 0
+                    }, "position+=1.8").from(this.navToggle.element, .6, {
+                        opacity: 0
+                    }, "position+=.5").to(".service_alt_txt", 0.2, { opacity: 1, ease: o.g.easeInOut }).to(".bigtxt", 0.2, { opacity: 1 }).to(".service-title__cta", 0.2, { opacity: 1, ease: o.g.easeInOut })
+                }
+                populateAnimOut() {
+                    const e = this.screenNavigator.currentScreen,
+                        t = e.figure.getBoundingClientRect();
+                    if (e.navigationEnabled = !1, "service" === this.owner.currentScreen.id) {
+                        const i = this.element.querySelector(".home__scroll-cta");
+                        e.bodyIsVisible && e.hideBody(), this.timeline.to([e.title.element, i, this.navToggle.element], 1, {
                             opacity: 0
-                        }, {
-                            opacity: 1,
-                            ease: o.d.easeNone
-                        }).add(() => {
-                            this.intro && (this.intro.element.style.visibility = "hidden")
-                        }).addLabel("position").from(e.figureInner, 2, {
-                            x: t.x,
-                            y: t.y,
-                            ease: o.g.easeInOut
-                        }, "position").from(e.figure, 2, {
+                        }, 0).to(e.figure, 2, {
                             x: -t.x,
                             y: -t.y,
                             ease: o.g.easeInOut
-                        }, "position").from(i, .7, {
-                            opacity: 0
-                        }, "position+=1").set(this.element.querySelector(".home__overlay"), {
-                            visibility: "hidden"
-                        }, "-=.8"), app.windowWidth < app.screenS ? this.timeline.from(e.title.element, .9, {
-                            opacity: 0
-                        }, "position+=.9") : this.timeline.staggerFromTo(e.title.splitText.chars, 2, {
-                            rotationY: 0,
-                            opacity: 0
-                        }, {
-                            rotationY: 0,
-                            opacity: 1,
-                            ease: o.g.easeOut
-                        }, .13, "position+=1.4").from(e.title.line, 1.5, {
-                            x: e.title.rect.x - e.title.lineRect.x,
-                            opacity: 0,
+                        }, 0).to(e.figureInner, 2, {
+                            x: t.x,
+                            y: t.y,
+                            scale: 1,
                             ease: o.g.easeInOut
-                        }, "position+=.9").from(e.title.textElements[1], .9, {
-                            opacity: 0
-                        }, "position+=1.8").from(this.navToggle.element, .6, {
-                            opacity: 0
-                        }, "position+=.5").to(".service_alt_txt", 0.2, {opacity:1, ease:o.g.easeInOut}).to(".bigtxt", 0.2, {opacity:1}).to(".service-title__cta", 0.2, {opacity:1, ease:o.g.easeInOut})
-                    }
-                    populateAnimOut() {
-                        const e = this.screenNavigator.currentScreen,
-                            t = e.figure.getBoundingClientRect();
-                        if (e.navigationEnabled = !1, "service" === this.owner.currentScreen.id) {
-                            const i = this.element.querySelector(".home__scroll-cta");
-                            e.bodyIsVisible && e.hideBody(), this.timeline.to([e.title.element, i, this.navToggle.element], 1, {
-                                opacity: 0
-                            }, 0).to(e.figure, 2, {
-                                x: -t.x,
-                                y: -t.y,
-                                ease: o.g.easeInOut
-                            }, 0).to(e.figureInner, 2, {
-                                x: t.x,
-                                y: t.y,
-                                scale: 1,
-                                ease: o.g.easeInOut
-                            }, 0)
-                        }
-                    }
-                    resize(e) {
-                        super.resize(e), this.screenNavigator.currentScreen && this.screenNavigator.currentScreen.resize()
-                    }
-                    showScreen(e) {
-                        const t = e.toString();
-                        if (!this.screenNavigator.getScreen(t)) {
-                            const i = new s.b(q, {
-                                canDispose: !1,
-                                arguments: [{
-                                    element: this.screenElements[e],
-                                    index: e,
-                                    owner: this.screenNavigator
-                                }],
-                                events: {
-                                    complete: this.onScreenComplete.bind(this),
-                                    linkClick: this.onScreenLinkClick.bind(this)
-                                }
-                            });
-                            this.screenNavigator.addScreen(t, i)
-                        }
-                        
-                        this.screenNavigator.showScreen(t)
-                    }
-                    gotoScreen(e) {
-                        e !== this.currentScreenIndex && this.screenNavigator.currentScreen.navigationEnabled && (this.previousScreenIndex = this.currentScreenIndex, this.currentScreenIndex = e, this.showScreen(e))
-                    }
-                    gotoNextScreen() {
-                        let e = this.currentScreenIndex + 2;
-                        if(e < this.screenElements.length){
-                        e > this.screenElements.length - 1 && (e = 0), this.gotoScreen(e)
-                        }
-                    }
-                    gotoPrevScreen() {
-                        let e = this.currentScreenIndex - 2;
-                        e < 0 && (e = 0), this.gotoScreen(e)
-                    }
-                    gotoLeft(){
-                        let e = this.currentScreenIndex + 1;
-                        e < 0 && (e = 0), this.gotoScreen(e)
-                    }
-                    gotoRight(){
-                        let e = this.currentScreenIndex - 1;
-                        e < 0 && (e = 0), this.gotoScreen(e)
-                    }
-                    swipe(e) {
-                        e < 0 ? this.gotoNextScreen() : this.gotoPrevScreen()
-                    }
-                    onKeyUp(e) {
-                        switch (e.keyCode) {
-                            case 38:
-                                this.gotoPrevScreen();
-                                break;
-                            case 40:
-                                this.gotoNextScreen()
-                        }
-                    }
-                    onScroll(e) {
-                        window.innerWidth < app.screenS || (e.preventDefault(), e.deltaY > 0 ? this.gotoNextScreen() : this.gotoPrevScreen())
-                    }
-                    onScreenNavigatorTransitionStart() {
-                        this.screenNavigator.previousScreen && (this.screenElements[this.previousScreenIndex].classList.remove(z), this.screenElements[this.currentScreenIndex].classList.add(z)), this.navToggle.setIndex(this.screenNavigator.currentScreen.index)
-                    }
-                    onScreenLinkClick() {
-                        this.skipAjaxLoading = !0
-                    }
-                    onScreenComplete() {
-                        this.gotoNextScreen()
-                    }
-                    onAnimateInComplete(e) {
-                        super.onAnimateInComplete(e), app.skipIn && (this.element.querySelector(".home__overlay").style.visibility = "hidden") && (this.element.querySelector(".service_alt_txt").style.opacity = "1") 
-                    }
-                    onNavToggleClick(e) {
-                        e.state === V.OPEN ? this.nav.show() : this.nav.hide()
-                    }
-                    onNavShow() {
-                        this.navToggle.setState(V.CLOSE), this.screenNavigator.currentScreen.collapseFigure()
-                    }
-                    onNavHide() {
-                        this.navToggle.setState(V.OPEN), this.screenNavigator.currentScreen.expandFigure()
-                    }
-                    onTouchStart(e) {
-                        const t = e.changedTouches[0];
-                        this.touchStartY = t.pageY, this.touchStartTime = e.timeStamp
-                    }
-                    onTouchEnd(e) {
-                        const t = e.changedTouches[0],
-                            i = e.timeStamp - this.touchStartTime,
-                            s = (t.pageY - this.touchStartY) / i;
-                        Math.abs(s) > .4 && this.swipe(s)
-                    }
-                    onScrollCtaClick() {
-                        this.gotoNextScreen()
-                    }
-                    OnFooterButtonClick(){
-                        this.gotoScreen(this.screenElements.length-2)
-                    }
-                    OnRightButtonClick(){
-                        this.gotoScreen(this.screenElements.length-1);
-                    }
-                },
-                service: class extends P {
-                    initPage() {
-                        super.initPage(), this.initCarousel(), this.initNextServiceTitle()
-                    }
-                    initCarousel() {
-                        const e = this.element.querySelector(".service__carousel");
-                        this.carousel = new M({
-                            element: e
-                        })
-                    }
-                    initNextServiceTitle() {
-                        const e = this.element.querySelector(".service-title");
-                        this.nextServiceTitle = new E({
-                            element: e
-                        }), e.addEventListener("mouseleave", this.onNextServiceRollOut.bind(this))
-                    }
-                    dispose() {
-                        super.dispose(), this.disposeCarousel()
-                    }
-                    disposeCarousel() {
-                        this.carousel.dispose()
-                    }
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".service__featured-image"),
-                            t = w(e.src);
-                        this.addAssetToLoad(t)
-                    }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".service__header__text");
-                        this.timeline.from(e, 1.3, {
-                            yPercent: 100,
-                            ease: N.e.easeInOut
-                        }, 0).staggerFromTo(e.children, 1, {
-                            y: 80,
-                            opacity: 0
-                        }, {
-                            y: 0,
-                            opacity: 1,
-                            ease: o.g.easeInOut
-                        }, .1, .2), this.owner.previousScreen && "home" === this.owner.previousScreen.id && this.timeline.shiftChildren(1.9)
-                    }
-                    resize(e) {
-                        super.resize(e), this.nextServiceTitle.resize()
-                    }
-                    onNextServiceRollOut() {
-                        this.nextServiceTitle.expand()
-                    }
-                },
-                about: class extends P {
-                    initPage() {
-                        super.initPage(), this.initNav(), this.initSections(), this.initProgress()
-                    }
-                    initSections() {
-                        const e = this.nav.getCurrentItemId(),
-                            t = this.element.querySelectorAll(".about__section");
-                        this.sectionNavigator = new s.d, this.sectionNavigator.transitionType = s.c.OutAndIn, this.sectionNavigator.on("transitionStart", this.onSectionNavigatorTransitionStart.bind(this)), this.sections = [], [...t].forEach((t, i) => {
-                            const n = t.getAttribute("data-id"),
-                                o = new s.b(le, {
-                                    canDispose: !1,
-                                    arguments: [{
-                                        id: n,
-                                        element: t,
-                                        index: i,
-                                        owner: this.sectionNavigator,
-                                        isAjax: this.isAjax
-                                    }],
-                                    events: {
-                                        complete: this.onSectionComplete.bind(this),
-                                        progress: this.onSectionProgress.bind(this)
-                                    }
-                                });
-                            n === e && (this.firstScreenId = n), this.sections.push(n), this.sectionNavigator.addScreen(n, o)
-                        })
-                    }
-                    initNav() {
-                        const e = this.element.querySelector(".about__nav");
-                        this.nav = new ce({
-                            element: e
-                        }), this.nav.on("itemClick", this.onNavItemClick.bind(this)), this.hashChangeCallback = this.onHashChange.bind(this), window.addEventListener("hashchange", this.hashChangeCallback)
-                    }
-                    initProgress() {
-                        this.progressElement = this.element.querySelector(".about__progress"), this.progress = 0
-                    }
-                    dispose() {
-                        super.dispose(), this.disposeSections(), this.disposeNav()
-                    }
-                    disposeSections() {
-                        this.sectionNavigator.dispose(), this.sectionNavigator = null
-                    }
-                    disposeNav() {
-                        this.nav.off("itemClick"), window.removeEventListener("hashchange", this.hashChangeCallback)
-                    }
-                    setProgress(e) {
-                        e !== this.progress && (this.progress = e, o.m.to(this.progressElement, .6, {
-                            scaleX: this.progress,
-                            ease: o.g.easeOut
-                        }))
-                    }
-                    getSectionProgress(e) {
-                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-                        return e * (1 / this.sections.length) + t * (1 / this.sections.length)
-                    }
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".about__section__video"),
-                            t = de(e);
-                        this.addAssetToLoad(t)
-                    }
-                    populateAnimIn() {
-                        if (window.location.hash) {
-                            const e = window.location.hash.replace("#", "");
-                            this.sectionNavigator.getScreen(e) && (this.firstScreenId = e)
-                        }
-                        this.timeline.set(this.progressElement, {
-                            scaleX: 0
-                        }, 0), this.sectionNavigator.showScreen(this.firstScreenId)
-                    }
-                    resize(e) {
-                        super.resize(e), this.resizeCurrentSection()
-                    }
-                    resizeCurrentSection() {
-                        this.sectionNavigator.currentScreen && this.sectionNavigator.currentScreen.resize()
-                    }
-                    onNavItemClick(e) {
-                        e.id !== this.sectionNavigator.currentScreen.id && this.sectionNavigator.showScreen(e.id)
-                    }
-                    onSectionNavigatorTransitionStart() {
-                        const e = this.sectionNavigator.currentScreen,
-                            t = "light" === e.getColor() ? "dark" : "light",
-                            i = this.getSectionProgress(e.index);
-                        this.sectionNavigator.previousScreen && (window.location.hash = e.id), this.setProgress(i), this.nav.setColor(t), this.nav.setCurrentItem(e.id), this.progressElement.classList.toggle("about__progress--dark", "dark" === t), this.emit("setHeaderColor", {
-                            color: t
-                        })
-                    }
-                    onSectionProgress(e) {
-                        const t = e.currentTarget,
-                            i = this.getSectionProgress(t.index, e.progress);
-                        this.setProgress(i)
-                    }
-                    onSectionComplete(e) {
-                        let t = e.currentTarget.index + e.direction;
-                        if (t < 0 || t > this.sections.length - 1) return;
-                        const i = this.sections[t];
-                        this.sectionNavigator.showScreen(i)
-                    }
-                    onHashChange(e) {
-                        let t = window.location.hash.replace("#", "");
-                        t.length || (t = this.sections[0]), t !== this.sectionNavigator.currentScreen.id && this.sectionNavigator.showScreen(t)
-                    }
-                    onPopState(e) {
-                        e.state.href === this.url && e.preventDefault()
-                    }
-                },
-                contact: class extends P {
-                    initPage() {
-                        super.initPage(), this.initScreenNavigator(), this.initNav(), this.initLocations()
-                    }
-                    initScreenNavigator() {
-                        this.screenNavigator = new s.d, this.screenNavigator.transitionType = s.c.OutThenIn
-                    }
-                    initNav() {
-                        const e = this.element.querySelector(".contact__nav");
-                        this.nav = new ue({
-                            element: e,
-                            owner: this.screenNavigator,
-                            isAjax: this.isAjax
-                        });
-                        const t = new s.b(this.nav, {
-                            events: {
-                                itemClick: this.onNavItemClick.bind(this)
-                            }
-                        });
-                        this.screenNavigator.addScreen("nav", t)
-                    }
-                    initLocations() {
-                        const e = this.element.querySelector(".contact__locations");
-                        this.locations = new _e({
-                            element: e,
-                            owner: this.screenNavigator
-                        });
-                        const t = new s.b(this.locations, {
-                            events: {
-                                complete: this.onLocationsComplete.bind(this)
-                            }
-                        });
-                        this.screenNavigator.addScreen("locations", t)
-                    }
-                    dispose() {
-                        super.dispose(), this.disposeScreenNavigator()
-                    }
-                    disposeScreenNavigator() {
-                        this.screenNavigator.dispose()
-                    }
-                    populateAssetPromises() {
-                        const e = this.loadFont(),
-                            t = ye()({
-                                key: app.googleMapsApiKey
-                            }),
-                            i = this.element.querySelector(".contact__nav__background__image");
-                        this.loadImage(i), this.addAssetToLoad(e), this.addAssetToLoad(t)
-                    }
-                    populateAnimIn() {
-                        const e = this.screenNavigator.showScreen("nav");
-                        this.animInPromises.push(e)
-                    }
-                    loadFont() {
-                        if (this.isAjax) return Promise.resolve();
-                        const e = this.element.querySelector(".contact__nav__item"),
-                            t = getComputedStyle(e),
-                            i = t.getPropertyValue("font-family").split(",")[0].split('"').join(""),
-                            s = t.getPropertyValue("font-weight");
-                        return new h.a(i, {
-                            weight: s
-                        }).load()
-                    }
-                    resize() {
-                        super.resize(), this.nav.resize()
-                    }
-                    onNavItemClick(e) {
-                        this.screenNavigator.showScreen("locations", null, {
-                            properties: {
-                                currentLocationIndex: e.index
-                            }
-                        })
-                    }
-                    onLocationsComplete() {
-                        this.screenNavigator.showScreen("nav")
-                    }
-                },
-                blog: class extends P {
-                    initPage() {
-                        super.initPage(), this.initFilters(), this.initPagination()
-                    }
-                    initFilters() {
-                        this.filterInput = this.element.querySelector(".blog__filters__select__input"), this.filterInput.addEventListener("change", this.onFilterInputChange.bind(this))
-                    }
-                    initPagination() {
-                        const e = this.element.querySelectorAll(".blog__pagination__page__link"),
-                            t = this.element.querySelector(".blog__pagination__next"),
-                            i = this.element.querySelector(".blog__content"),
-                            s = [...e];
-                        t && s.push(t), this.currentPageIndex = parseInt(i.getAttribute("data-page")), this.loadingPageIndex = -1, s.forEach(e => {
-                            e.addEventListener("click", this.onPaginationLinkClick.bind(this))
-                        })
-                    }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".blog__title"),
-                            t = this.element.querySelector(".blog__filters"),
-                            i = this.element.querySelector(".blog__article"),
-                            s = [e, t];
-                        i && s.push(i), this.timeline.staggerFrom(s, .9, {
-                            y: 100,
-                            opacity: 0,
-                            ease: o.g.easeOut
-                        }, .1, .5)
-                    }
-                    setFilter(e) {
-                        const t = this.filterInput.querySelector("option[value=".concat(e, "]"));
-                        t && (this.element.querySelector(".blog__filters__current__text").textContent = t.textContent)
-                    }
-                    appendPage(e) {
-                        const t = e.querySelector(".blog__content"),
-                            i = this.element.querySelector(".blog__content"),
-                            s = this.filterInput.getBoundingClientRect().y + window.pageYOffset;
-                        (new r.a).to(window, .8, {
-                            scrollTo: {
-                                y: s,
-                                autoKill: !1
-                            }
-                        }, 0).to(i.querySelector(".blog__content__overlay"), .7, {
-                            opacity: 1
-                        }, .4).add(() => {
-                            this.element.replaceChild(t, i)
-                        }).fromTo(t.querySelector(".blog__content__overlay"), .5, {
-                            autoAlpha: 1
-                        }, {
-                            autoAlpha: 0
-                        }).add(() => {
-                            this.initPagination()
-                        })
-                    }
-                    loadPage(e) {
-                        const t = this.element.querySelector(".blog__content__overlay");
-                        this.pageIsLoading ? this.fetchPage() : o.m.fromTo(t, .5, {
-                            visibility: "inherit",
-                            opacity: 0
-                        }, {
-                            opacity: .7,
-                            onComplete: this.fetchPage.bind(this)
-                        }), this.pageIsLoading = !0
-                    }
-                    fetchPage() {
-                        const e = window.location.href;
-                        window.fetch(e, {
-                            headers: {
-                                "X-Requested-With": "XMLHttpRequest",
-                                credentials: "same-origin"
-                            }
-                        }).then(function(e) {
-                            return e.text().then(function(t) {
-                                return {
-                                    url: e.url,
-                                    text: t,
-                                    status: e.status
-                                }
-                            })
-                        }).then(this.onPageLoaded.bind(this))
-                    }
-                    onPageLoaded(e) {
-                        if (e.url !== window.location.href) return;
-                        if (this.pageIsLoading = !1, 200 !== e.status) return;
-                        const t = n(e.text);
-                        this.appendPage(t)
-                    }
-                    onPaginationLinkClick(e) {
-                        const t = parseInt(e.currentTarget.getAttribute("data-page"));
-                        if (t === this.currentPageIndex || t === this.loadingPageIndex) return;
-                        const i = e.currentTarget.href;
-                        this.emit("pushState", {
-                            state: {
-                                page: "blog"
-                            },
-                            url: i
-                        }), this.loadPage(i)
-                    }
-                    onPopState(e) {
-                        if (!e.state || !e.state.page || "blog" !== e.state.page) return;
-                        e.preventDefault();
-                        const t = new URL(window.location.href);
-                        if (t.searchParams.has("filter")) this.setFilter(t.searchParams.get("filter"));
-                        else {
-                            const e = this.filterInput.querySelector("option");
-                            this.setFilter(e.value)
-                        }
-                        this.loadPage(e.href)
-                    }
-                    onFilterInputChange(e) {
-                        const t = this.filterInput.value,
-                            i = new URL(window.location.href);
-                        i.searchParams.set("filter", t), i.searchParams.has("page") && i.searchParams.set("page", 1), this.setFilter(t), this.emit("pushState", {
-                            state: {
-                                page: "blog"
-                            },
-                            url: i
-                        }), this.loadPage(i)
-                    }
-                },
-                clients: class extends P {
-                    initPage() {
-                        super.initPage(), this.initGallery()
-                    }
-                    initGallery() {
-                        const e = this.element.querySelector(".clients__gallery");
-                        e && (this.gallery = new Se({
-                            element: e
-                        }))
-                    }
-                    dispose() {
-                        super.dispose(), this.disposeGallery()
-                    }
-                    disposeGallery() {
-                        this.gallery && this.gallery.dispose()
-                    }
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".clients__image");
-                        this.loadImage(e)
-                    }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".clients__header__text"),
-                            t = this.element.querySelector(".clients__image-wrapper");
-                        this.timeline.from(t, 2.3, {
-                            y: -.2 * app.windowHeight,
-                            ease: Power3.easeInOut
-                        }, 0).from(e, 2, {
-                            yPercent: 100,
-                            ease: Power3.easeInOut
-                        }, 0).staggerFromTo(e.children, 2, {
-                            y: 80,
-                            opacity: 0
-                        }, {
-                            y: 0,
-                            opacity: 1,
-                            ease: Power3.easeInOut
-                        }, .1, .2)
-                    }
-                    resize(e) {
-                        super.resize(e), this.gallery && this.gallery.resize()
-                    }
-                },
-                careers: class extends P {
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".careers__header__image");
-                        this.loadImage(e)
-                    }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".careers__header__title-block"),
-                            t = this.element.querySelector(".careers__header__image-wrapper");
-                        this.timeline.from(t, 1.3, {
-                            y: -.2 * app.windowHeight,
-                            ease: o.f.easeInOut
-                        }, 0).from(e, 1.5, {
-                            yPercent: 100,
-                            ease: o.g.easeInOut
-                        }, 0).staggerFromTo(e.children, 1.5, {
-                            y: 80,
-                            opacity: 0
-                        }, {
-                            y: 0,
-                            opacity: 1,
-                            ease: o.g.easeInOut
-                        }, .1, .2)
-                    }
-                    onAnimateInComplete(e) {
-                        super.onAnimateInComplete(e), !e && this.isAjax && this.element.querySelector(".careers__contact__background").play()
-                    }
-                },
-                regulations: class extends P {
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".regulations__image");
-                        this.loadImage(e)
-                    }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".regulations__title-block"),
-                            t = this.element.querySelector(".regulations__background");
-                        this.timeline.from(t, 1.7, {
-                            y: -.2 * app.windowHeight,
-                            ease: Power3.easeInOut
-                        }, 0).from(e, 1.5, {
-                            y: app.windowHeight,
-                            ease: Power3.easeInOut
                         }, 0)
                     }
-                },
-                text: class extends P {
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".text__image");
-                        this.loadImage(e)
+                }
+                resize(e) {
+                    super.resize(e), this.screenNavigator.currentScreen && this.screenNavigator.currentScreen.resize()
+                }
+                showScreen(e) {
+                    const t = e.toString();
+                    if (!this.screenNavigator.getScreen(t)) {
+                        const i = new s.b(q, {
+                            canDispose: !1,
+                            arguments: [{
+                                element: this.screenElements[e],
+                                index: e,
+                                owner: this.screenNavigator
+                            }],
+                            events: {
+                                complete: this.onScreenComplete.bind(this),
+                                linkClick: this.onScreenLinkClick.bind(this)
+                            }
+                        });
+                        this.screenNavigator.addScreen(t, i)
                     }
-                },
-                article: class extends P {
-                    populateAssetPromises() {
-                        const e = this.element.querySelector(".article__header__image");
-                        this.loadImage(e)
+
+                    this.screenNavigator.showScreen(t)
+                }
+                gotoScreen(e) {
+                    e !== this.currentScreenIndex && this.screenNavigator.currentScreen.navigationEnabled && (this.previousScreenIndex = this.currentScreenIndex, this.currentScreenIndex = e, this.showScreen(e))
+                }
+                gotoNextScreen() {
+                    if(this.currentScreenIndex === 0){
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.gotoScreen(2)
+                    } else if (this.currentScreenIndex === 2) {
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(4)
+                    } else if (this.currentScreenIndex === 4) {
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.gotoScreen(6)
+                    } else if (this.currentScreenIndex === 6) {
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.gotoScreen(8)
+                    } else {
+
                     }
-                    populateAnimIn() {
-                        if (!this.isAjax) return;
-                        const e = this.element.querySelector(".article__header__title-block"),
-                            t = this.element.querySelector(".article__header__image-wrapper");
-                        this.timeline.from(t, 1.3, {
-                            y: .2 * app.windowHeight,
-                            ease: Power2.easeInOut
-                        }, 0).from(e, 1.5, {
-                            yPercent: 100,
-                            ease: o.g.easeInOut
-                        }, 0).staggerFromTo(e.children, 1.5, {
-                            y: 80,
-                            opacity: 0
-                        }, {
-                            y: 0,
-                            opacity: 1,
-                            ease: o.g.easeInOut
-                        }, .1, .2)
+
+                }
+                gotoPrevScreen() {
+                    debugger;
+                    if(this.currentScreenIndex === 0){
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                    } else if (this.currentScreenIndex === 2) {
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(0)
+                    } else if (this.currentScreenIndex === 4) {
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.gotoScreen(2)
+                    } else if (this.currentScreenIndex === 6) {
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(4)
+                    } else if(this.currentScreenIndex === 8){
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.gotoScreen(6)
+                    }
+
+                    // let e = this.currentScreenIndex - 2;
+                    // e < 0 && (e = 0), this.gotoScreen(e)
+                }
+                gotoLeft() {
+
+                    if(this.currentScreenIndex === 0){
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(1);
+                    } else if(this.currentScreenIndex == 3){
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(2);
+                    } else if(this.currentScreenIndex === 4){
+                        this.element.querySelector("#rightArrow").style.display = "none";
+                        this.element.querySelector("#leftArrow").style.display = "block";
+                        this.gotoScreen(5);
+                    }else {
+
                     }
                 }
+                gotoRight() {
+                    if(this.currentScreenIndex === 1){
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.gotoScreen(0);
+                    }else if(this.currentScreenIndex === 2){
+                        this.element.querySelector("#leftArrow").style.display = "none";
+                        this.element.querySelector("#rightArrow").style.display = "block";
+                        this.gotoScreen(3);
+                    }
+                }
+                swipe(e) {
+                    e < 0 ? this.gotoNextScreen() : this.gotoPrevScreen()
+                }
+                onKeyUp(e) {
+                    switch (e.keyCode) {
+                        case 38:
+                            this.gotoPrevScreen();
+                            break;
+                        case 40:
+                            this.gotoNextScreen()
+                    }
+                }
+                onScroll(e) {
+                    window.innerWidth < app.screenS || (e.preventDefault(), e.deltaY > 0 ? this.gotoNextScreen() : this.gotoPrevScreen())
+                }
+                onScreenNavigatorTransitionStart() {
+                    this.screenNavigator.previousScreen && (this.screenElements[this.previousScreenIndex].classList.remove(z), this.screenElements[this.currentScreenIndex].classList.add(z)), this.navToggle.setIndex(this.screenNavigator.currentScreen.index)
+                }
+                onScreenLinkClick() {
+                    this.skipAjaxLoading = !0
+                }
+                onScreenComplete() {
+                    this.gotoNextScreen()
+                }
+                onAnimateInComplete(e) {
+                    super.onAnimateInComplete(e), app.skipIn && (this.element.querySelector(".home__overlay").style.visibility = "hidden") && (this.element.querySelector(".service_alt_txt").style.opacity = "1")
+                }
+                onNavToggleClick(e) {
+                    e.state === V.OPEN ? this.nav.show() : this.nav.hide()
+                }
+                onNavShow() {
+                    this.navToggle.setState(V.CLOSE), this.screenNavigator.currentScreen.collapseFigure()
+                }
+                onNavHide() {
+                    this.navToggle.setState(V.OPEN), this.screenNavigator.currentScreen.expandFigure()
+                }
+                onTouchStart(e) {
+                    const t = e.changedTouches[0];
+                    this.touchStartY = t.pageY, this.touchStartTime = e.timeStamp
+                }
+                onTouchEnd(e) {
+                    const t = e.changedTouches[0],
+                        i = e.timeStamp - this.touchStartTime,
+                        s = (t.pageY - this.touchStartY) / i;
+                    Math.abs(s) > .4 && this.swipe(s)
+                }
+                onScrollCtaClick() {
+                    this.gotoNextScreen()
+                }
+                OnFooterButtonClick() {
+                    this.gotoScreen(this.screenElements.length - 2)
+                }
+                OnRightButtonClick() {
+                    this.gotoScreen(this.screenElements.length - 1);
+                }
             },
+            service: class extends P {
+                initPage() {
+                    super.initPage(), this.initCarousel(), this.initNextServiceTitle()
+                }
+                initCarousel() {
+                    const e = this.element.querySelector(".service__carousel");
+                    this.carousel = new M({
+                        element: e
+                    })
+                }
+                initNextServiceTitle() {
+                    const e = this.element.querySelector(".service-title");
+                    this.nextServiceTitle = new E({
+                        element: e
+                    }), e.addEventListener("mouseleave", this.onNextServiceRollOut.bind(this))
+                }
+                dispose() {
+                    super.dispose(), this.disposeCarousel()
+                }
+                disposeCarousel() {
+                    this.carousel.dispose()
+                }
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".service__featured-image"),
+                        t = w(e.src);
+                    this.addAssetToLoad(t)
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".service__header__text");
+                    this.timeline.from(e, 1.3, {
+                        yPercent: 100,
+                        ease: N.e.easeInOut
+                    }, 0).staggerFromTo(e.children, 1, {
+                        y: 80,
+                        opacity: 0
+                    }, {
+                        y: 0,
+                        opacity: 1,
+                        ease: o.g.easeInOut
+                    }, .1, .2), this.owner.previousScreen && "home" === this.owner.previousScreen.id && this.timeline.shiftChildren(1.9)
+                }
+                resize(e) {
+                    super.resize(e), this.nextServiceTitle.resize()
+                }
+                onNextServiceRollOut() {
+                    this.nextServiceTitle.expand()
+                }
+            },
+            about: class extends P {
+                initPage() {
+                    super.initPage(), this.initNav(), this.initSections(), this.initProgress()
+                }
+                initSections() {
+                    const e = this.nav.getCurrentItemId(),
+                        t = this.element.querySelectorAll(".about__section");
+                    this.sectionNavigator = new s.d, this.sectionNavigator.transitionType = s.c.OutAndIn, this.sectionNavigator.on("transitionStart", this.onSectionNavigatorTransitionStart.bind(this)), this.sections = [], [...t].forEach((t, i) => {
+                        const n = t.getAttribute("data-id"),
+                            o = new s.b(le, {
+                                canDispose: !1,
+                                arguments: [{
+                                    id: n,
+                                    element: t,
+                                    index: i,
+                                    owner: this.sectionNavigator,
+                                    isAjax: this.isAjax
+                                }],
+                                events: {
+                                    complete: this.onSectionComplete.bind(this),
+                                    progress: this.onSectionProgress.bind(this)
+                                }
+                            });
+                        n === e && (this.firstScreenId = n), this.sections.push(n), this.sectionNavigator.addScreen(n, o)
+                    })
+                }
+                initNav() {
+                    const e = this.element.querySelector(".about__nav");
+                    this.nav = new ce({
+                        element: e
+                    }), this.nav.on("itemClick", this.onNavItemClick.bind(this)), this.hashChangeCallback = this.onHashChange.bind(this), window.addEventListener("hashchange", this.hashChangeCallback)
+                }
+                initProgress() {
+                    this.progressElement = this.element.querySelector(".about__progress"), this.progress = 0
+                }
+                dispose() {
+                    super.dispose(), this.disposeSections(), this.disposeNav()
+                }
+                disposeSections() {
+                    this.sectionNavigator.dispose(), this.sectionNavigator = null
+                }
+                disposeNav() {
+                    this.nav.off("itemClick"), window.removeEventListener("hashchange", this.hashChangeCallback)
+                }
+                setProgress(e) {
+                    e !== this.progress && (this.progress = e, o.m.to(this.progressElement, .6, {
+                        scaleX: this.progress,
+                        ease: o.g.easeOut
+                    }))
+                }
+                getSectionProgress(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
+                    return e * (1 / this.sections.length) + t * (1 / this.sections.length)
+                }
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".about__section__video"),
+                        t = de(e);
+                    this.addAssetToLoad(t)
+                }
+                populateAnimIn() {
+                    if (window.location.hash) {
+                        const e = window.location.hash.replace("#", "");
+                        this.sectionNavigator.getScreen(e) && (this.firstScreenId = e)
+                    }
+                    this.timeline.set(this.progressElement, {
+                        scaleX: 0
+                    }, 0), this.sectionNavigator.showScreen(this.firstScreenId)
+                }
+                resize(e) {
+                    super.resize(e), this.resizeCurrentSection()
+                }
+                resizeCurrentSection() {
+                    this.sectionNavigator.currentScreen && this.sectionNavigator.currentScreen.resize()
+                }
+                onNavItemClick(e) {
+                    e.id !== this.sectionNavigator.currentScreen.id && this.sectionNavigator.showScreen(e.id)
+                }
+                onSectionNavigatorTransitionStart() {
+                    const e = this.sectionNavigator.currentScreen,
+                        t = "light" === e.getColor() ? "dark" : "light",
+                        i = this.getSectionProgress(e.index);
+                    this.sectionNavigator.previousScreen && (window.location.hash = e.id), this.setProgress(i), this.nav.setColor(t), this.nav.setCurrentItem(e.id), this.progressElement.classList.toggle("about__progress--dark", "dark" === t), this.emit("setHeaderColor", {
+                        color: t
+                    })
+                }
+                onSectionProgress(e) {
+                    const t = e.currentTarget,
+                        i = this.getSectionProgress(t.index, e.progress);
+                    this.setProgress(i)
+                }
+                onSectionComplete(e) {
+                    let t = e.currentTarget.index + e.direction;
+                    if (t < 0 || t > this.sections.length - 1) return;
+                    const i = this.sections[t];
+                    this.sectionNavigator.showScreen(i)
+                }
+                onHashChange(e) {
+                    let t = window.location.hash.replace("#", "");
+                    t.length || (t = this.sections[0]), t !== this.sectionNavigator.currentScreen.id && this.sectionNavigator.showScreen(t)
+                }
+                onPopState(e) {
+                    e.state.href === this.url && e.preventDefault()
+                }
+            },
+            contact: class extends P {
+                initPage() {
+                    super.initPage(), this.initScreenNavigator(), this.initNav(), this.initLocations()
+                }
+                initScreenNavigator() {
+                    this.screenNavigator = new s.d, this.screenNavigator.transitionType = s.c.OutThenIn
+                }
+                initNav() {
+                    const e = this.element.querySelector(".contact__nav");
+                    this.nav = new ue({
+                        element: e,
+                        owner: this.screenNavigator,
+                        isAjax: this.isAjax
+                    });
+                    const t = new s.b(this.nav, {
+                        events: {
+                            itemClick: this.onNavItemClick.bind(this)
+                        }
+                    });
+                    this.screenNavigator.addScreen("nav", t)
+                }
+                initLocations() {
+                    const e = this.element.querySelector(".contact__locations");
+                    this.locations = new _e({
+                        element: e,
+                        owner: this.screenNavigator
+                    });
+                    const t = new s.b(this.locations, {
+                        events: {
+                            complete: this.onLocationsComplete.bind(this)
+                        }
+                    });
+                    this.screenNavigator.addScreen("locations", t)
+                }
+                dispose() {
+                    super.dispose(), this.disposeScreenNavigator()
+                }
+                disposeScreenNavigator() {
+                    this.screenNavigator.dispose()
+                }
+                populateAssetPromises() {
+                    const e = this.loadFont(),
+                        t = ye()({
+                            key: app.googleMapsApiKey
+                        }),
+                        i = this.element.querySelector(".contact__nav__background__image");
+                    this.loadImage(i), this.addAssetToLoad(e), this.addAssetToLoad(t)
+                }
+                populateAnimIn() {
+                    const e = this.screenNavigator.showScreen("nav");
+                    this.animInPromises.push(e)
+                }
+                loadFont() {
+                    if (this.isAjax) return Promise.resolve();
+                    const e = this.element.querySelector(".contact__nav__item"),
+                        t = getComputedStyle(e),
+                        i = t.getPropertyValue("font-family").split(",")[0].split('"').join(""),
+                        s = t.getPropertyValue("font-weight");
+                    return new h.a(i, {
+                        weight: s
+                    }).load()
+                }
+                resize() {
+                    super.resize(), this.nav.resize()
+                }
+                onNavItemClick(e) {
+                    this.screenNavigator.showScreen("locations", null, {
+                        properties: {
+                            currentLocationIndex: e.index
+                        }
+                    })
+                }
+                onLocationsComplete() {
+                    this.screenNavigator.showScreen("nav")
+                }
+            },
+            blog: class extends P {
+                initPage() {
+                    super.initPage(), this.initFilters(), this.initPagination()
+                }
+                initFilters() {
+                    this.filterInput = this.element.querySelector(".blog__filters__select__input"), this.filterInput.addEventListener("change", this.onFilterInputChange.bind(this))
+                }
+                initPagination() {
+                    const e = this.element.querySelectorAll(".blog__pagination__page__link"),
+                        t = this.element.querySelector(".blog__pagination__next"),
+                        i = this.element.querySelector(".blog__content"),
+                        s = [...e];
+                    t && s.push(t), this.currentPageIndex = parseInt(i.getAttribute("data-page")), this.loadingPageIndex = -1, s.forEach(e => {
+                        e.addEventListener("click", this.onPaginationLinkClick.bind(this))
+                    })
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".blog__title"),
+                        t = this.element.querySelector(".blog__filters"),
+                        i = this.element.querySelector(".blog__article"),
+                        s = [e, t];
+                    i && s.push(i), this.timeline.staggerFrom(s, .9, {
+                        y: 100,
+                        opacity: 0,
+                        ease: o.g.easeOut
+                    }, .1, .5)
+                }
+                setFilter(e) {
+                    const t = this.filterInput.querySelector("option[value=".concat(e, "]"));
+                    t && (this.element.querySelector(".blog__filters__current__text").textContent = t.textContent)
+                }
+                appendPage(e) {
+                    const t = e.querySelector(".blog__content"),
+                        i = this.element.querySelector(".blog__content"),
+                        s = this.filterInput.getBoundingClientRect().y + window.pageYOffset;
+                    (new r.a).to(window, .8, {
+                        scrollTo: {
+                            y: s,
+                            autoKill: !1
+                        }
+                    }, 0).to(i.querySelector(".blog__content__overlay"), .7, {
+                        opacity: 1
+                    }, .4).add(() => {
+                        this.element.replaceChild(t, i)
+                    }).fromTo(t.querySelector(".blog__content__overlay"), .5, {
+                        autoAlpha: 1
+                    }, {
+                        autoAlpha: 0
+                    }).add(() => {
+                        this.initPagination()
+                    })
+                }
+                loadPage(e) {
+                    const t = this.element.querySelector(".blog__content__overlay");
+                    this.pageIsLoading ? this.fetchPage() : o.m.fromTo(t, .5, {
+                        visibility: "inherit",
+                        opacity: 0
+                    }, {
+                        opacity: .7,
+                        onComplete: this.fetchPage.bind(this)
+                    }), this.pageIsLoading = !0
+                }
+                fetchPage() {
+                    const e = window.location.href;
+                    window.fetch(e, {
+                        headers: {
+                            "X-Requested-With": "XMLHttpRequest",
+                            credentials: "same-origin"
+                        }
+                    }).then(function (e) {
+                        return e.text().then(function (t) {
+                            return {
+                                url: e.url,
+                                text: t,
+                                status: e.status
+                            }
+                        })
+                    }).then(this.onPageLoaded.bind(this))
+                }
+                onPageLoaded(e) {
+                    if (e.url !== window.location.href) return;
+                    if (this.pageIsLoading = !1, 200 !== e.status) return;
+                    const t = n(e.text);
+                    this.appendPage(t)
+                }
+                onPaginationLinkClick(e) {
+                    const t = parseInt(e.currentTarget.getAttribute("data-page"));
+                    if (t === this.currentPageIndex || t === this.loadingPageIndex) return;
+                    const i = e.currentTarget.href;
+                    this.emit("pushState", {
+                        state: {
+                            page: "blog"
+                        },
+                        url: i
+                    }), this.loadPage(i)
+                }
+                onPopState(e) {
+                    if (!e.state || !e.state.page || "blog" !== e.state.page) return;
+                    e.preventDefault();
+                    const t = new URL(window.location.href);
+                    if (t.searchParams.has("filter")) this.setFilter(t.searchParams.get("filter"));
+                    else {
+                        const e = this.filterInput.querySelector("option");
+                        this.setFilter(e.value)
+                    }
+                    this.loadPage(e.href)
+                }
+                onFilterInputChange(e) {
+                    const t = this.filterInput.value,
+                        i = new URL(window.location.href);
+                    i.searchParams.set("filter", t), i.searchParams.has("page") && i.searchParams.set("page", 1), this.setFilter(t), this.emit("pushState", {
+                        state: {
+                            page: "blog"
+                        },
+                        url: i
+                    }), this.loadPage(i)
+                }
+            },
+            clients: class extends P {
+                initPage() {
+                    super.initPage(), this.initGallery()
+                }
+                initGallery() {
+                    const e = this.element.querySelector(".clients__gallery");
+                    e && (this.gallery = new Se({
+                        element: e
+                    }))
+                }
+                dispose() {
+                    super.dispose(), this.disposeGallery()
+                }
+                disposeGallery() {
+                    this.gallery && this.gallery.dispose()
+                }
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".clients__image");
+                    this.loadImage(e)
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".clients__header__text"),
+                        t = this.element.querySelector(".clients__image-wrapper");
+                    this.timeline.from(t, 2.3, {
+                        y: -.2 * app.windowHeight,
+                        ease: Power3.easeInOut
+                    }, 0).from(e, 2, {
+                        yPercent: 100,
+                        ease: Power3.easeInOut
+                    }, 0).staggerFromTo(e.children, 2, {
+                        y: 80,
+                        opacity: 0
+                    }, {
+                        y: 0,
+                        opacity: 1,
+                        ease: Power3.easeInOut
+                    }, .1, .2)
+                }
+                resize(e) {
+                    super.resize(e), this.gallery && this.gallery.resize()
+                }
+            },
+            careers: class extends P {
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".careers__header__image");
+                    this.loadImage(e)
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".careers__header__title-block"),
+                        t = this.element.querySelector(".careers__header__image-wrapper");
+                    this.timeline.from(t, 1.3, {
+                        y: -.2 * app.windowHeight,
+                        ease: o.f.easeInOut
+                    }, 0).from(e, 1.5, {
+                        yPercent: 100,
+                        ease: o.g.easeInOut
+                    }, 0).staggerFromTo(e.children, 1.5, {
+                        y: 80,
+                        opacity: 0
+                    }, {
+                        y: 0,
+                        opacity: 1,
+                        ease: o.g.easeInOut
+                    }, .1, .2)
+                }
+                onAnimateInComplete(e) {
+                    super.onAnimateInComplete(e), !e && this.isAjax && this.element.querySelector(".careers__contact__background").play()
+                }
+            },
+            regulations: class extends P {
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".regulations__image");
+                    this.loadImage(e)
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".regulations__title-block"),
+                        t = this.element.querySelector(".regulations__background");
+                    this.timeline.from(t, 1.7, {
+                        y: -.2 * app.windowHeight,
+                        ease: Power3.easeInOut
+                    }, 0).from(e, 1.5, {
+                        y: app.windowHeight,
+                        ease: Power3.easeInOut
+                    }, 0)
+                }
+            },
+            text: class extends P {
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".text__image");
+                    this.loadImage(e)
+                }
+            },
+            article: class extends P {
+                populateAssetPromises() {
+                    const e = this.element.querySelector(".article__header__image");
+                    this.loadImage(e)
+                }
+                populateAnimIn() {
+                    if (!this.isAjax) return;
+                    const e = this.element.querySelector(".article__header__title-block"),
+                        t = this.element.querySelector(".article__header__image-wrapper");
+                    this.timeline.from(t, 1.3, {
+                        y: .2 * app.windowHeight,
+                        ease: Power2.easeInOut
+                    }, 0).from(e, 1.5, {
+                        yPercent: 100,
+                        ease: o.g.easeInOut
+                    }, 0).staggerFromTo(e.children, 1.5, {
+                        y: 80,
+                        opacity: 0
+                    }, {
+                        y: 0,
+                        opacity: 1,
+                        ease: o.g.easeInOut
+                    }, .1, .2)
+                }
+            }
+        },
             Ce = i(45);
         const Ie = {
-                OPEN: 0,
-                CLOSE: 1
-            },
+            OPEN: 0,
+            CLOSE: 1
+        },
             ke = "js-nav-toggle--close";
         var Te = new class extends f.a {
             constructor() {
@@ -4266,23 +4329,23 @@
             }
         };
         var Ae = new class extends f.a {
-                constructor() {
-                    super(), this.isVisible = !1, this.color = "light", this.element = document.querySelector(".logo")
-                }
-                setColor(e) {
-                    e !== this.color && (this.color = e, this.element.classList.toggle("logo--dark", "dark" === e))
-                }
-                show() {
-                    this.isVisible || (this.isVisible = !0, this.animateIn())
-                }
-                animateIn() {
-                    o.m.set(this.element, {
-                        visibility: "inherit"
-                    }), o.m.from(this.element, 1, {
-                        opacity: 0
-                    })
-                }
-            },
+            constructor() {
+                super(), this.isVisible = !1, this.color = "light", this.element = document.querySelector(".logo")
+            }
+            setColor(e) {
+                e !== this.color && (this.color = e, this.element.classList.toggle("logo--dark", "dark" === e))
+            }
+            show() {
+                this.isVisible || (this.isVisible = !0, this.animateIn())
+            }
+            animateIn() {
+                o.m.set(this.element, {
+                    visibility: "inherit"
+                }), o.m.from(this.element, 1, {
+                    opacity: 0
+                })
+            }
+        },
             Ee = i(175),
             Ne = i.n(Ee);
         i(196);
@@ -4301,7 +4364,7 @@
             if (Be = null, !i) return;
             const n = i.getAttribute("data-page"),
                 o = i.getAttribute("data-page-id"),
-                r = function(e, t) {
+                r = function (e, t) {
                     const i = t ? e + "-" + t : e;
                     let n = qe.getScreen(i);
                     if (!n) {
@@ -4357,7 +4420,7 @@
 
         function Ue() {
             const e = qe.currentScreen;
-            Ve && Me(), e && (e.skipAjaxLoading || "ajax-loading" === e.id) || function() {
+            Ve && Me(), e && (e.skipAjaxLoading || "ajax-loading" === e.id) || function () {
                 const e = "ajax-loading";
                 let t = qe.getScreen(e);
                 if (!t) {
@@ -4379,9 +4442,9 @@
 
         function Ke(e) {
             const t = {
-                    element: n(e.text),
-                    url: e.url
-                },
+                element: n(e.text),
+                url: e.url
+            },
                 i = qe.currentScreen;
             i && "ajax-loading" === i.id && qe.transition ? Be = t : je(t)
         }
@@ -4405,7 +4468,7 @@
         }
 
         function Je() {
-            ! function() {
+            ! function () {
                 const e = "intro",
                     t = document.querySelector(".intro"),
                     i = new s.b(v, {
@@ -4448,7 +4511,7 @@
         }
 
         function nt(e) {
-            if (Oe.isVisible) return Xe = e.color, void(ze = e.color);
+            if (Oe.isVisible) return Xe = e.color, void (ze = e.color);
             Ae.setColor(e.color), Te.setColor(e.color)
         }
 
@@ -4463,17 +4526,17 @@
         function at(e) {
             e.isVisible ? (Xe = Ae.color, ze = Te.color, Ae.setColor("light"), Te.setColor("light")) : (Xe && Ae.setColor(Xe), ze && Te.setColor(ze))
         }
-        
+
         function lt() {
             Ve && !Ve.isLoadingAssets && setTimeout(() => Ye(), 100)
-        }! function() {
+        } ! function () {
             if (window.app = window.app || {}, app.screenXS = 480, app.screenS = 600, app.screenM = 900, app.screenL = 1280, app.screenXL = 1400, app.screenXXL = 1600, app.screenHD = 1920, app.windowWidth = 0, app.windowHeight = 0, app.hasTouch = "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch, app.hasTouch && document.documentElement.classList.add("touch"), app.debug && window.location.search && (app.skip = -1 !== window.location.search.indexOf("skip"), app.skipIn = -1 !== window.location.search.indexOf("skipIn")), "/" !== window.location.pathname && localStorage) {
                 const e = localStorage.getItem("skipIntro");
                 "1" === e && (app.skip = !0)
             }
         }(), (qe = new s.d).transitionType = s.c.OutAndIn, qe.on("transitionStart", Fe), qe.on("transitionComplete", He), (Re = new b({
             prefetchLinks: !1
-        })).on("pageLoading", Ue), Re.on("pageLoaded", Ke), Re.on("popState", Ge), Oe.on("visibilityChange", at), "scrollRestoration" in window.history && (window.history.scrollRestoration = "manual"), window.addEventListener("resize", Ne()(Ze, 100)), Ze(), app.skip ? De() : function() {
+        })).on("pageLoading", Ue), Re.on("pageLoaded", Ke), Re.on("popState", Ge), Oe.on("visibilityChange", at), "scrollRestoration" in window.history && (window.history.scrollRestoration = "manual"), window.addEventListener("resize", Ne()(Ze, 100)), Ze(), app.skip ? De() : function () {
             const e = "main-loading",
                 t = document.querySelector(".main-loading"),
                 i = new s.b(c, {
@@ -4495,71 +4558,71 @@
 
 // tooltip
 
-    $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
 
-            }
-        );
-        
-   // menu      
-$("#m21").hover(function(){
-  $(this).find('.nav__link__label').css("color", "white");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
-  $('.m11').css("opacity", "1");
-  $('.m11').find('.nav__link__label').css("color", "#acacac");
+}
+);
 
-  }, function(){
+// menu      
+$("#m21").hover(function () {
+    $(this).find('.nav__link__label').css("color", "white");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
+    $('.m11').css("opacity", "1");
+    $('.m11').find('.nav__link__label').css("color", "#acacac");
 
-  $(this).find('.nav__link__label').css("color", "#acacac");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
-  $('.menu-1').find('.nav__list').css("opacity", "1");
-  $('.m11').find('.nav__link__label').css("color", "#dadada");
+}, function () {
+
+    $(this).find('.nav__link__label').css("color", "#acacac");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
+    $('.menu-1').find('.nav__list').css("opacity", "1");
+    $('.m11').find('.nav__link__label').css("color", "#dadada");
 });
 
 
 
-$("#m22").hover(function(){
-  $(this).find('.nav__link__label').css("color", "white");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
-  $('.m12').css("opacity", "1");
-  $('.m12').find('.nav__link__label').css("color", "#acacac");
+$("#m22").hover(function () {
+    $(this).find('.nav__link__label').css("color", "white");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
+    $('.m12').css("opacity", "1");
+    $('.m12').find('.nav__link__label').css("color", "#acacac");
 
-  }, function(){
+}, function () {
 
-  $(this).find('.nav__link__label').css("color", "#acacac");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
-  $('.menu-1').find('.nav__list').css("opacity", "1");
-  $('.m12').find('.nav__link__label').css("color", "#dadada");
+    $(this).find('.nav__link__label').css("color", "#acacac");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
+    $('.menu-1').find('.nav__list').css("opacity", "1");
+    $('.m12').find('.nav__link__label').css("color", "#dadada");
 });
 
 
 
-$("#m23").hover(function(){
-  $(this).find('.nav__link__label').css("color", "white");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
-  $('.m13').css("opacity", "1");
-  $('.m13').find('.nav__link__label').css("color", "#acacac");
+$("#m23").hover(function () {
+    $(this).find('.nav__link__label').css("color", "white");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
+    $('.m13').css("opacity", "1");
+    $('.m13').find('.nav__link__label').css("color", "#acacac");
 
-  }, function(){
+}, function () {
 
-  $(this).find('.nav__link__label').css("color", "#acacac");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
-  $('.menu-1').find('.nav__list').css("opacity", "1");
-  $('.m13').find('.nav__link__label').css("color", "#dadada");
+    $(this).find('.nav__link__label').css("color", "#acacac");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
+    $('.menu-1').find('.nav__list').css("opacity", "1");
+    $('.m13').find('.nav__link__label').css("color", "#dadada");
 });
 
 
 
-$("#m24").hover(function(){
-  $(this).find('.nav__link__label').css("color", "white");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
-  $('.m14').css("opacity", "1");
-  $('.m14').find('.nav__link__label').css("color", "#acacac");
-FF
-  }, function(){
+$("#m24").hover(function () {
+    $(this).find('.nav__link__label').css("color", "white");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "0.2");
+    $('.m14').css("opacity", "1");
+    $('.m14').find('.nav__link__label').css("color", "#acacac");
+    FF
+}, function () {
 
-  $(this).find('.nav__link__label').css("color", "#acacac");
-  $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
-  $('.menu-1').find('.nav__list').css("opacity", "1");
-  $('.m14').find('.nav__link__label').css("color", "#dadada");
+    $(this).find('.nav__link__label').css("color", "#acacac");
+    $('.menu-1').find('.nav__list').find('.nav__item').css("opacity", "1");
+    $('.menu-1').find('.nav__list').css("opacity", "1");
+    $('.m14').find('.nav__link__label').css("color", "#dadada");
 });
