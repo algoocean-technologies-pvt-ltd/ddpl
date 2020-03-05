@@ -1021,7 +1021,7 @@ picture.object-fit-polyfill {
 }
 
 .image-filter:before {
-    opacity: .5
+    opacity: .4
 }
 
 .image-filter:after {
@@ -4551,7 +4551,7 @@ span.logo__inner {
 .image-filter:after {
     display: block;
     mix-blend-mode: screen;
-    filter: brightness(.2);
+    /* filter: brightness(.2); */
 }
 button.nav-toggle.js-nav-toggle--close span.nav-toggle__picto {
     vertical-align: sub;
