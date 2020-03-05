@@ -342,8 +342,8 @@
             l = i(71),
             h = i.n(l);
         class c extends s.a {
-            constructor(e) {
-                debugger; 
+            // constructor(e) {
+                
                 // this.element = e.element, 
                 // this.id = e.id, 
                 // this.progress = 0, 
@@ -354,7 +354,7 @@
                 // this.progressElement = this.element.querySelector(".main-loading__progress"),
                 // this.progressTimeline = null,
                 // this.text = this.element.querySelector(".main-loading__text")
-            }
+            // }
             setProgress(e, t) {
                 if (!(this.progress >= e)) {
                     if (!t) {
