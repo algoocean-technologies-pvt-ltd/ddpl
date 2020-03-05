@@ -1111,18 +1111,18 @@
                 return new r.a(
                     {
                         onUpdate: this.render.bind(this)
-                    });
-                // .from(this.imageWrapper, 2, {
-                //     alpha: 0,
-                //     ease: o.d.easeNone
-                // }, 0).from(this.blurFilter, 2, {
-                //     blur: 90,
-                //     ease: o.d.easeNone
-                // }, 0).from(this.image.scale, 3.5, {
-                //     x: 1.2 * this.image.scale.x,
-                //     y: 1.2 * this.image.scale.y,
-                //     ease: o.f.easeInOut
-                // }, 0)
+                    })
+                    .from(this.imageWrapper, 2, {
+                    alpha: 0,
+                    ease: o.d.easeNone
+                }, 0).from(this.blurFilter, 2, {
+                    blur: 90,
+                    ease: o.d.easeNone
+                }, 0).from(this.image.scale, 3.5, {
+                    x: 1.2 * this.image.scale.x,
+                    y: 1.2 * this.image.scale.y,
+                    ease: o.f.easeInOut
+                }, 0)
             }
             render() {
                 this.renderer.render(this.stage)
