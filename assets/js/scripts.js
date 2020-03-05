@@ -343,7 +343,17 @@
             h = i.n(l);
         class c extends s.a {
             constructor(e) {
-                super(), this.element = e.element, this.id = e.id, this.progress = 0, this.button = this.element.querySelector(".main-loading__button"), this.button.addEventListener("click", this.onButtonClick.bind(this)), this.buttonBorder = this.button.querySelector(".main-loading__button__border"), this.buttonLabel = this.button.querySelector(".main-loading__button__label"), this.progressElement = this.element.querySelector(".main-loading__progress"), this.progressTimeline = null, this.text = this.element.querySelector(".main-loading__text")
+                debugger;
+                super(), 
+                this.element = e.element, 
+                this.id = e.id, this.progress = 0, 
+                this.button = this.element.querySelector(".main-loading__button"),
+                this.button.addEventListener("click", this.onButtonClick.bind(this)),
+                this.buttonBorder = this.button.querySelector(".main-loading__button__border"),
+                this.buttonLabel = this.button.querySelector(".main-loading__button__label"),
+                this.progressElement = this.element.querySelector(".main-loading__progress"),
+                this.progressTimeline = null,
+                this.text = this.element.querySelector(".main-loading__text")
             }
             setProgress(e, t) {
                 if (!(this.progress >= e)) {
