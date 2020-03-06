@@ -1300,7 +1300,8 @@
 
 
             createAnimIn(e) {
-                if (this.owner.currentScreen.index % 2 === 1 || this.owner.previousScreen.index % 2 === 1) {
+                debugger;
+                if(this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2)){
                     this.createAnimInLeftRight(e)
                 }
                 else {
@@ -1348,8 +1349,7 @@
 
             }
             createAnimOut(e) {
-                debugger;
-                if (this.owner.currentScreen.index % 2 === 1 || this.owner.previousScreen.index % 2 === 1) {
+                if(this.owner.previousScreen.index == 1  || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) ){
                     this.createAnimOutLeftRight(e)
                 }
                 else {
@@ -3621,21 +3621,21 @@
                 gotoNextScreen() {
                     debugger;
                     if(this.currentScreenIndex === 0){
-                        this.gotoScreen(2)
+                        this.gotoScreen(3)
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
-                    } else if (this.currentScreenIndex === 2) {
+                    } else if (this.currentScreenIndex === 3) {
                         this.gotoScreen(4)
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                         
                     } else if (this.currentScreenIndex === 4) {
-                        this.gotoScreen(6)
+                        this.gotoScreen(7)
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
-                    } else if (this.currentScreenIndex === 6) {
+                    } else if (this.currentScreenIndex === 7) {
                         this.gotoScreen(8)
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
@@ -3649,22 +3649,22 @@
                     if(this.currentScreenIndex === 0){
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                    } else if (this.currentScreenIndex === 2) {
+                    } else if (this.currentScreenIndex === 3) {
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                         this.gotoScreen(0)
                     } else if (this.currentScreenIndex === 4) {
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.gotoScreen(2)
-                    } else if (this.currentScreenIndex === 6) {
+                        this.gotoScreen(3)
+                    } else if (this.currentScreenIndex === 7) {
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                         this.gotoScreen(4)
                     } else if(this.currentScreenIndex === 8){
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.gotoScreen(6)
+                        this.gotoScreen(7)
                     }
 
                     // let e = this.currentScreenIndex - 2;
@@ -3677,8 +3677,8 @@
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                         
-                    } else if(this.currentScreenIndex == 3){
-                        this.gotoScreen(2);
+                    } else if(this.currentScreenIndex == 2){
+                        this.gotoScreen(3);
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                     } else if(this.currentScreenIndex === 4){
@@ -3697,8 +3697,8 @@
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
-                    }else if(this.currentScreenIndex === 2){
-                        this.gotoScreen(3);
+                    }else if(this.currentScreenIndex === 3){
+                        this.gotoScreen(2);
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
@@ -3723,13 +3723,13 @@
                             this.gotoPrevScreen();
                             break;
                         case 40:
-                            this.gotoNextScreen()
+                            this.gotoNextScreen();
                             break;
                         case 39:
                             this.gotoLeft();
                             break;
                         case 37:
-                            this.gotoRight()
+                            this.gotoRight();
                             break;
                     }
 
