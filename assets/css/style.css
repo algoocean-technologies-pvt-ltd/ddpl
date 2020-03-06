@@ -5364,8 +5364,10 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
     left: 7.5vw !important;
 }
 
-#change-img:hover{
-    content: url('../images/designed-by.png');
-    
-
-}
+#change-img:hover{content: url('../images/designed-by.png'); }
+#skype-hover:hover{content: url('../images/skype-hover.png'); transition: all .5s ease;}
+#whatsapp-h:hover{content: url('../images/whatsapp-hover.png'); transition: all .5s ease;}
+#wechat-h:hover{content: url('../images/wechat-hover.png'); transition: all .5s ease;}
+#qq-h:hover{content: url('../images/qq-hover.png'); transition: all .5s ease;}
+#mobile-h:hover{content: url('../images/mobile-hover.png'); transition: all .5s ease;}
+#line-h:hover{content: url('../images/line-hover.png'); transition: all .5s ease;}
