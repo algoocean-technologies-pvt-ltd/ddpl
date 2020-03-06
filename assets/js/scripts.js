@@ -1301,7 +1301,7 @@
 
             createAnimIn(e) {
                 debugger;
-                if(this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2)){
+                if(this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6)){
                     this.createAnimInLeftRight(e)
                 }
                 else {
@@ -1349,7 +1349,7 @@
 
             }
             createAnimOut(e) {
-                if(this.owner.previousScreen.index == 1  || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) ){
+                if(this.owner.previousScreen.index == 1  || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6) ){
                     this.createAnimOutLeftRight(e)
                 }
                 else {
@@ -3685,8 +3685,8 @@
                         this.gotoScreen(5);
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
-                    }else if(this.currentScreenIndex === 7){
-                        this.gotoScreen(6);
+                    }else if(this.currentScreenIndex === 6){
+                        this.gotoScreen(7);
                         this.element.querySelector("#rightArrow").style.visibility ="hidden"
                         this.element.querySelector("#leftArrow").style.visibility ="visible"
                     }
@@ -3707,8 +3707,8 @@
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
-                    } else if(this.currentScreenIndex === 6){
-                        this.gotoScreen(7);
+                    } else if(this.currentScreenIndex === 7){
+                        this.gotoScreen(6);
                         this.element.querySelector("#leftArrow").style.visibility ="hidden"
                         this.element.querySelector("#rightArrow").style.visibility ="visible"
                         
