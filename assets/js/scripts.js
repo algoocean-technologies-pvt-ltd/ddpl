@@ -3724,7 +3724,15 @@
                             break;
                         case 40:
                             this.gotoNextScreen()
+                            break;
+                        case 39:
+                            this.gotoLeft();
+                            break;
+                        case 37:
+                            this.gotoRight()
+                            break;
                     }
+
                 }
                 onScroll(e) {
                     window.innerWidth < app.screenS || (e.preventDefault(), e.deltaY > 0 ? this.gotoNextScreen() : this.gotoPrevScreen())
