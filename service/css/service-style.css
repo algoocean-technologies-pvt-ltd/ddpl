@@ -1714,7 +1714,7 @@ background-color: #000000;
 }
 /*==========vertical align nav==========*/
 
- .vertical_nav{position: absolute;bottom: 0rem;left: 7.5vw;transform: rotate(-90deg);transform-origin: 0;    font-size: 15px;}
+ .vertical_nav{position: fixed;top: 24rem;left: 7.5vw;transform: rotate(-90deg);transform-origin: 0;    font-size: 15px;}
  .vertical_nav ul li{margin-right: 20px;position: relative;}
  .vertical_nav ul li:last-child{margin-right: 0;}
 .vertical_nav ul li:after{  
