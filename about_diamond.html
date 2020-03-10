@@ -267,7 +267,7 @@
 
 
 
-      <h2 class="heading3 mt-2">4Cs INTRODUCTION</h2>
+      <h2 class="heading2 mt-2">4Cs INTRODUCTION</h2>
 
       <div class="row pb-1">
         <div class="col-md-12">
@@ -860,16 +860,25 @@
       var i;
 
       for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+      acc[i].addEventListener("click", function () {
+        var acc2 = document.getElementsByClassName("accordion");
+        var j;
+        for (j = 0; j < acc.length; j++) {
+          if(this != acc2[j]){
+          acc2[j].classList.remove("active");
+          acc2[j].nextElementSibling.style.maxHeight = null;
           }
-        });
-      }
+        }
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+
       jQuery(document).ready(function () {
 
         var tl = new TimelineLite();

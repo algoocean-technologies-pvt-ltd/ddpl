@@ -112,7 +112,7 @@ a {
     font-style: normal;
     font-weight: 700;
     font-size: 1em;
-    color: rgba(255,0,0,1);
+    color: rgba(0,0,0,1);
 }
 
 .card-img-top {
@@ -261,8 +261,8 @@ hr {
 
 .img-box {
     background-color: #fff;
-    height: 78px;
-    width: 197px;
+    /* height: 78px;
+    width: 197px; */
     padding-left:0px;
     margin-top:10px;
 }

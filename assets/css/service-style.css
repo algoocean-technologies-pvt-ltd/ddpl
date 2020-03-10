@@ -39,7 +39,7 @@ h6
 p
 {
     font-weight: 200;
-    font-size: 16px;
+    font-size: 1.25rem;
     margin-block-start: .5em;
     margin-block-end: .5em;
     line-height: 27px;
@@ -196,9 +196,12 @@ margin-top: 7px; }
 }
 
 .special-sec1-row3 img {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    left: -50%;
+    left: 50%;
+    margin-left: -16%;
 }
 .row.special-sec1-row3 .col-sm-2 {
     flex: 0 0 12%;

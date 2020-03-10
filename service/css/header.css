@@ -1208,7 +1208,7 @@ span.nav__link__label {
     position: absolute;
     left: 50%;
     top: 50%;
-    animation: loader-animation 0.8s infinite linear;
+    /* animation: loader-animation 0.8s infinite linear; */
     margin: -50px 0px 0px -50px;
 }
 @keyframes loader-animation{
@@ -1223,7 +1223,7 @@ span.nav__link__label {
     position: absolute;
     left: 50%;
     top: 50%;
-    animation: loader-animation 0.5s infinite linear;
+    /* animation: loader-animation 0.5s infinite linear; */
     margin: -25px 0px 0px -25px;
     width: 50px;
 }

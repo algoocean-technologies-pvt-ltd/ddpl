@@ -17,16 +17,20 @@
   position: absolute;
   width: 100%;
 }
+
 .backg {
   width: 100%;
   margin-bottom: 20px!important;
   /* height: 100vh; */
 }
+.sc-margin-bottom-none{
+  margin-bottom: 0px!important;
+}
 
 .text-box {
 color: #fff;
 text-align:  left;
-font-size: 1rem;
+font-size: 1.25rem;
 font-weight: 200;
 line-height:1.8rem;
 }	
@@ -38,14 +42,14 @@ blockquote {
     margin-top:1rem;
 }
 .Container65 {
-width: 65%;
+width: 73%;
 margin: auto;
 padding-top: 9rem;
 }
 
 
 .Container66 {
-    width: 66%;
+    width: 73%;
     margin: auto;
     padding-top: 9rem;
 }
@@ -55,7 +59,7 @@ text-align: left;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 600;
-font-size: 28px;
+font-size: 34px;
 color: #fff;
 text-transform: uppercase;
 }	
@@ -70,8 +74,8 @@ color: #fff;
 }
 
 .side-text1 {
-position: absolute;
-font-size: 0.55rem;
+position: fixed;
+font-size: 0.70rem;
 font-weight: 700;
 color: #fff;
 opacity: 1;
@@ -205,6 +209,11 @@ img {
   max-width: 100%;
   display: block;
   
+}
+.sc-img-cover{
+  object-fit: cover;
+  height: 295px;
+  min-width: 100%;
 }
 .example-box {
   margin-bottom: 50px;
@@ -423,9 +432,13 @@ table.table_clarity p {
   text-align: left;
   max-height: 0;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 200;
   transition: max-height 0.2s ease-out;
+}
+
+.sc-text-left {
+  text-align: left!important;
 }
 
 .panel p {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,15 +10,16 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700,800,900&ampdisplay=swap"
     rel="stylesheet">
-  
+
   <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/slider.css">
-  
+
   <link rel="stylesheet" href="../assets/css/flexslider.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
-    
-  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+
   <!-- Nav & Footer Linking Starts -->
   <link rel="stylesheet" href="../assets/css/header.css" />
   <link rel="stylesheet" href="../assets/css/style.css">
@@ -27,191 +27,302 @@
   <link rel="stylesheet" href="../assets/css/style_inner.css" />
   <link href="css/service-style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-  
+
   <!-- Nav & Footer Linking Ends -->
   <title>Services</title>
-<style>
-
-.arrow-button__border, .arrow-button__border svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-svg:not(:root) {
-    overflow: hidden;
-}
-
-
-.arrow-button__picto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    width: 15px;
-    height: 9px;
-    stroke: currentColor;
-    stroke-width: 2px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-animation-duration: 1.2s;
-    animation-duration: 1.2s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(.455, .03, .515, .955);
-    animation-timing-function: cubic-bezier(.455, .03, .515, .955);
-}
-.down_arrow_part{margin: 0 auto;}
-    .down_arrow_part .down_arrow{width: 65px;height: 65px;display: block;position: relative;}
-.down_arrow_part .down_arrow .arrow-button__border{width: 100%;height: 100%;}
-.down_arrow_part .down_arrow .arrow-button__border svg{stroke: currentColor;fill: none;-webkit-backface-visibility: hidden;backface-visibility: hidden;}
-.down_arrow_part .down_arrow .arrow-button__border svg:first-child{opacity: .5;}
-.down_arrow_part .down_arrow .arrow-button__border svg:last-child{stroke-dasharray: 207.34512px 207.34512px;stroke-dashoffset: 207.34512px;visibility: hidden;-webkit-transition: visibility 0s 1.5s;transition: visibility 0s 1.5s;-webkit-animation: arrow-button__border-out 1.5s cubic-bezier(.77,0,.175,1);animation: arrow-button__border-out 1.5s cubic-bezier(1.77,10,.275,2);}
-html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__border svg:last-child{visibility: inherit;-webkit-transition: none;transition: none;-webkit-animation: arrow-button__border-over 1.5s cubic-bezier(.77,0,.175,1) forwards;animation: arrow-button__border-over 1.5s cubic-bezier(.77,0,.175,1) forwards;}
-@keyframes arrow-button__border-over{
-    0%{-webkit-transform:rotate(-0deg);transform:rotate(-0deg)}
-    to{-webkit-transform:rotate(0deg);transform:rotate(0deg);
-        stroke-dashoffset:0}
+  <style>
+    .arrow-button__border,
+    .arrow-button__border svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 
-html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit-animation-name: arrow-button__picto-over-right;animation-name: arrow-button__picto-over-right;}
-@keyframes arrow-button__picto-over-right{
-    0%{opacity:1;-webkit-transform:translate(-50%,-50%) rotate(0deg);transform:translate(-50%,-50%) rotate(0deg)}
-    50%{-webkit-transform:translate(-50%,100%) rotate(0deg);transform:translate(-50%,100%) rotate(0deg);opacity:1}
-    50.01%{-webkit-transform:translate(-50%,-200%) rotate(0deg);transform:translate(-50%,-200%) rotate(0deg)}
-    to{-webkit-transform:translate(-50%,-50%) rotate(0deg);transform:translate(-50%,-50%) rotate(0deg);opacity:1}
-}
+    svg:not(:root) {
+      overflow: hidden;
+    }
 
-@keyframes arrow-button__border-over{
-    0%{
-        -webkit-transform:rotate(-0deg);
-        transform:rotate(-0deg)
+
+    .arrow-button__picto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 15px;
+      height: 9px;
+      stroke: currentColor;
+      stroke-width: 2px;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-timing-function: cubic-bezier(.455, .03, .515, .955);
+      animation-timing-function: cubic-bezier(.455, .03, .515, .955);
     }
-    to{
-        -webkit-transform:rotate(0deg);
-        transform:rotate(0deg);
-        stroke-dashoffset:0}
+
+    .down_arrow_part {
+      margin: 0 auto;
     }
-/* .arrow-button__picto{position: absolute;top: 50%;left: 50%;display: block;width: 15px;height: 9px;stroke: currentColor;
+
+    .down_arrow_part .down_arrow {
+      width: 65px;
+      height: 65px;
+      display: block;
+      position: relative;
+    }
+
+    .down_arrow_part .down_arrow .arrow-button__border {
+      width: 100%;
+      height: 100%;
+    }
+
+    .down_arrow_part .down_arrow .arrow-button__border svg {
+      stroke: currentColor;
+      fill: none;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .down_arrow_part .down_arrow .arrow-button__border svg:first-child {
+      opacity: .5;
+    }
+
+    .down_arrow_part .down_arrow .arrow-button__border svg:last-child {
+      stroke-dasharray: 207.34512px 207.34512px;
+      stroke-dashoffset: 207.34512px;
+      visibility: hidden;
+      -webkit-transition: visibility 0s 1.5s;
+      transition: visibility 0s 1.5s;
+      -webkit-animation: arrow-button__border-out 1.5s cubic-bezier(.77, 0, .175, 1);
+      animation: arrow-button__border-out 1.5s cubic-bezier(1.77, 10, .275, 2);
+    }
+
+    html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__border svg:last-child {
+      visibility: inherit;
+      -webkit-transition: none;
+      transition: none;
+      -webkit-animation: arrow-button__border-over 1.5s cubic-bezier(.77, 0, .175, 1) forwards;
+      animation: arrow-button__border-over 1.5s cubic-bezier(.77, 0, .175, 1) forwards;
+    }
+
+    @keyframes arrow-button__border-over {
+      0% {
+        -webkit-transform: rotate(-0deg);
+        transform: rotate(-0deg)
+      }
+
+      to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        stroke-dashoffset: 0
+      }
+    }
+
+    html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto {
+      -webkit-animation-name: arrow-button__picto-over-right;
+      animation-name: arrow-button__picto-over-right;
+    }
+
+    @keyframes arrow-button__picto-over-right {
+      0% {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg)
+      }
+
+      50% {
+        -webkit-transform: translate(-50%, 100%) rotate(0deg);
+        transform: translate(-50%, 100%) rotate(0deg);
+        opacity: 1
+      }
+
+      50.01% {
+        -webkit-transform: translate(-50%, -200%) rotate(0deg);
+        transform: translate(-50%, -200%) rotate(0deg)
+      }
+
+      to {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1
+      }
+    }
+
+    @keyframes arrow-button__border-over {
+      0% {
+        -webkit-transform: rotate(-0deg);
+        transform: rotate(-0deg)
+      }
+
+      to {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        stroke-dashoffset: 0
+      }
+    }
+
+    /* .arrow-button__picto{position: absolute;top: 50%;left: 50%;display: block;width: 15px;height: 9px;stroke: currentColor;
     stroke-width: 2px;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-animation-duration: 1.2s;
     animation-duration: 1.2s;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;-webkit-animation-timing-function: cubic-bezier(.455,.03,.515,.955);
     animation-timing-function: cubic-bezier(.455,.03,.515,.955);background-color: white;} */
-.down_arrow_part .down_arrow .arrow-button__picto{-webkit-transform: translate(-50%,-50%) rotate(0deg);transform: translate(-50%,-50%) rotate(0deg);-webkit-animation-name:  arrow-button__picto-out-right;animation-name:  arrow-button__picto-out-right;}
-@keyframes  arrow-button__picto-out-right{
-    0%{opacity:1;-webkit-transform:translate(-50%,-50%) rotate(0deg);transform:translate(-50%,-50%) rotate(0deg)}
-    50%{-webkit-transform:translate(-50%,-200%) rotate(0deg);transform:translate(-50%,-200%) rotate(0deg);opacity:0}
-    50.01%{-webkit-transform:translate(-50%,100%) rotate(0deg);transform:translate(-50%,100%) rotate(0deg)}
-    to{-webkit-transform:translate(-50%,-50%) rotate(0deg);transform:translate(-50%,-50%) rotate(0deg);opacity:1}
-}
+    .down_arrow_part .down_arrow .arrow-button__picto {
+      -webkit-transform: translate(-50%, -50%) rotate(0deg);
+      transform: translate(-50%, -50%) rotate(0deg);
+      -webkit-animation-name: arrow-button__picto-out-right;
+      animation-name: arrow-button__picto-out-right;
+    }
+
+    @keyframes arrow-button__picto-out-right {
+      0% {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg)
+      }
+
+      50% {
+        -webkit-transform: translate(-50%, -200%) rotate(0deg);
+        transform: translate(-50%, -200%) rotate(0deg);
+        opacity: 0
+      }
+
+      50.01% {
+        -webkit-transform: translate(-50%, 100%) rotate(0deg);
+        transform: translate(-50%, 100%) rotate(0deg)
+      }
+
+      to {
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 1
+      }
+    }
 
 
-/* .down_arrow_part .down_arrow img{max-width: 100%;max-height: 100%;} */
-#section_1 .right_col {
-    background: #000!important;
-}
-image {
-    width: 100%;
-}
+    /* .down_arrow_part .down_arrow img{max-width: 100%;max-height: 100%;} */
+    #section_1 .right_col {
+      background: #000 !important;
+    }
 
-html:not(.touch) .arrow-button--right:hover .arrow-button__picto {
-    -webkit-animation-name: arrow-button__picto-over-right;
-    animation-name: arrow-button__picto-over-right
-}
-@-webkit-keyframes arrow-button__picto-over-right {
-    0% {
+    image {
+      width: 100%;
+    }
+
+    html:not(.touch) .arrow-button--right:hover .arrow-button__picto {
+      -webkit-animation-name: arrow-button__picto-over-right;
+      animation-name: arrow-button__picto-over-right
+    }
+
+    @-webkit-keyframes arrow-button__picto-over-right {
+      0% {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%)
-    }
-    50% {
+      }
+
+      50% {
         -webkit-transform: translate(100%, -50%);
         transform: translate(100%, -50%);
         opacity: 0
-    }
-    50.01% {
+      }
+
+      50.01% {
         -webkit-transform: translate(-200%, -50%);
         transform: translate(-200%, -50%)
-    }
-    to {
+      }
+
+      to {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 1
+      }
     }
-}
 
-@keyframes arrow-button__picto-over-right {
-    0% {
+    @keyframes arrow-button__picto-over-right {
+      0% {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%)
-    }
-    50% {
+      }
+
+      50% {
         -webkit-transform: translate(100%, -50%);
         transform: translate(100%, -50%);
         opacity: 0
-    }
-    50.01% {
+      }
+
+      50.01% {
         -webkit-transform: translate(-200%, -50%);
         transform: translate(-200%, -50%)
-    }
-    to {
+      }
+
+      to {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 1
+      }
     }
-}
 
-.arrow-button--right .arrow-button__picto {
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-animation-name: arrow-button__picto-out-right;
-    animation-name: arrow-button__picto-out-right
-}
-@-webkit-keyframes arrow-button__picto-out-right {
-    0% {
+    .arrow-button--right .arrow-button__picto {
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-animation-name: arrow-button__picto-out-right;
+      animation-name: arrow-button__picto-out-right
+    }
+
+    @-webkit-keyframes arrow-button__picto-out-right {
+      0% {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%)
-    }
-    50% {
+      }
+
+      50% {
         -webkit-transform: translate(-200%, -50%);
         transform: translate(-200%, -50%);
         opacity: 0
-    }
-    50.01% {
+      }
+
+      50.01% {
         -webkit-transform: translate(100%, -50%);
         transform: translate(100%, -50%)
-    }
-    to {
+      }
+
+      to {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 1
+      }
     }
-}
 
-@keyframes arrow-button__picto-out-right {
-    0% {
+    @keyframes arrow-button__picto-out-right {
+      0% {
         opacity: 1;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%)
-    }
-    50% {
+      }
+
+      50% {
         -webkit-transform: translate(-200%, -50%);
         transform: translate(-200%, -50%);
         opacity: 0
-    }
-    50.01% {
+      }
+
+      50.01% {
         -webkit-transform: translate(100%, -50%);
         transform: translate(100%, -50%)
-    }
-    to {
+      }
+
+      to {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         opacity: 1
+      }
     }
-}
-</style>
+  </style>
 </head>
 
 <body class="page-id-home">
@@ -418,154 +529,204 @@ html:not(.touch) .arrow-button--right:hover .arrow-button__picto {
     </div>
   </nav>
 
-  
-  
 
-   <!-- =========== Page start  ===========-->
 
-<section id="section_1" class="service-parallax-sec">
+
+  <!-- =========== Page start  ===========-->
+
+  <section id="section_1" class="service-parallax-sec">
     <div class="parallax-one">
-	<div class="container diamond">
-		<div class="row">
-		    
-                    <div class="col-sm-2 left_col">
-                        <div class="flip-card-inner">
-                            <img src="images/icon1.png" class="centered">
-                            </div>
-                       </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="special-cut.html" target="_parent"id="special_cut1">Special Cut</a></h4>
-				<p>Nature bent us special with one touch. DDPL create special with their human touch. Dharmanandan’s Special Cut diamond possesses the ability to add extra feather in being special, exemplary light return and a visual representation.</p>
-		          </div>
-			</div>
-			<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">
-                                    <button class="down_arrow">
-                                        <span class="arrow-button__border">
-                                            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="33" cy="33" r="32"></circle>
-                                            </svg>
-                                            <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="33" cy="33" r="32"></circle>
-                                            </svg>
-                                        </span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">
-                                            <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-            </div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner">
-			    <img src="images/icon2.png" class="centered" id="transparency">
-			    </div>
-			    </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="time-lapse.html" target="_parent">Diamond Time-Lapse</a></h4>
-				<p>First time in the industry, A Blockchain enabled Diamond Time-Lapse report by 
-DDPL is facilitating a diamond voyage from mine to finger with minute details 
-of crafting and beautifying process.</p>
-</div>
-			</div>
-		<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner"> 
-			     <img src="images/icon3.png" class="centered">
-			     </div>
-			     </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="natural-assurance.html" target="_parent">Natural Assurance</a></h4>
-				<p>DDPL performs stringent quality checks on various processes to ensure the 
-diamond is natural and maintain the integrity by the Diamond Time-Lapse, a 
-trustworthy technology.</p>
-</div>
-			</div>
-			<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner">
-			         <img src="images/icon4.png" class="centered">
-			         </div>
-			         </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="technology.html" target="_parent">Technology & Training</a></h4>
-				<p>DDPL believes in enriching and supporting their valued retailers and 
-employees. Their ingenious tech and well trained staff creates a delightful 
-experience for their customers to navigate and buy with ease and satisfaction.</p>
-</div>
-			</div>
-			<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner"> 
-			     <img src="images/icon5.png" class="centered">
-			     </div>
-			     </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="bespoke.html" target="_parent">Bespoke</a></h4>
-				<p>DDPL’s extensive rough diamond resources, infrastructure and workforce is 
-capable of providing any scale of tailor made merchandise on a specific timeline.</p>
-</div>
-			</div>
-		<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner"><img src="images/icon6.png" class="centered">
-			     </div>
-			     </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="auction.html" target="_parent">Auction</a></h4>
-				<p>DDPL Online Auctions offers a range of exceptional diamonds from the 
-treasure of Dharmanandan in very effective and efficient way.</p>
-</div>
-			</div>
-			<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-2 left_col">
-			     <div class="flip-card-inner">
-			         <img src="images/icon7.png" class="centered">
-			         </div>
-			         </div>
-			<div class="col-sm-8 center_col">
-			    <div class=service-center>
-				<h4><a href="jewellery.html" target="_parent">Jewellery</a></h4>
-				<p>Dharmanandan Diamond has put a vast array of breathtaking & trending 
-jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertips.</p>
-</div>
-			</div>
-			<div class="col-sm-2 right_col">
-			    <div class="down_arrow_part centered">                                     <button class="down_arrow">                                         <span class="arrow-button__border">                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                             <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">                                                 <circle cx="33" cy="33" r="32"></circle>                                             </svg>                                         </span>                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">                                             <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>                                         </svg>                                     </button>                                 </div>
-			</div>
-		</div>
-	</div>
-	</div>
-</section>
+      <div class="container diamond">
+        <div class="row" style="padding-bottom: 0.15rem;">
 
-   <!-- =========== Page start  ===========-->
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon1.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="special-cut.html" target="_parent" id="special_cut1">Special Cut</a></h4>
+              <p>Nature bent us special with one touch. DDPL create special with their human touch. Dharmanandan’s
+                Special Cut diamond possesses the ability to add extra feather in being special, exemplary light return
+                and a visual representation.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered">
+              <button class="down_arrow" onclick="window.location.href='special-cut.html'">
+                <span class="arrow-button__border">
+                  <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg>
+                  <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4" class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon2.png" class="centered" id="transparency">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="time-lapse.html" target="_parent">Diamond Time-Lapse</a></h4>
+              <p>First time in the industry, A Blockchain enabled Diamond Time-Lapse report by
+                DDPL is facilitating a diamond voyage from mine to finger with minute details
+                of crafting and beautifying process.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='time-lapse.html'" class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon3.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="natural-assurance.html" target="_parent">Natural Assurance</a></h4>
+              <p>DDPL performs stringent quality checks on various processes to ensure the
+                diamond is natural and maintain the integrity by the Diamond Time-Lapse, a
+                trustworthy technology.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='natural-assurance.html'" class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon4.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="technology.html" target="_parent">Technology & Training</a></h4>
+              <p>DDPL believes in enriching and supporting their valued retailers and
+                employees. Their ingenious tech and well trained staff creates a delightful
+                experience for their customers to navigate and buy with ease and satisfaction.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='technology.html'" class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon5.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="bespoke.html" target="_parent">Bespoke</a></h4>
+              <p>DDPL’s extensive rough diamond resources, infrastructure and workforce is
+                capable of providing any scale of tailor made merchandise on a specific timeline.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='bespoke.html'" class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner"><img src="images/icon6.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="auction.html" target="_parent">Auction</a></h4>
+              <p>DDPL Online Auctions offers a range of exceptional diamonds from the
+                treasure of Dharmanandan in very effective and efficient way.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='auction.html'" class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 0.15rem;">
+          <div class="col-sm-2 left_col">
+            <div class="flip-card-inner">
+              <img src="images/icon7.png" class="centered">
+            </div>
+          </div>
+          <div class="col-sm-8 center_col">
+            <div class=service-center>
+              <h4><a href="jewellery.html" target="_parent">Jewellery</a></h4>
+              <p>Dharmanandan Diamond has put a vast array of breathtaking & trending
+                jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertips.</p>
+            </div>
+          </div>
+          <div class="col-sm-2 right_col">
+            <div class="down_arrow_part centered"> <button onclick="window.location.href='jewellery.html'"  class="down_arrow"> <span class="arrow-button__border"> <svg
+                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> <svg viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="33" cy="33" r="32"></circle>
+                  </svg> </span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 29.4"
+                  class="arrow-button__picto">
+                  <path fill="none" d="M0 14.7h50.4M35.7 29.4l14.7-14.7L35.7 0"></path>
+                </svg> </button> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========== Page start  ===========-->
 
   <!-- footer -->
   <section class="scfooter">
@@ -597,7 +758,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                 </li>
               </ul>
             </div>
-  
+
             <div class="widget mx-auto">
               <h4 class="text-white text-uppercase">About</h4>
               <ul>
@@ -624,7 +785,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                 </li>
               </ul>
             </div>
-  
+
             <div class="widget">
               <h4 class="text-white text-uppercase">Community</h4>
               <ul>
@@ -646,7 +807,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
               </ul>
             </div>
           </div>
-  
+
           <div class="rightWidget mb-3 clearfix">
             <div class="widget">
               <ul>
@@ -668,9 +829,9 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                 </li>
               </ul>
             </div>
-  
+
             <div class="widget sc-footer-address">
-  
+
               <ul>
                 <li class="location">
                   <a class="sc-line-height-20 " style="color: #acacac;">
@@ -692,11 +853,12 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                 <li class="sc-margin-right-10">
                   <a href="skype:dharamhk?call" data-toggle="tooltip" title="" data-placement="top">
                     <figure>
-                      <img id="skype-hover" class="ficon" src="../assets/images/skype.png" alt="" width="40" height="40">
+                      <img id="skype-hover" class="ficon" src="../assets/images/skype.png" alt="" width="40"
+                        height="40">
                     </figure>
                   </a>
                 </li>
-  
+
                 <li class="sc-margin-right-10">
                   <a href="https://api.whatsapp.com/send?phone=+919601598015" data-toggle="tooltip"
                     title="+91 96015 98015" data-placement="top">
@@ -706,7 +868,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                     </figure>
                   </a>
                 </li>
-  
+
                 <li class="sc-margin-right-10">
                   <a href="#" data-toggle="tooltip" title="+91 96015 98015 WeChat ID: dharamcreations"
                     data-placement="top">
@@ -716,7 +878,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                     </figure>
                   </a>
                 </li>
-  
+
                 <li class="sc-margin-right-10">
                   <a href="#" data-toggle="tooltip" title="QQ (1794498784)" data-placement="top">
                     <figure>
@@ -724,7 +886,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                     </figure>
                   </a>
                 </li>
-  
+
                 <li class="sc-margin-right-10">
                   <a href="tel:+912612535200" data-toggle="tooltip" title="+91 96015 98015" data-placement="top">
                     <figure>
@@ -733,7 +895,7 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                     </figure>
                   </a>
                 </li>
-  
+
                 <li class="sc-margin-right-10">
                   <a href="#" data-toggle="tooltip" title="Line ID: dharamhk" data-placement="top" id="popover6">
                     <figure>
@@ -772,32 +934,32 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
             </div>
           </div>
         </div>
-  
+
         <div class="footer-area-bottom clearfix">
           <div class="container">
-  
+
             <div class="row">
-  
-  
+
+
               <div class="col-md-10">
                 <div class="col-md-2 float-left text-center">
                   <figure>
                     <img src="../assets/images/Sightholder.png" alt="">
                   </figure>
                 </div>
-  
+
                 <div class="col-md-2 float-left text-center">
                   <figure>
                     <img src="../assets/images/Alrosa.png" alt="">
                   </figure>
                 </div>
-  
+
                 <div class="col-md-2 float-left text-center">
                   <figure>
                     <img src="../assets/images/forevermark.png" alt="">
                   </figure>
                 </div>
-  
+
                 <div class="col-md-2 float-left text-center">
                   <figure>
                     <img src="../assets/images/AmericanGemsSociety.png" alt="">
@@ -814,18 +976,18 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
                   </figure>
                 </div>
               </div>
-  
+
               <div class="col-md-2 float-right text-center">
                 <figure>
-  
+
                   <img id="change-img" src="../assets/images/white-ig-logo.png" alt="">
                 </figure>
               </div>
-  
+
             </div>
-  
+
           </div>
-  
+
           <!-- <div class="rightWidget clearfix">
                                   <div class="widget mx-auto">
                                       
@@ -838,57 +1000,65 @@ jewellery designs in Ring, Earrings, Pendants, Bracelets, etc. at your fingertip
         </div>
       </div>
     </div>
-  
-  
-  
+
+
+
   </section>
-  
+
 
 
   <script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-	  <script src="../assets/js/index.min.js"></script>
-	  <script src="../assets/bootstrap/js/index.min.js"></script>
-	  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-	  <script src="../assets/bootstrap/js/popper.min.js"></script>
-	
-	  <script type="module" src="../assets/js/vendors.39f20601d10f25c8bc62.js"></script>
-	  <script nomodule src="../assets/js/vendors.616f37b26d2e93666535.js"></script>
-	  <script nomodule src="../assets/js/legacy.js"></script>
-	  <script async src="https://unpkg.com/orejime@1.1.1/dist/orejime.js"></script>
-	  <script src="../assets/js/jquery.flexslider-min.js"></script>
-	  <!-- Scripts CSS For Animation Functionality -->
-	  <script type="module" src="../assets/js/scripts.js"></script>
+  <script src="../assets/js/index.min.js"></script>
+  <script src="../assets/bootstrap/js/index.min.js"></script>
+  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/bootstrap/js/popper.min.js"></script>
 
-    <script type="text/javascript">
+  <script type="module" src="../assets/js/vendors.39f20601d10f25c8bc62.js"></script>
+  <script nomodule src="../assets/js/vendors.616f37b26d2e93666535.js"></script>
+  <script nomodule src="../assets/js/legacy.js"></script>
+  <script async src="https://unpkg.com/orejime@1.1.1/dist/orejime.js"></script>
+  <script src="../assets/js/jquery.flexslider-min.js"></script>
+  <!-- Scripts CSS For Animation Functionality -->
+  <script type="module" src="../assets/js/scripts.js"></script>
+
+  <script type="text/javascript">
     var acc = document.getElementsByClassName("accordion");
-var i;
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-		jQuery(document).ready(function () {
-	
-		  var tl = new TimelineLite();
-	
-		  tl.to("#hhcontainer, .nav-toggle", .5, {
-			  opacity: 0
-			})
-			.to("#hhcontainer, .nav-toggle", .5, {
-			  opacity: 1,
-			  visibility: 'inherit',
-			  ease: Power2.easeInOut
-			});
-	
-	
-		  jQuery('.flexslider').flexslider({
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        var acc2 = document.getElementsByClassName("accordion");
+        var j;
+        for (j = 0; j < acc.length; j++) {
+          if (this != acc2[j]) {
+            acc2[j].classList.remove("active");
+            acc2[j].nextElementSibling.style.maxHeight = null;
+          }
+        }
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    jQuery(document).ready(function () {
+
+      var tl = new TimelineLite();
+
+      tl.to("#hhcontainer, .nav-toggle", .5, {
+        opacity: 0
+      })
+        .to("#hhcontainer, .nav-toggle", .5, {
+          opacity: 1,
+          visibility: 'inherit',
+          ease: Power2.easeInOut
+        });
+
+
+      jQuery('.flexslider').flexslider({
         animation: "slide",
         controlNav: false,
         slideshow: false,
@@ -905,12 +1075,12 @@ for (i = 0; i < acc.length; i++) {
       $('.flixslider--controls___prev').click(() => {
         $('.flexslider').flexslider("prev");
       });
-      
-    
-		});
-	  </script>
-	  
-	  
+
+
+    });
+  </script>
+
+
 </body>
 
 </html>

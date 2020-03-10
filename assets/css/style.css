@@ -4853,7 +4853,7 @@ span.nav__link__label {
     position: absolute;
     left: 50%;
     top: 50%;
-    animation: loader-animation 0.8s infinite linear;
+    /* animation: loader-animation 0.8s infinite linear; */
     margin: -50px 0px 0px -50px;
 }
 @keyframes loader-animation{
@@ -4868,7 +4868,7 @@ span.nav__link__label {
     position: absolute;
     left: 50%;
     top: 50%;
-    animation: loader-animation 0.5s infinite linear;
+    /* animation: loader-animation 0.5s infinite linear; */
     margin: -25px 0px 0px -25px;
     width: 50px;
 }
@@ -5002,8 +5002,8 @@ svg {
     font-size: 1px;
     padding: 1px;
     color: white;
-    animation: fadeIn 1.5s,roll 1.5s;
-    opacity: .7;
+    /* animation: fadeIn 1.5s,roll 1.5s; */
+    opacity: 1;
 }
 
 @-webkit-keyframes  fadeIn {
