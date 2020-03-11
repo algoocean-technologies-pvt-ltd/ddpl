@@ -1016,7 +1016,10 @@ html:not(.touch) .nav-toggle:hover .nav-toggle__picto__point:last-child {
 }
 div#hhcol3 {
     text-align: right;
-    padding-right: 7.5vw;
+    /* padding-right: 7.5vw; */
+}
+.sc-login-button{
+    padding-right: 7.5vw!important;
 }
 .home__scroll-cta {
     right: 4vw;
