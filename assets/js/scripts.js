@@ -344,16 +344,16 @@
         class c extends s.a {
             constructor(e) {
                 debugger;
-                super(), 
-                this.element = e.element, 
-                this.id = e.id, this.progress = 0, 
-                this.button = this.element.querySelector(".main-loading__button"),
-                this.button.addEventListener("click", this.onButtonClick.bind(this)),
-                this.buttonBorder = this.button.querySelector(".main-loading__button__border"),
-                this.buttonLabel = this.button.querySelector(".main-loading__button__label"),
-                this.progressElement = this.element.querySelector(".main-loading__progress"),
-                this.progressTimeline = null,
-                this.text = this.element.querySelector(".main-loading__text")
+                super(),
+                    this.element = e.element,
+                    this.id = e.id, this.progress = 0,
+                    this.button = this.element.querySelector(".main-loading__button"),
+                    this.button.addEventListener("click", this.onButtonClick.bind(this)),
+                    this.buttonBorder = this.button.querySelector(".main-loading__button__border"),
+                    this.buttonLabel = this.button.querySelector(".main-loading__button__label"),
+                    this.progressElement = this.element.querySelector(".main-loading__progress"),
+                    this.progressTimeline = null,
+                    this.text = this.element.querySelector(".main-loading__text")
             }
             setProgress(e, t) {
                 if (!(this.progress >= e)) {
@@ -1123,16 +1123,16 @@
                         onUpdate: this.render.bind(this)
                     })
                     .from(this.imageWrapper, 2, {
-                    alpha: 0,
-                    ease: o.d.easeNone
-                }, 0).from(this.blurFilter, 2, {
-                    blur: 90,
-                    ease: o.d.easeNone
-                }, 0).from(this.image.scale, 3.5, {
-                    x: 1.2 * this.image.scale.x,
-                    y: 1.2 * this.image.scale.y,
-                    ease: o.f.easeInOut
-                }, 0)
+                        alpha: 0,
+                        ease: o.d.easeNone
+                    }, 0).from(this.blurFilter, 2, {
+                        blur: 90,
+                        ease: o.d.easeNone
+                    }, 0).from(this.image.scale, 3.5, {
+                        x: 1.2 * this.image.scale.x,
+                        y: 1.2 * this.image.scale.y,
+                        ease: o.f.easeInOut
+                    }, 0)
                 debugger;
             }
             render() {
@@ -1301,7 +1301,7 @@
 
             createAnimIn(e) {
                 debugger;
-                if(this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6)){
+                if (this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6)) {
                     this.createAnimInLeftRight(e)
                 }
                 else {
@@ -1319,7 +1319,11 @@
                     }, {
                         y: 0,
                         ease: o.g.easeOut
-                    }, .5).fromTo(this.figureInner, 1, {
+                    }, .5)
+                    .to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn })
+                    .to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn })
+                    .to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn })
+                    .fromTo(this.figureInner, 1, {
                         y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
                     }, {
                         y: 0,
@@ -1342,14 +1346,15 @@
                         onComplete: () => {
                             this.title.rollEnabled = !0, this.title.hovered && this.showBody()
                         }
-                    }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn }).to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn }).to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn }).from(this.title.textElements[1], .6, {
+                    }, "title-=" + .1 * this.title.splitText.chars.length)
+                    .from(this.title.textElements[1], .6, {
                         opacity: 0
                     }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
                 }
 
             }
             createAnimOut(e) {
-                if(this.owner.previousScreen.index == 1  || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6) ){
+                if (this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6)) {
                     this.createAnimOutLeftRight(e)
                 }
                 else {
@@ -3546,32 +3551,36 @@
                         x: t.x,
                         y: t.y,
                         ease: o.g.easeInOut
-                    }, "position").from(e.figure, 2, {
-                        x: -t.x,
-                        y: -t.y,
-                        ease: o.g.easeInOut
-                    }, "position").from(i, .7, {
-                        opacity: 0
-                    }, "position+=1").set(this.element.querySelector(".home__overlay"), {
-                        visibility: "hidden"
-                    }, "-=.8"), app.windowWidth < app.screenS ? this.timeline.from(e.title.element, .9, {
-                        opacity: 0
-                    }, "position+=.9") : this.timeline.staggerFromTo(e.title.splitText.chars, 2, {
-                        rotationY: 0,
-                        opacity: 0
-                    }, {
-                        rotationY: 0,
-                        opacity: 1,
-                        ease: o.g.easeOut
-                    }, .13, "position+=1.4").from(e.title.line, 1.5, {
-                        x: e.title.rect.x - e.title.lineRect.x,
-                        opacity: 0,
-                        ease: o.g.easeInOut
-                    }, "position+=.9").from(e.title.textElements[1], .9, {
-                        opacity: 0
-                    }, "position+=1.8").from(this.navToggle.element, .6, {
-                        opacity: 0
-                    }, "position+=.5").to(".service_alt_txt", 0.2, { opacity: 1, ease: o.g.easeInOut }).to(".bigtxt", 0.2, { opacity: 1 }).to(".service-title__cta", 0.2, { opacity: 1, ease: o.g.easeInOut })
+                    }, "position").to(".service_alt_txt", 0.2, { opacity: 1, ease: o.g.easeInOut })
+                        .to(".bigtxt", 0.2, { opacity: 1 })
+                        .to(".service-title__cta", 0.2, { opacity: 1, ease: o.g.easeInOut })
+                        .from(e.figure, 2, {
+                            x: -t.x,
+                            y: -t.y,
+                            ease: o.g.easeInOut
+                        }, "position").from(i, .7, {
+                            opacity: 0
+                        }, "position+=1").set(this.element.querySelector(".home__overlay"), {
+                            visibility: "hidden"
+                        }, "-=.8"), app.windowWidth < app.screenS ? this.timeline.from(e.title.element, .9, {
+                            opacity: 0
+                        }, "position+=.9") : this.timeline.staggerFromTo(e.title.splitText.chars, 2, {
+                            rotationY: 0,
+                            opacity: 0
+                        }, {
+                            rotationY: 0,
+                            opacity: 1,
+                            ease: o.g.easeOut
+                        }, .13, "position+=1.4").from(e.title.line, 1.5, {
+                            x: e.title.rect.x - e.title.lineRect.x,
+                            opacity: 0,
+                            ease: o.g.easeInOut
+                        }, "position+=.9").from(e.title.textElements[1], .9, {
+                            opacity: 0
+                        }, "position+=1.8").from(this.navToggle.element, .6, {
+                            opacity: 0
+                        }, "position+=.5")
+
                 }
                 populateAnimOut() {
                     const e = this.screenNavigator.currentScreen,
@@ -3620,25 +3629,25 @@
                 }
                 gotoNextScreen() {
                     debugger;
-                    if(this.currentScreenIndex === 0){
+                    if (this.currentScreenIndex === 0) {
                         this.gotoScreen(3)
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
                     } else if (this.currentScreenIndex === 3) {
                         this.gotoScreen(4)
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                        
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+
                     } else if (this.currentScreenIndex === 4) {
                         this.gotoScreen(7)
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
                     } else if (this.currentScreenIndex === 7) {
                         this.gotoScreen(8)
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
                     } else {
 
                     }
@@ -3646,24 +3655,24 @@
                 }
                 gotoPrevScreen() {
                     debugger;
-                    if(this.currentScreenIndex === 0){
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                    if (this.currentScreenIndex === 0) {
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
                     } else if (this.currentScreenIndex === 3) {
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
                         this.gotoScreen(0)
                     } else if (this.currentScreenIndex === 4) {
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.gotoScreen(3)
                     } else if (this.currentScreenIndex === 7) {
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
                         this.gotoScreen(4)
-                    } else if(this.currentScreenIndex === 8){
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
+                    } else if (this.currentScreenIndex === 8) {
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.gotoScreen(7)
                     }
 
@@ -3672,46 +3681,46 @@
                 }
                 gotoLeft() {
 
-                    if(this.currentScreenIndex === 0){
+                    if (this.currentScreenIndex === 0) {
                         this.gotoScreen(1);
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                        
-                    } else if(this.currentScreenIndex == 2){
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+
+                    } else if (this.currentScreenIndex == 2) {
                         this.gotoScreen(3);
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                    } else if(this.currentScreenIndex === 4){
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                    } else if (this.currentScreenIndex === 4) {
                         this.gotoScreen(5);
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                    }else if(this.currentScreenIndex === 6){
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                    } else if (this.currentScreenIndex === 6) {
                         this.gotoScreen(7);
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
                     }
                 }
                 gotoRight() {
-                    if(this.currentScreenIndex === 1){
+                    if (this.currentScreenIndex === 1) {
                         this.gotoScreen(0);
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
-                    }else if(this.currentScreenIndex === 3){
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
+                    } else if (this.currentScreenIndex === 3) {
                         this.gotoScreen(2);
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
-                    } else if(this.currentScreenIndex === 5){
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
+                    } else if (this.currentScreenIndex === 5) {
                         this.gotoScreen(4);
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
-                    } else if(this.currentScreenIndex === 7){
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
+                    } else if (this.currentScreenIndex === 7) {
                         this.gotoScreen(6);
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                        
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+
                     }
                 }
                 swipe(e) {
@@ -3772,24 +3781,24 @@
                     this.gotoNextScreen()
                 }
                 OnFooterButtonClick() {
-                    if(this.currentScreenIndex === 0){
+                    if (this.currentScreenIndex === 0) {
                         this.gotoScreen(2)
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                        
-                    } else if(this.currentScreenIndex === 2){
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+
+                    } else if (this.currentScreenIndex === 2) {
                         this.gotoScreen(4)
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="visible"
-                    } else if(this.currentScreenIndex === 4){
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                    } else if (this.currentScreenIndex === 4) {
                         this.gotoScreen(6)
-                        this.element.querySelector("#leftArrow").style.visibility ="visible"
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                    }else if(this.currentScreenIndex === 6){
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                    } else if (this.currentScreenIndex === 6) {
                         this.gotoScreen(8)
-                        this.element.querySelector("#leftArrow").style.visibility ="hidden"
-                        this.element.querySelector("#rightArrow").style.visibility ="hidden"
-                    }else {
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                    } else {
 
                     }
                 }
