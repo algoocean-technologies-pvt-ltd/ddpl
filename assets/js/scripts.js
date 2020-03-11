@@ -3781,20 +3781,21 @@
                     this.gotoNextScreen()
                 }
                 OnFooterButtonClick() {
+                    debugger;
                     if (this.currentScreenIndex === 0) {
-                        this.gotoScreen(2)
+                        this.gotoScreen(3)
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
 
-                    } else if (this.currentScreenIndex === 2) {
+                    } else if (this.currentScreenIndex === 3) {
                         this.gotoScreen(4)
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
                     } else if (this.currentScreenIndex === 4) {
-                        this.gotoScreen(6)
+                        this.gotoScreen(7)
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
-                    } else if (this.currentScreenIndex === 6) {
+                    } else if (this.currentScreenIndex === 7) {
                         this.gotoScreen(8)
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
