@@ -1249,7 +1249,11 @@
                 }, {
                     x: 0,
                     ease: o.g.easeOut
-                }, .5).fromTo(this.figureInner, 1, {
+                }, .5)
+                .to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn })
+                .to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn })
+                .to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn })
+                .fromTo(this.figureInner, 1, {
                     x: 1 === t ? -i.width + this.figure.offsetTop : app.windowHeight
                 }, {
                     x: 0,
@@ -1272,7 +1276,8 @@
                     onComplete: () => {
                         this.title.rollEnabled = !0, this.title.hovered && this.showBody()
                     }
-                }, "title-=" + .1 * this.title.splitText.chars.length).to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn }).to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn }).to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn }).from(this.title.textElements[1], .6, {
+                }, "title-=" + .1 * this.title.splitText.chars.length)
+                .from(this.title.textElements[1], .6, {
                     opacity: 0
                 }, "title+=" + .3 * (this.title.splitText.chars.length - 4))
             }
