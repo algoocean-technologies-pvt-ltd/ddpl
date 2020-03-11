@@ -2511,13 +2511,13 @@ html:not(.touch) .arrow-button--left:hover .arrow-button__picto {
     background-color: currentColor;
     -webkit-transform-origin: left top;
     transform-origin: left top;
-    opacity: 0;
+    opacity: 0!important;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
 }
 
 .about__nav__item--current .about__nav__link:after {
-    opacity: 1
+    opacity: 1!important;
 }
 
 .about__nav__link:hover:after {

@@ -2981,7 +2981,7 @@ html:not(.touch) .arrow-button--left:hover .arrow-button__picto {
 }
 
 .about__nav__item--current .about__nav__link:after {
-    opacity: 1
+    opacity: 1!important;
 }
 
 .about__nav__link:hover:after {
