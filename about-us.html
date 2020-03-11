@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js desktop " lang="en">
 
@@ -29,11 +30,20 @@
     <link rel="stylesheet" href="assets/css/flexslider.css">
     <link rel="stylesheet" href="assets/plugins/one_page_scroll/css/onepage-scroll.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+     <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/about-style.css">
     <link rel="stylesheet" href="assets/css/media.css">
 </head>
 
 <body class="page-id-home">
+    
+    <div class="gap-loader-wrapper">
+        <div class="loader-wrap">
+            <img src="assets/images/loader-gif.gif" height="150"/>
+        </div>
+    </div>
+    
     <div id="hhcontainer" style="opacity: 1;">
         <div class="hhcol" id="hhcol1">
             <button class="nav-toggle visible">
@@ -153,7 +163,7 @@
         </div>
 
         <div class="hhcol" id="hhcol3">
-            <div class="sc-login-button"><a class="login" href="#">LOGIN</a></div>
+            <a class="login" href="#">LOGIN</a>
         </div>
     </div>
 
@@ -229,9 +239,9 @@
     </nav>
 
     <div class="page-container">
-        <div class="about_section">
+        <div class="about_section" id="block" style="width: 100%; height: 100%;" data-vide-bg="assets/videos/about" data-vide-options="position: 0% 50%">
             <div class="main">
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -263,10 +273,10 @@
                     </div>
                 </section>
 
-                <section class="about_box inner_page" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box inner_page">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">IN CHANGING TIMES… WHAT REMAINS UNCHNAGED IS OUR FOCUS.</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">IN CHANGING TIMES… WHAT REMAINS UNCHNAGED IS OUR FOCUS.</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="desc">Built on a legacy of trust and with more than 4 decades of excellence, Dharmanandan is synonymous to competence and innovation in diamond manufacturing to cater customers worldwide with finest quality diamonds and jewellery.</p>
@@ -300,9 +310,9 @@
 
                         <div class="our_milestone_part">
                             <div class="milestone_slider_part">
-                                <div class="flexslider milestoneSlider">
-                                    <ul class="slides">
-                                        <li>
+                                <div class="milestoneSlider">
+                                    <div class="slides owl-carousel owlmilestoneSlider">
+                                        <div class="slider-li">
                                             <div class="d-flex flex-wrap justify-content-between">
                                                 <div class="milestone_slider_box">
                                                     <div class="milestone_inner_box">
@@ -340,9 +350,9 @@
                                                     </div>    
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div class="slider-li">
                                             <div class="d-flex flex-wrap justify-content-between">
                                                 <div class="milestone_slider_box">
                                                     <div class="milestone_inner_box">
@@ -380,9 +390,9 @@
                                                     </div>    
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div class="slider-li">
                                             <div class="d-flex flex-wrap justify-content-between">
                                                 <div class="milestone_slider_box">
                                                     <div class="milestone_inner_box">
@@ -420,9 +430,9 @@
                                                     </div>    
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div class="slider-li">
                                             <div class="d-flex flex-wrap justify-content-between">
                                                 <div class="milestone_slider_box">
                                                     <div class="milestone_inner_box">
@@ -460,9 +470,9 @@
                                                     </div>    
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
 
-                                        <li>
+                                        <div class="slider-li">
                                             <div class="d-flex flex-wrap justify-content-between">
                                                 <div class="milestone_slider_box">
                                                     <div class="milestone_inner_box">
@@ -500,15 +510,17 @@
                                                     </div>    
                                                 </div>
                                             </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="backbutton-close">
-                                <a href="#"><img src="http://localhost/diamond/assets/images/Path22.png"></a>
+                                <a href="#"><img src="assets/images/Path22.png"></a>
                             </div>
 
-                             <div class="vertical_nav inner_vertical_nav">
+                            <div class="side-heading"><h3>MILESTONES</h3> <h3>MILESTONES</h3></div>
+
+                            <div class="vertical_nav inner_vertical_nav">
                                 <ul class="d-flex flex-wrap">
                                     <li>  
                                         <a href="#">Milestones</a>
@@ -519,7 +531,6 @@
                                     <li>
                                         <a href="#">About</a>
                                     </li>
-                                    </li>
                                 </ul>
                             </div>
 
@@ -527,7 +538,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -559,10 +570,10 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">CREATING VALUE FOR OUR CUSTOMERS IN OUR JOURNEY TO SUCCESS.</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">CREATING VALUE FOR OUR CUSTOMERS IN OUR JOURNEY TO SUCCESS.</h3>
                             
                             <p class="desc">Regarded as one of the world’s largest diamond manufacturer, Dharmanandan Diamonds formerly known as Shreeji Gems, was founded by Laljibhai Patel & Tulsibhai Patel, in 1980. Shortly after, achieving the above tag of largest diamond manufacturer in the world in 0.30 carats to 5.00 carat size diamonds the firm rebranded as Dharmanandan Diamonds Pvt. Ltd.</p>
 
@@ -571,17 +582,17 @@
                             <div class="counter_part">
                                 <ul class="d-flex flex-wrap">
                                     <li>
-                                        <span class="counter"><counter class="counter-inner">40</counter>+</span>
+                                        <span class="counter"><div class="def">0</div><counter class="counter-inner active-counter">40</counter>+</span>
                                         <p>Years of Promise</p>
                                     </li>
 
                                     <li>
-                                        <span class="counter"><counter class="counter-inner">2500</counter>+</span>
+                                        <span class="counter"><div class="def">0</div><counter class="counter-inner active-counter">2500</counter>+</span>
                                         <p>Happy Customers</p>
                                     </li>
 
                                     <li>
-                                        <span class="counter"><counter class="counter-inner">7500</counter>+</span>
+                                        <span class="counter"><div class="def">0</div><counter class="counter-inner active-counter">7500</counter>+</span>
                                         <p>Dedicated Artisan</p>
                                     </li>
                                 </ul>
@@ -623,7 +634,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -655,10 +666,10 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">PASSIONATE TO CREATE THE MOST SOUGHT AFTER DIAMOND.</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">PASSIONATE TO CREATE THE MOST SOUGHT AFTER DIAMOND.</h3>
                             
                             <p class="desc">Our highly experienced team has worked with us over the years, and many times over generations of the family are working with us bringing continuity, expertise and quality to our entire collection.</p>
 
@@ -670,7 +681,7 @@
                                 <ul class="d-flex flex-wrap">
                                     <li>
                                         <div class="counter_box">
-                                            <h3 class="counter"><counter>05</counter></h3>
+                                            <h3 class="counter"><div class="def">0</div><counter class="active-counter">05</counter></h3>
                                             <p class="val">LAC</p>
                                             <span>Square Feet</span>
                                         </div>
@@ -679,7 +690,7 @@
 
                                     <li>
                                         <div class="counter_box">
-                                            <h3 class="counter"><counter>45</counter></h3>
+                                            <h3 class="counter"><div class="def">0</div><counter class="active-counter">45</counter></h3>
                                             <p class="val">Million</p>
                                             <span>US$</span>
                                         </div>
@@ -689,7 +700,7 @@
                                     <li>
                                         <div class="counter_box">
                                             <span>+9 Sieve</span>
-                                            <h3 class="counter"><counter>50</counter></h3>
+                                            <h3 class="counter"><div class="def">0</div><counter class="active-counter">50</counter></h3>
                                             <p class="val">Cart</p>
                                         </div>
                                         <p class="para">size of Rough Diamonds</p>
@@ -741,7 +752,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -773,10 +784,10 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">WE ARE EVER EVOLVING.</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">WE ARE EVER EVOLVING.</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <p class="desc">Dharmanandan Diamonds a manufacturer sourcing mined diamond directly from the mines they represent can offer their clients larger options of quality natural diamonds in stock, as per their clients demand to choose from. For their clients’ ‘compromise’ is not an option.</p>
@@ -794,7 +805,7 @@
                                 </div>
                             </div>
 
-                            <p class="desc my-5">There are innumerable reasons for selecting dharamHK.com these are just a few:</p>
+                            <p class="desc my-5">There are innumerable reasons for selecting <a href="http://dharamhk.com/" target="_blank"><u>dharamHK.com</u></a> these are just a few:</p>
 
                             <div class="row">
                                 <div class="col-md-6">
@@ -1227,7 +1238,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -1259,10 +1270,10 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/legacy-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">DIAMONDS ARE RARE, PRECIOUS AND INHERENTLY VALUABLE BUT THEIR WORTH IS ECLIPSED BY THAT OF THE PEOPLE WHO WORK TOGETHER TO BRING THEM SAFELY TO THE LIGHT.</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">DIAMONDS ARE RARE, PRECIOUS AND INHERENTLY VALUABLE BUT THEIR WORTH IS ECLIPSED BY THAT OF THE PEOPLE WHO WORK TOGETHER TO BRING THEM SAFELY TO THE LIGHT.</h3>
                             
                             <p class="desc">We at Dharmanandan have partnered with the world’s largest raw diamond producers, to maintain demand for, and confidence in diamonds, by promoting the integrity and reputation of the diamond industry and sharing best practices. By understanding the material socioeconomic and environmental benefits and impacts of diamond production. Further leverage this understanding to identify opportunities to minimise the impacts of the industry whilst maximizing the positive value created.</p>
 
@@ -1274,7 +1285,7 @@
                                 </div>
 
                                 <div class="col-md-8">
-                                    <h3 class="heading">DeBeers Sightholder</h3>
+                                    <h3 class="heading">DeBeers SIGHTHOLDER</h3>
                                     <p class="desc">It is one of the important factors for the diamond manufacturer to become the Sightholder. To become the Sightholder, the company must align all of the operations in line to the Best Practice Principles (BPP), which is the highest standards in the diamond industry for manufacturing.  DDPL become Sightholder in 2008. DeBeers is one of the largest producers of rough diamonds in the world and Sightholder status provides the consistency in the rough supply which ultimately leads the business sustainability for the diamond manufacturer.</p>
                                 </div>
                             </div>    
@@ -1287,7 +1298,7 @@
                                 </div>
 
                                 <div class="col-md-8">
-                                    <h3 class="heading">Alrosa Alliance</h3>
+                                    <h3 class="heading">ALROSA ALLIANCE</h3>
                                     <p class="desc">Alrosa Alliance represents our long-term partnership with Alrosa, one of the largest mine in the world. This long term partnership status is awarded to the diamond manufacturer who meet high standards of business conduct and possess a keen insight into the diamond market. Being Alrosa Alliance title identified as a priority buyer of gem quality rough diamonds and a responsible business partner.</p>
                                 </div>
                             </div>    
@@ -1315,7 +1326,7 @@
                                             <figure>
                                                 <img src="assets/images/certificate2.png" alt="">
                                             </figure>
-                                            <p>Occupational Health & Safety Management System – OHSAS 18001:2007</p>
+                                            <p>Occupational Health & Safety Management System – OHSAS 18001:2007 </p>
                                         </li>
 
                                         <li>
@@ -1386,7 +1397,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/leadership-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -1418,10 +1429,10 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/leadership-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
-                            <h3 class="title">EXPERIENCE OF GENERATIONS GUIDE THE LEADERS OF TODAY</h3>
+                            <h3 class="title main-heading-animation" data-in-effect="fadeInLeft">EXPERIENCE OF GENERATIONS GUIDE THE LEADERS OF TODAY</h3>
                             
                             <p class="desc">Founded an the four pillars of success: Elegance, Excellence, Trust and Value over 4 decades today, Dharmanandan is a name to reckon with in the global diamond industry.</p>
 
@@ -1445,13 +1456,13 @@
 
                                 <div class="col-md-8">
                                     <div class="d-flex flex-wrap h-100 align-content-between">
-                                        <p class="desc">Every diamond is crafted with great care, passion and dedication, using ultra- modern technology and highly skilled specialists so you can be sure of one thing, and that's our uncompromised qualify.</p>
+                                        <p class="desc">EVERY DIAMOND IS CRAFTED WITH GREAT CARE, PASSION AND DEDICATION, USING ULTRA-MODERN TEHNOLOGY AND HIGHLY SKILLED SPECIALISTS SO YOU CAN BE SURE OF ONE THING, AND THAT'S OUR UNCOMPROMISED QUALITY.</p>
 
-                                        <p class="desc">With our network offices sparking across the world, prompt service is guaranteed to our customers no matter where they are.</p>
+                                        <p class="desc">WITH OUR NETWORK OFFICES SPARKING ACROSS THE WORLD, PROMPT SERVICE IS GUARANTEED TO OUR CUSTOEMERS NO MATTER WHERE THEY ARE.</p>
 
-                                        <p class="desc">We maintain high ethical standards, implement Best Practice Principles and Kimberly Process Certification throughout the process to ensure diamond supply is free from any malpractices.</p>
+                                        <p class="desc">WE MAINTAIN HIGH ETHICAL STANDARDS, IMPLEMENT BEST PRACTICE PRINCIPLES AND KIMBERLY PROCESS CERTIFICATION THROUGHOUT THE PROCESS TO ENSURE DIAMOND SUPPLY IS FREE FROM ANY MALPRACTICES.</p>
 
-                                        <p class="desc">We wish our valued customers a great satisfactory experience. Together we aim to shape a better tomorrow.</p>
+                                        <p class="desc">WE WISH OUR VALUED CUSTOMERS A GREAT SATISFACTORY EXPERIENCE. TOGETHER WE AIM TO SHAPE A BETTER TOMORROW.</p>
 
                                         <figure class="sign">
                                             <img src="assets/images/ddpl/lt-sign.png" alt="">
@@ -1479,7 +1490,7 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/leadership-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_inner_box">
                             <div class="d-flex flex-wrap align-content-between h-100">
@@ -1511,13 +1522,71 @@
                     </div>
                 </section>
 
-                <section class="about_box" style="background-image: url('assets/images/leadership-bg.png');">
+                <section class="about_box">
                     <div class="container">
                         <div class="about_text_box text_max_size">
                             <div class="map_img_part mb-5">
                                 <figure>
                                     <img src="assets/images/map.png" alt="" class="img-fluid">
-                                </figure>    
+                                </figure>
+                                <div class="map-icon_wrapper new-york">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>New York</p>
+                                </div>
+
+                                <div class="map-icon_wrapper belgium">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Belgium</p>
+                                </div>
+
+                                <div class="map-icon_wrapper botswana">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Botswana</p>
+                                </div>
+
+                                <div class="map-icon_wrapper dubai">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Dubai</p>
+                                </div>
+
+
+                                <div class="map-icon_wrapper surat">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Surat</p>
+                                </div>
+
+
+                                <div class="map-icon_wrapper mumbai">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Mumbai</p>
+                                </div>
+
+
+                                <div class="map-icon_wrapper hong-kong">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Hong Kong</p>
+                                </div>
+
+                                <div class="map-icon_wrapper shanghai">
+                                    <div class="icon-wrap">
+                                        <img src="assets/images/map-icon.png" alt="">
+                                    </div>
+                                    <p>Shanghai</p>
+                                </div>    
                             </div>
 
                             <div class="row">
@@ -1531,7 +1600,7 @@
                             </div>
 
                             <div class="row office_world">
-                                <h3 class="heading">Offices around the world</h3>
+                                <h3 class="heading">OFFICES AROUND THE WORLD</h3>
 
                                 <div class="col-md-6">
                                     <div class="collapse_part">
@@ -1652,7 +1721,7 @@
                                 <div class="col-md-6">
                                     <div class="collapse_part">
                                         <div class="collapse_box">
-                                            <a href="#" class="collapse_box_heading">Surat</a>
+                                            <a href="#" class="collapse_box_heading">SURAT</a>
 
                                             <div class="collapse_box_content">
                                                 <h3 class="title">Dharmanandan Diamonds Pvt Ltd.</h3>
@@ -1680,7 +1749,7 @@
                                         </div>
 
                                         <div class="collapse_box">
-                                            <a href="#" class="collapse_box_heading">Belgium</a>
+                                            <a href="#" class="collapse_box_heading">BELGIUM</a>
 
                                             <div class="collapse_box_content">
                                                 <h3 class="title">DHARM DIAM BVBA.</h3>
@@ -1708,7 +1777,7 @@
                                         </div>
 
                                         <div class="collapse_box">
-                                            <a href="#" class="collapse_box_heading">Dubai</a>
+                                            <a href="#" class="collapse_box_heading">DUBAI</a>
 
                                             <div class="collapse_box_content">
                                                 <p class="address">25A, Almas Tower, Jumeirah Lake Tower, P.O. Box 112476,</p>
@@ -1734,7 +1803,7 @@
                                         </div>
 
                                         <div class="collapse_box">
-                                            <a href="#" class="collapse_box_heading">Shanghai</a>
+                                            <a href="#" class="collapse_box_heading">SHANGHAI</a>
 
                                             <div class="collapse_box_content">
                                                 <h3 class="title">Dharm (Shanghai) Ltd</h3>
@@ -1804,23 +1873,107 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <ul class="d-flex flex-wrap">
+                                <ul class="d-flex flex-wrap form-tab-ul">
                                     <li>
-                                        <a href="#" class="sub_btn clear_btn">Inquiry</a>
+                                        <a href="#" data-nav="1" class="form-tab-btn active sub_btn">Inquiry</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="sub_btn">Feedback</a>
+                                        <a href="#" data-nav="2" class="form-tab-btn sub_btn">Feedback</a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="modal-body">
-                                <div class="appointment_form">
+                            <div class="modal-body from-tab-body">
+                                <div class="appointment_form" data-tab="1" >
                                     <form method="post" action="">
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <label class="form-label">Company Name*</label>
+                                                    <input type="text" name="company_name" class="form-control">
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <label class="form-label">Contact Person*</label>
+                                                    <input type="text" name="contact_person" class="form-control">
+                                                </div>
+                                            </div>    
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label">City*</label>
+                                                                <input type="text" name="city" class="form-control">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="form-label">phone*</label>
+                                                                <input type="text" name="phone" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label">State*</label>
+                                                                <input type="text" name="state" class="form-control">
+                                                            </div>
+
+                                                            <div class="form-group">
+                                                                <label class="form-label">Fax</label>
+                                                                <input type="text" name="fax" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label">Zip/PostCode</label>
+                                                                <input type="text" name="postcode" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="form-label">Country*</label>
+                                                                <input type="text" name="country" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label class="form-label">Email*</label>
+                                                                <input type="text" name="email" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label">Remarks</label>
+                                            <textarea name="remarks" class="form-control"></textarea>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center">
+                                            <button type="reset" class="sub_btn clear_btn">Clear</button>
+                                            <button type="submit" name="submit" class="sub_btn">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="appointment_form" style="display: none;" data-tab="2">
+                                    <form method="post" action="">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <label class="form-label">Company Name new*</label>
                                                     <input type="text" name="company_name" class="form-control">
                                                 </div>
 
@@ -1916,6 +2069,44 @@
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.countup.js"></script>
     <script type="module" src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha256-jnOjDTXIPqall8M0MyTSt98JetJuZ7Yu+1Jm7hLTF7U=" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.vide.js"></script>
+
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/jquery.lettering.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>
+
+    <script type="text/javascript">
+        $('section:first-child .main-heading-animation').textillate();
+    </script>
+
+    <script type="text/javascript">
+        
+        jQuery(document).ready(function($) {
+           $('.sub_btn').click(function(event) {
+
+                $('.form-tab-ul li a.form-tab-btn').removeClass('active');
+                
+                $(this).addClass('active');
+
+                $(this).parent('li').siblings('li').children('a.form-tab-btn').removeClass('active');
+
+                var data_nav = $(this).attr('data-nav');
+
+                $('.from-tab-body .appointment_form').each(function(index, el) {
+                    var data_tab = $(this).attr('data-tab');
+                    if (data_tab == data_nav) {
+                        $(this).show();
+                        $(this).siblings('.appointment_form').hide();
+                    }
+                });
+
+           }); 
+        });
+
+    </script>
 
     <script>
         setTimeout(function() {
@@ -1932,10 +2123,11 @@
             });
         },1000);
 
-        $(".our_milestone").click(function(){
+        $(".our_milestone").click(function(event){
+            event.preventDefault();
             $(this).parents('.about_box').addClass('openMilestone');
             mouse_wheel_disable();
-
+            $('.about_text_box').hide();
             $('.about_section .vertical_nav').hide();
         });
 
@@ -1943,6 +2135,7 @@
             $(this).parents('.about_box').removeClass('openMilestone');
             mouse_wheel_enable();
             $('.about_section .vertical_nav').show();
+            $('.about_text_box').show();
         });
 
          function mouse_wheel_enable(){
@@ -1961,9 +2154,9 @@
 
     <script>
 
-        $('counter').countUp();
+        //$('counter').countUp();
         
-        new WOW().init();
+        
     </script>
 
     <script>
@@ -1984,43 +2177,109 @@
         };
 
         jQuery(document).ready(function () {
-            jQuery('.milestoneSlider').flexslider({
-              animation: "slide",
-              controlNav: false, 
-              animationLoop: false,
-              slideshow: false,
-              directionNav: true,
-              slideshowSpeed: 5000,
-              animationSpeed: 2000,
+            // jQuery('.milestoneSlider').flexslider({
+            //   animation: "slide",
+            //   animationLoop: true,
+            //   mousewheel: true,
+            //   controlNav: false, 
+            //   animationLoop: false,
+            //   slideshow: false,
+            //   directionNav: false,
+            //   slideshowSpeed: 5000,
+            //   animationSpeed: 2000,
+            //   isFirefox:true,
+            // });
+            
+            var owl = $('.owlmilestoneSlider');
+            owl.owlCarousel({
+                loop:true,
+                nav:true,
+                margin:10,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },            
+                    960:{
+                        items:1
+                    },
+                    1200:{
+                        items:1
+                    }
+                }
             });
+            owl.on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaY<0) {
+                  console.log(e.deltaY);
+                    owl.trigger('next.owl');
+                } else {
+                    owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+
         });
 
-        $('#slider').flexslider('destroy');
+
    </script>
 
     <script>
+
+        
         $(document).ready(function(){
+            
+            $('.active-counter').hide();
+
             $(".main").onepage_scroll({
                 sectionContainer: "section",
                 responsiveFallback: 600,
-                loop: true,
+                loop: false,
                 pagination: true,
                 keyboard: true,
                 animationTime: 1000,
                 afterMove: function(index) {
-                  var data_index = $('.main .section.active').attr('data-index');
-                  $(".vertical_nav ul li").each(function(index, el) {
+
+                    var data_index = $('.main .section.active').attr('data-index');
+                    $(".vertical_nav ul li").each(function(index, el) {
                       var nav_data_index = $(this).find('a').attr('data-index');
                       if (nav_data_index == data_index) {
                         $(".vertical_nav ul li").removeClass('active');
                         $(this).addClass('active');
                       }
-                  });
+                    });
+                    $('.section.active .def').hide();
+                    $('.section.active .active-counter').show();
 
-                  $('counter').countUp();
+                    setTimeout(function() {
+                        //if (true) {}
+                        $('.active-counter').countUp();
+                        $('.section.active counter').removeClass('active-counter');
 
+                    }, 10);
+                    
+                    if ($('.map_img_part').parents('.section').hasClass('active')) {
+                        $('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
+                    }
+
+
+                    setTimeout(function() {
+                        $('section.active .main-heading-animation').css('opacity', '1');
+                        $('section.active .main-heading-animation').textillate({
+                            minDisplayTime: 1000,
+                        });
+                    }, 10);
+                    
+                    
                 }
             });
+            
+            setTimeout(function() {
+
+                $('.gap-loader-wrapper').fadeOut(400);
+    
+            }, 1500);
         });
 
         $(".down_arrow_part .down_arrow").click(function(){
@@ -2062,7 +2321,7 @@
         $(".about_section .about_box").each(function(){
             if($(this).hasClass('active')){
                 var fgddd = $(this).attr('data-index');
-                alert(fgddd);
+                //alert(fgddd);
             }
         });
 

@@ -1051,8 +1051,19 @@ picture.object-fit-polyfill {
 .sc-margin-right-10{
     margin-right: 10px;
 }
+.sc-width-435{
+    width:435px!important;
+}
 .sc-font-27{
     font-size: 27px!important;
+}
+.sc-font-12{
+    font-size: 12px!important;
+}
+.sc-leader-para{
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
 }
 .footer {
     position: relative;
@@ -5141,17 +5152,17 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
 
 .holder_part{margin-bottom: 30px;}
 .holder_part figure img{max-width: 50%;}
-.holder_part .heading{font-size: 15px;font-weight: 600;margin-bottom: 10px;}
+.holder_part .heading{font-size: 24px;font-weight: bold;margin-bottom: 10px;}
 .holder_part .bsi_img_part li{width: 33.33%;text-align: center;}
 .holder_part .bsi_img_part li figure{margin-bottom: 15px;}
 .holder_part .bsi_img_part li figure img{max-width: 100%;max-height: 100%;}
 .holder_part .bsi_img_part li p{font-size: 10px;text-transform: uppercase;line-height: 1.5;padding: 0 10px;}
 .counter2_part{margin-top: 35px;}
 .counter2_part ul li{width: 33.33%;text-align: center;}
-.counter2_part ul li .counter_box{border:1.5px solid#C6910D;padding: 15px;display: block;margin: 0 auto 15px;width: 150px;}
+.counter2_part ul li .counter_box{border:1.5px solid#C6910D;padding: 15px;display: block;margin: 0 auto 15px;width: 80%;}
 .counter2_part ul li .counter_box .counter{font-size: 60px;line-height: 1;display: block;color: #C6910D;}
 .counter2_part ul li .counter_box .val{font-size: 25px;text-transform: uppercase;line-height: 1;}
-.counter2_part ul li .counter_box span{font-size: 12px;}
+.counter2_part ul li .counter_box span{font-size: 16px;}
 .counter2_part ul li .para{font-size: 14px;line-height: 1.5;padding: 0 20px;}
 .perfomance_list_part{margin: 40px 0;}
 .perfomance_list_part ul li{font-size: 14px;line-height: 1.5;padding: 10px 0;border-top: 1px solid#C6910D;}
@@ -5219,6 +5230,37 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
 .about_section .main .inner_page .our_milestone_part:after{content: "";display: block;width: 100%;height: 100%;background-color: rgba(0,0,0,0.7);position: absolute;top: 0;left: 0;z-index: -1;}
 .about_section .main .inner_page.openMilestone .our_milestone_part{transform: translateX(0);}
 
+/* ------------- Popup Css ------------ */
+.book_appointment_modal .modal-dialog{max-width: 750px;}
+.book_appointment_modal .modal-dialog .modal-content{border: 0;border-radius: 0;background-color: rgba(35,35,35,0.9);}
+.book_appointment_modal .modal-dialog .modal-content .modal-header{justify-content: center;border: 0;border-radius: 0;padding: 35px 20px 20px;text-align: center;}
+.book_appointment_modal .modal-dialog .modal-content .modal-header .modal-title{text-transform: uppercase;line-height: 1;font-size: 23px;}
+
+.book_appointment_modal .modal-dialog .modal-content .modal-body{padding: 10px 35px 25px;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group{margin-bottom: 20px;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-label{font-size: 13px;text-transform: uppercase;display: block;line-height: 1;margin-bottom: 10px;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-control{border: 0;font-size: 15px;height: auto;line-height: 1;padding: 8px 15px;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-control::placeholder{text-transform: uppercase;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-control:-ms-input-placeholder{text-transform: uppercase;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-control::-ms-input-placeholder{text-transform: uppercase;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .form-control:focus{box-shadow: none;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group textarea{height: 100px !important;resize: none;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .form-group .info_text{font-size: 13px;line-height: 1.5;text-align: center;text-transform: uppercase;}
+.book_appointment_modal .modal-dialog .modal-content .modal-body .appointment_form .book_btn{color: #fff;line-height: 1;text-transform: uppercase;background-color: #C6910D;cursor: pointer;}
+.book_appointment_modal .modal-dialog .modal-content .sub_btn{font-size: 14px;  background-color: #D6D6D6;  line-height: 1;text-transform: uppercase;color: #000;padding: 12px 15px;font-weight: 600;}
+.book_appointment_modal .modal-dialog .modal-content .clear_btn{background-color: #ACACAC;}
+.book_appointment_modal .modal-dialog .modal-content .form-tab-btn.active{ background-color: #ACACAC; }
+.book_appointment_modal .modal-dialog .modal-header ul{margin-bottom: 15px;}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ } 
+.home__scroll-cta {
+ animation: fadeIn 10s ease-in-out; 
+}
+
+
 /* ------------------/ About Us Css ----------------- */
 
 .inner_vertical_nav{
@@ -5228,6 +5270,205 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
     transform-origin: center !important;
     left: 7.5vw !important;
 }
+
+
+/*Map css*/
+
+.map_img_part {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.new-york {
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    animation-delay: 0.2s;
+}
+
+.belgium {
+    position: absolute;
+    top: 19%;
+    left: 41%;
+    animation-delay: 0.4s;
+}
+
+
+
+.botswana {
+    position: absolute;
+    top: 65%;
+    left: 46%;
+    animation-delay: 1s;
+}
+
+.dubai p {
+    margin-left: -40px;
+    margin-top: -20px;
+    animation-delay: 0.8s;
+}
+
+.dubai{
+    position: absolute;
+    top: 35%;
+    left: 56%;
+    animation-delay: 0.5s;
+}
+
+
+.icon-wrap {
+    text-align: center;
+}
+
+.map-icon_wrapper p {
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 300;
+}
+
+.surat p {
+    margin-left: -20px;
+    margin-top: -4px;
+}
+
+.surat {
+    position: absolute;
+    top: 34.5%;
+    left: 60.5%;
+    animation-delay: 0.1s;
+}
+
+.mumbai {
+    position: absolute;
+    top: 40%;
+    left: 60.5%;
+    animation-delay: 0.3s;
+}
+
+.shanghai {
+    position: absolute;
+    top: 19%;
+    left: 75%;
+    animation-delay: 0.5s;
+}
+
+.hong-kong {
+    position: absolute;
+    top: 32%;
+    left: 70%;
+}
+
+.icon-wrap img {
+    width: 24px;
+}
+
+.map-icon_wrapper{ opacity: 1; }
+.mapdropad-animation {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+0% {
+   opacity: 0;
+   -webkit-transform: translateY(-600px);
+}
+60% {
+   opacity: 1;
+   -webkit-transform: translateY(30px);
+}
+80% {
+   -webkit-transform: translateY(-15px);
+}
+100% { 
+   -webkit-transform: translateY(0);
+   opacity: 1;
+}
+}
+
+@keyframes bounceInDown {
+0% {
+   opacity: 0;
+   transform: translateY(-6000px);
+}
+60% {
+   opacity: 1;
+   transform: translateY(30px);
+}
+80% {
+   transform: translateY(-15px);
+}
+100% {
+   transform: translateY(0);
+   opacity: 1;
+}
+}
+
+.map-dropad {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+}
+
+.side-heading {
+    display: flex !important;
+    bottom: 67%;
+    transform: translateY(-50%) rotate(-90deg) !important;
+    transform-origin: center !important;
+    left: -16% !important;
+    z-index: 5;
+    position: absolute;
+}
+
+.side-heading h3{ font-size: 42px; margin-right: 120px; }
+
+.main-heading-animation{ opacity:0;}
+
+.milestoneSlider .owl-nav{display: none;}
+
+
+@media screen and (min-height: 800px) {
+	.about_section .vertical_nav ul li {
+        margin-right: 20px;
+    }
+    
+    .about_section .vertical_nav ul li a {
+        font-size: 10.5px;  
+    }
+
+}
+
+@media screen and (min-height: 900px) {
+
+	.about_section .vertical_nav ul li {
+        margin-right: 20px;
+    }
+    
+    .about_section .vertical_nav ul li a {
+        font-size: 12px;  
+    }
+
+}
+
+@media screen and (min-height: 1000px) {
+
+	.about_section .vertical_nav ul li {
+        margin-right: 35px;
+    }
+    
+    .about_section .vertical_nav ul li a {
+        font-size: 13px;  
+    }
+
+}
+
+@media screen and (min-device-width: 1366px) and (max-device-width: 1500px){
+    .side-heading{left: -20% !important;}
+}
+
 
 #change-img:hover{content: url('../images/designed-by.png'); }
 #skype-hover:hover{content: url('../images/skype-hover.png'); transition: all .5s ease;}

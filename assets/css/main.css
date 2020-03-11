@@ -3300,12 +3300,12 @@ html:not(.touch) .arrow-button--left:hover .arrow-button__picto {
     display: none
 }
 .sc_about_text_body{
-    font-size: 20px;
+    font-size: 20px!important;
     color: white;
     font-family: Montserrat;
 }
 .sc_about_text_body_small{
-    font-size: 12px;
+    font-size: 16px;
     color: white;
     font-family: Montserrat;
 }
