@@ -4806,6 +4806,9 @@ footer {
 .sc-line-height-20{
     line-height:20px;
 }
+.sc-line-height-2{
+    line-height:2;
+}
 .footer-area-top .rightWidget .widget ul li.location {
     font-weight: 400;
     line-height: 50px;
