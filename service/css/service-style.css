@@ -116,7 +116,7 @@ nav {
 }
 
 #section_1 .left_col {
-    height: 155px;
+    height: 175px;
     position: relative;
     background: #c6910d;
     color: #fff;
@@ -1176,7 +1176,7 @@ nav {
 }
 
 .padma-last-sec {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 li.padma-li {
@@ -1192,17 +1192,17 @@ li.padma-li {
     font-size: 1rem;
     display: none;
     padding-top: 30px;
-    float: right;
-    width: 42%;
-    padding-right: 31px;
+    width: 100%;
+    text-align: CENTER;
 }
 
 .img-nav-caption2 {
     font-size: 1rem;
     display: none;
-    text-align: center;
     padding-top: 30px;
-    width: 38%;
+    width: 100%;
+    text-align: CENTER;
+    
 }
 
 .caption-div1:hover h6.img-nav-caption1 {
