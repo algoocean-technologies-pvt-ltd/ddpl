@@ -2928,7 +2928,7 @@ html:not(.touch) .arrow-button--left:hover .arrow-button__picto {
         flex-direction: row-reverse;
         -webkit-transform: translateX(-50%) rotate(-90deg);
         transform: translateX(-50%) rotate(-90deg);
-        z-index: 1
+        z-index: 5
     }
 }
 
