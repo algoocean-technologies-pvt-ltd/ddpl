@@ -5363,8 +5363,10 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
 .icon-wrap img {
     width: 24px;
 }
-
-.map-icon_wrapper{ opacity: 1; }
+.sc-opacity-1{
+    opacity: 1!important;
+}
+.map-icon_wrapper{ opacity: 0; }
 .mapdropad-animation {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;

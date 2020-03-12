@@ -2576,6 +2576,7 @@
         }
         class le extends s.a {
             isCountUp = false;
+            isMapAnimate = false;
             constructor(e) {
                 super(), this.id = e.id, this.element = e.element, this.index = e.index, this.owner = e.owner, this.isAjax = e.isAjax, this.progress = 0, this.color = this.element.classList.contains("about__section--dark") ? "dark" : "light", this.initScreenNavigator(), this.initHeader(), this.initContent(), this.initBackground()
             }
@@ -2617,10 +2618,14 @@
                 return this.element.getAttribute("data-color")
             }
             setProgress(e) {
-                debugger;
                 if(e > 0.5 && e < 0.6 && this.isCountUp === false){
                     this.isCountUp = true;
                     jQuery('counter').countUp();
+                } 
+                if(e > 0.3 && e < 0.45 && this.isMapAnimate === false){
+                    jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
+                    jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
+                    this.isMapAnimate = true;
                 }
                 e !== this.progress && (this.progress = e, this.emit("progress", {
                     progress: e,
