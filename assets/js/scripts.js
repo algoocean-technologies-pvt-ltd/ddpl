@@ -1325,6 +1325,7 @@
                     .to(".service_alt_txt", .2, { opacity: 1, ease: Power2.easeIn })
                     .to(".bigtxt", .2, { opacity: 1, ease: Power2.easeIn })
                     .to(".service-title__cta", .2, { opacity: 1, ease: Power2.easeIn })
+                    .to("#hhcontainer", 1, { opacity: 1 })
                     .fromTo(this.figureInner, 1, {
                         y: 1 === t ? -i.height + this.figure.offsetTop : app.windowHeight
                     }, {
