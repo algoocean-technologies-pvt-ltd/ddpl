@@ -54,7 +54,7 @@
 
 <body class="page-id-home">
     <div id="loader"></div>
-    <div id="hhcontainer" style="opacity: 1;">
+    <div id="hhcontainer" style="opacity: 0;">
         <div class="hhcol">
             <button class="nav-toggle visible">
                 <!-- <span class="nav-toggle__circle"></span> -->
@@ -1309,15 +1309,15 @@
 
     <script>
         localStorage.setItem("skipIntro", "1");
-        // jQuery(document).ready(function () {
-        //     setTimeout(function () {
-        //         var tl = new TimelineLite();
+        jQuery(document).ready(function () {
+            setTimeout(function () {
+                var tl = new TimelineLite();
 
-        //         tl
-        //             .to("#hhcontainer", 1, { opacity: 0 })
-        //             .to("#hhcontainer", 1, { opacity: 1 });
-        //     }, 3500);
-        // });
+                tl
+                    .to("#hhcontainer", 1, { opacity: 0 })
+                    .to("#hhcontainer", 1, { opacity: 1 });
+            }, 5500);
+        });
 
                 // jQuery(document).ready(function() {     setTimeout(function() { var tl = new
                 // TimelineLite(); var introtextsplit = new SplitText(".service_alt_txt",
