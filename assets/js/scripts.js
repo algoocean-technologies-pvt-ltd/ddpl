@@ -3498,7 +3498,9 @@
                 initNavToggle() {
                     // document.getElementById('leftArrow').style.display = none;
                     //  document.getElementById('rightArrow').style.display = block;
+                    topArrow
                     this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
+                    this.element.querySelector("#topArrow").addEventListener("click", this.gotoTop.bind(this));
                     this.element.querySelector("#rightArrow").addEventListener("click", this.gotoLeft.bind(this));
                     this.element.querySelector("#leftArrow").addEventListener("click", this.gotoRight.bind(this));
                     // this.element.querySelector("#rightArrow")
@@ -3765,6 +3767,10 @@
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                     }
                 }
+                }
+                gotoTop(){
+                    this.element.querySelector("#topArrow").style.opacity = "0"
+                    this.gotoPrevScreen();
                 }
                 gotoRight() {
                     if(this.screenNavigator.currentScreen.navigationEnabled){
