@@ -343,7 +343,6 @@
             h = i.n(l);
         class c extends s.a {
             constructor(e) {
-                debugger;
                 super(),
                     this.element = e.element,
                     this.id = e.id, this.progress = 0,
@@ -1133,7 +1132,6 @@
                         y: 1.2 * this.image.scale.y,
                         ease: o.f.easeInOut
                     }, 0)
-                debugger;
             }
             render() {
                 this.renderer.render(this.stage)
@@ -1305,7 +1303,6 @@
 
 
             createAnimIn(e) {
-                debugger;
                 if (this.owner.previousScreen.index == 1 || this.owner.previousScreen.index == 2 || this.owner.previousScreen.index == 5 || this.owner.previousScreen.index == 6 || (this.owner.previousScreen.index == 0 && this.owner.currentScreen.index == 1) || (this.owner.previousScreen.index == 3 && this.owner.currentScreen.index == 2) || (this.owner.previousScreen.index == 4 && this.owner.currentScreen.index == 5) || (this.owner.previousScreen.index == 7 && this.owner.currentScreen.index == 6)) {
                     this.createAnimInLeftRight(e)
                 }
@@ -3667,10 +3664,60 @@
                     } else {
 
                     }
+                }
+                gotoUpScreen(){
+                    console.log(this.currentScreenIndex);
+                    if(this.screenNavigator.currentScreen.navigationEnabled){
+                    if (this.currentScreenIndex === 0) {
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                    } else if (this.currentScreenIndex === 3) {
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.gotoScreen(0)
+                    } else if (this.currentScreenIndex === 4) {
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.gotoScreen(3)
+                    } else if (this.currentScreenIndex === 7) {
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+                        this.gotoScreen(4)
+                    } else if (this.currentScreenIndex === 8) {
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.gotoScreen(7)
+                    }
+                }
+                }
+                gotoDownScreen(){
+                    debugger;
+                    if(this.screenNavigator.currentScreen.navigationEnabled){
+                    if (this.currentScreenIndex === 0) {
+                        this.gotoScreen(3)
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
 
+                    } else if (this.currentScreenIndex === 3) {
+                        this.gotoScreen(4)
+                        this.element.querySelector("#rightArrow").style.visibility = "visible"
+                        this.element.querySelector("#leftArrow").style.visibility = "hidden"
+
+                    } else if (this.currentScreenIndex === 4) {
+                        this.gotoScreen(7)
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+
+                    } else if (this.currentScreenIndex === 7) {
+                        this.gotoScreen(8)
+                        this.element.querySelector("#leftArrow").style.visibility = "visible"
+                        this.element.querySelector("#rightArrow").style.visibility = "hidden"
+                    } else {
+
+                    }  
+                }
                 }
                 gotoPrevScreen() {
-                    debugger;
                     if (this.currentScreenIndex === 0) {
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
@@ -3691,12 +3738,11 @@
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.gotoScreen(7)
                     }
-
                     // let e = this.currentScreenIndex - 2;
                     // e < 0 && (e = 0), this.gotoScreen(e)
                 }
                 gotoLeft() {
-
+                    if(this.screenNavigator.currentScreen.navigationEnabled){
                     if (this.currentScreenIndex === 0) {
                         this.gotoScreen(1);
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
@@ -3716,7 +3762,9 @@
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                     }
                 }
+                }
                 gotoRight() {
+                    if(this.screenNavigator.currentScreen.navigationEnabled){
                     if (this.currentScreenIndex === 1) {
                         this.gotoScreen(0);
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
@@ -3739,16 +3787,17 @@
 
                     }
                 }
+                }
                 swipe(e) {
                     e < 0 ? this.gotoNextScreen() : this.gotoPrevScreen()
                 }
                 onKeyUp(e) {
                     switch (e.keyCode) {
                         case 38:
-                            this.gotoPrevScreen();
+                            this.gotoUpScreen();
                             break;
                         case 40:
-                            this.gotoNextScreen();
+                            this.gotoDownScreen();
                             break;
                         case 39:
                             this.gotoLeft();

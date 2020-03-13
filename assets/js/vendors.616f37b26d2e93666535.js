@@ -2721,7 +2721,6 @@
             }, {
                 key: "animateIn",
                 value: function() {
-                    debugger;
                     var t = this,
                         e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                     return this.emit("animateIn", {
