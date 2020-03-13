@@ -1288,7 +1288,7 @@
                     onComplete: e
                 }).set(this.element, {
                     visibility: "inherit"
-                }).to(".service_alt_txt", .01, { opacity: 0 }).to(".bigtxt", .01, { opacity: 0 }).to(".service-title__cta", .2, { opacity: 0 }).to(this.title.element, 1, {
+                }).to(".service_alt_txt", .00, { opacity: 0 }).to(".bigtxt", .00, { opacity: 0 }).to(".service-title__cta", .0, { opacity: 0 }).to(this.title.element, 1, {
                     opacity: 0
                 }).to(this.figure, 1, {
                     x: 1 === i ? -(app.windowWidth + this.figure.offsetLeft) : t.width + this.figure.offsetLeft,
@@ -1367,12 +1367,14 @@
                         onComplete: e
                     }).set(this.element, {
                         visibility: "inherit"
-                    }).to(".service_alt_txt", .01, { opacity: 0 }).to(".bigtxt", .01, { opacity: 0 }).to(".service-title__cta", .2, { opacity: 0 }).to(this.title.element, 1, {
+                    })
+                    .to(".service_alt_txt", .00, { opacity: 0 }).to(".bigtxt", .00, { opacity: 0 }).to(".service-title__cta", .0, { opacity: 0 }).to(this.title.element, 1, {
                         opacity: 0
                     }).to(this.figure, 1, {
                         y: 1 === i ? -(app.windowHeight + this.figure.offsetTop) : t.height + this.figure.offsetTop,
                         ease: o.g.easeInOut
-                    }, 0).to(this.figureInner, 1, {
+                    }, 0)
+                    .to(this.figureInner, 1, {
                         y: 1 === i ? app.windowHeight : -t.height,
                         ease: o.g.easeInOut
                     }, 0).set(this.element, {
