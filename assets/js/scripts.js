@@ -3500,7 +3500,7 @@
                 initNavToggle() {
                     // document.getElementById('leftArrow').style.display = none;
                     //  document.getElementById('rightArrow').style.display = block;
-                    topArrow
+                    // topArrow
                     this.element.querySelector("#footerArrow").addEventListener("click", this.OnFooterButtonClick.bind(this));
                     this.element.querySelector("#topArrow").addEventListener("click", this.gotoTop.bind(this));
                     this.element.querySelector("#rightArrow").addEventListener("click", this.gotoLeft.bind(this));
@@ -3752,19 +3752,23 @@
                     if(this.screenNavigator.currentScreen.navigationEnabled){
                     if (this.currentScreenIndex === 0) {
                         this.gotoScreen(1);
+                        this.element.querySelector("#footerArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
 
                     } else if (this.currentScreenIndex == 2) {
                         this.gotoScreen(3);
+                        this.element.querySelector("#footerArrow").style.visibility = "visible"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                     } else if (this.currentScreenIndex === 4) {
                         this.gotoScreen(5);
+                        this.element.querySelector("#footerArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                     } else if (this.currentScreenIndex === 6) {
                         this.gotoScreen(7);
+                        this.element.querySelector("#footerArrow").style.visibility = "visible"
                         this.element.querySelector("#rightArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "visible"
                     }
@@ -3772,27 +3776,31 @@
                 }
                 gotoTop(){
                     this.element.querySelector("#topArrow").style.opacity = "0"
-                    this.gotoPrevScreen();
+                    this.gotoScreen(0);
                 }
                 gotoRight() {
                     if(this.screenNavigator.currentScreen.navigationEnabled){
                     if (this.currentScreenIndex === 1) {
                         this.gotoScreen(0);
+                        this.element.querySelector("#footerArrow").style.visibility = "visible"
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
 
                     } else if (this.currentScreenIndex === 3) {
                         this.gotoScreen(2);
+                        this.element.querySelector("#footerArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
 
                     } else if (this.currentScreenIndex === 5) {
                         this.gotoScreen(4);
+                        this.element.querySelector("#footerArrow").style.visibility = "visible"
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
 
                     } else if (this.currentScreenIndex === 7) {
                         this.gotoScreen(6);
+                        this.element.querySelector("#footerArrow").style.visibility = "hidden"
                         this.element.querySelector("#leftArrow").style.visibility = "hidden"
                         this.element.querySelector("#rightArrow").style.visibility = "visible"
 
