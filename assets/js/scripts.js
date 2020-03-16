@@ -2620,9 +2620,10 @@
             setProgress(e) {
                 if(e > 0.5 && e < 0.6 && this.isCountUp === false){
                     this.isCountUp = true;
+                    debugger;
                     jQuery('counter').countUp();
                 } 
-                if(e > 0.3 && e < 0.45 && this.isMapAnimate === false){
+                if(e > 0.3 && e < 0.45){
                     jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
                     jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
                     this.isMapAnimate = true;
