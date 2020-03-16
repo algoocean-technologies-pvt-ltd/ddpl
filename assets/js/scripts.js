@@ -816,13 +816,13 @@
                 }))
             }
             onObserverChange(e) {
-                let t;
-                for (let i = 0, s = e.length; i < s; i++) {
-                    const s = e[i],
-                        n = s.time - this.lastChangeTime;
-                    s.isIntersecting ? t = "light" === s.target.getAttribute("data-color") ? "dark" : "light" : n > 20 && (t = "light"), this.lastChangeTime = s.time
-                }
-                t && this.setColor(t)
+                // let t;
+                // for (let i = 0, s = e.length; i < s; i++) {
+                //     const s = e[i],
+                //         n = s.time - this.lastChangeTime;
+                //     s.isIntersecting ? t = "light" === s.target.getAttribute("data-color") ? "dark" : "light" : n > 20 && (t = "light"), this.lastChangeTime = s.time
+                // }
+                // t && this.setColor(t)
             }
         }
         class C {
@@ -2633,6 +2633,7 @@
                 }))
             }
             createAnimIn(e) {
+                debugger;
                 const t = this.element.querySelector(".about__section__inner"),
                     i = this.element.querySelector(".about__section__foreground"),
                     s = this.element.querySelector(".about__section__background"),
@@ -2682,7 +2683,7 @@
                     autoAlpha: 1,
                     ease: o.d.easeNone
                 }, 0).to([s, n], .9, {
-                    opacity: 0
+                    opacity: 1
                 }, 0).to(this.element, 1.5, {
                     yPercent: -100 * a,
                     ease: o.f.easeInOut
@@ -2760,6 +2761,7 @@
                 this.color = e, this.element.classList.remove("about__nav--" + t), this.element.classList.add("about__nav--" + e)
             }
             onLinkClick(e) {
+                debugger;
                 const t = e.currentTarget.parentNode.getAttribute("data-id");
                 e.preventDefault(), this.emit("itemClick", {
                     id: t
