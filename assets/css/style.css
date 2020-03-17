@@ -5482,3 +5482,118 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
 #qq-h:hover{content: url('../images/qq-hover.png'); transition: all .5s ease;}
 #mobile-h:hover{content: url('../images/mobile-hover.png'); transition: all .5s ease;}
 #line-h:hover{content: url('../images/line-hover.png'); transition: all .5s ease;}
+
+
+
+
+/*----- button 3 -----*/
+.box-container::after {
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+}
+
+.box-container .animate-border::after {
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+}
+
+.box-container::before {
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.box-container .animate-border::before {
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+}
+
+.box-container:hover::after {
+    transition-delay: 0s;
+}
+
+.box-container:hover .animate-border::after {
+    transition-delay: 0.2s;
+}
+
+.box-container:hover::before {
+    transition-delay: 0.4s;
+}
+
+.box-container:hover .animate-border::before {
+    transition-delay: 0.6s;
+}
+
+/*animation for second box*/
+.box-container::before,
+.box-container::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+.box-container::before,
+.box-container::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+.box-container:hover::before,
+.box-container:hover::after {
+    width: 100%;
+}
+
+.box-container:hover .animate-border::before,
+.box-container:hover .animate-border::after {
+    height: 100%;
+}
+
+.box-container::after {
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+}
+
+.box-container .animate-border::after {
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0
+}
+
+.box-container::before {
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.box-container .animate-border::before {
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+}
+
+.box-container:hover::after {
+    transition-delay: 0s;
+}
+
+.box-container:hover .animate-border::after {
+    transition-delay: 0.2s;
+}
+
+.box-container:hover::before {
+    transition-delay: 0.4s;
+}
+
+.box-container:hover .animate-border::before {
+    transition-delay: 0.6s;
+}

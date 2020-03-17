@@ -467,25 +467,25 @@
                                         most ethical, rare and beautiful diamonds in the world.
                                     </p>
                                 </div>
-                                <div onload="testing()" class="counter_part">
-                                    <ul class="d-flex flex-wrap">
+                                <div class="counter_part">
+                                    <ul class="d-flex flex-wrap" id="firstCounter">
                                         <li>
                                             <span class="counter">
-                                                <counter class="counter-inner">40</counter>+
+                                                <counter class="counter-inner" data-counterupTo= "40" >0</counter>+
                                             </span>
                                             <p>Years of Promise</p>
                                         </li>
 
                                         <li>
                                             <span class="counter">
-                                                <counter class="counter-inner">2500</counter>+
+                                                <counter class="counter-inner" data-counterupTo= "2500">0</counter>+
                                             </span>
                                             <p>Happy Customers</p>
                                         </li>
 
                                         <li style="border-right: 0px;">
                                             <span class="counter">
-                                                <counter class="counter-inner">7500</counter>+
+                                                <counter class="counter-inner" data-counterupTo= "7500">0</counter>+
                                             </span>
                                             <p>Dedicated Artisan</p>
                                         </li>
@@ -494,13 +494,13 @@
 
                                 <div class="row mb-5">
                                     <div class="col-md-6">
-                                        <p class="desc mb-2"><b style="font-weight: bold;">VISION</b></p>
+                                        <p class="text-box"><b style="font-weight: bold;">VISION</b></p>
                                         <p class="sc_about_text_body">Serving as a Framework for our Mission aiming to
                                             accomplish in order to grow sustainably.</p>
                                     </div>
 
                                     <div class="col-md-6">
-                                        <p class="desc mb-2"><b style="font-weight: bold;">MISSION</b></p>
+                                        <p class="text-box"><b style="font-weight: bold;">MISSION</b></p>
                                         <p class="sc_about_text_body">Enduring Mission to produce Quality Diamonds.</p>
                                     </div>
                                 </div>
@@ -605,11 +605,11 @@
                                     </p>
                                 </div>
                                 <div class="counter2_part" style="margin: auto;margin-top: 28px;">
-                                    <ul class="d-flex flex-wrap">
+                                    <ul class="d-flex flex-wrap" id="secondCounter">
                                         <li>
                                             <div class="counter_box">
                                                 <h3 class="counter">
-                                                    <counter>05</counter>
+                                                    <counter data-counterupTo= "05">0</counter>
                                                 </h3>
                                                 <p class="val">LAC</p>
                                                 <span>Square Feet</span>
@@ -621,7 +621,7 @@
                                         <li>
                                             <div class="counter_box">
                                                 <h3 class="counter">
-                                                    <counter>1000</counter>
+                                                    <counter data-counterupTo= "1000">0</counter>
                                                 </h3>
                                                 <p class="val">experts</p>
                                                 <span>&nbsp;&nbsp;</span>
@@ -634,7 +634,7 @@
                                             <div class="counter_box">
                                                 <!-- <span>+9 Sieve</span> -->
                                                 <h3 class="counter">
-                                                    <counter>15</counter>+
+                                                    <counter data-counterupTo= "15">0</counter>+
                                                 </h3>
                                                 <p class="val">Tailor Made</p>
                                                 <span>&nbsp;&nbsp;</span>
@@ -1860,8 +1860,8 @@
                              <section class="home__screen" style="visibility: visible;bottom: 0;display: block;top: 100%;background: black;margin: 0px;">
                                 <div class="home__screen__inner slideUp event w-100" style="padding-top:0px!important">
                                     <div class="service-title pl-0">
-                                        <div class="container mb-5">
-                                            <a class="service-title__inner" href="#">
+                                        <div class="container">
+                                            <!-- <a class="service-title__inner" href="#">
                                                 <p class="service_alt_txt m-0" style=""></p>
                                                 <span class="service-title__text hidden">
                                                     <span style="color:#C6910D;"></span>
@@ -1874,7 +1874,7 @@
                                                 </span>
                                                 <p class="service_alt_txt" style=""></p>
                                                 <p class="bigtxt" style=""></p>
-                                            </a>
+                                            </a> -->
             
                                             <a class="service-title__cta hidden" href="#"></a>
             
@@ -2593,6 +2593,9 @@
     <script type="module" src="assets/js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.js"></script>
     <script src="assets/js/jquery.vide.js"></script>
+
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/jquery.lettering.js"></script>
     <script type="text/javascript">
         
         jQuery(document).ready(function($) {
@@ -2619,9 +2622,6 @@
 
     </script>
     <script>
-        function testing(){
-            $('counter').countUp();
-        }
         setTimeout(function() {
             var i = 1;
             $(".milestone_slider_part .milestone_slider_box").each(function(){
@@ -2667,8 +2667,7 @@
 
     <script>
 
-        $('counter').countUp();
-        
+        // $('counter').countUp();
         new WOW().init();
     </script>
 

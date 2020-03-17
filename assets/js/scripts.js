@@ -2539,7 +2539,7 @@
                 }, 0))
             }
             updateScrollHeight() {
-                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height+200, this.maxScrollY = -1 * this.scrollHeight
+                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height+80, this.maxScrollY = -1 * this.scrollHeight
             }
             startRenderScroll() {
                 this.scrollIsRendering || (this.scrollIsRendering = !0, o.m.ticker.addEventListener("tick", this.tickCallback), this.scroll.on(this.scrollCallback))
@@ -2575,7 +2575,8 @@
             }
         }
         class le extends s.a {
-            isCountUp = false;
+            isFirstCountUp = false;
+            isSecondCountUp = false;
             isMapAnimate = false;
             constructor(e) {
                 super(), this.id = e.id, this.element = e.element, this.index = e.index, this.owner = e.owner, this.isAjax = e.isAjax, this.progress = 0, this.color = this.element.classList.contains("about__section--dark") ? "dark" : "light", this.initScreenNavigator(), this.initHeader(), this.initContent(), this.initBackground()
@@ -2618,16 +2619,35 @@
                 return this.element.getAttribute("data-color")
             }
             setProgress(e) {
-                if(e > 0.5 && e < 0.6 && this.isCountUp === false){
-                    this.isCountUp = true;
-                    debugger;
-                    jQuery('counter').countUp();
-                } 
-                if(e > 0.3 && e < 0.45){
-                    jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
-                    jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
-                    this.isMapAnimate = true;
-                }
+                console.log(e);
+                jQuery('.about__nav--light').css('visibility','visible');
+                switch (this.index){
+                case 1:
+                    if(e > 0.5 && e < 0.6 && this.isFirstCountUp === false){
+                        this.isFirstCountUp = true;
+                        debugger;
+                        jQuery('#firstCounter counter').countUp();
+                    } 
+                    break;
+                case 2: 
+                    if(e > 0.35 && e < 0.6 && this.isSecondCountUp === false){
+                        this.isSecondCountUp = true;
+                        debugger;
+                        jQuery('#secondCounter counter').countUp();
+                    }
+                    break;
+                case 6:
+                    if(e > 0.25 && e < 0.45){
+                        jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
+                        jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
+                        this.isMapAnimate = true;
+                    }
+                    if(e > 0.75){
+                        jQuery('.about__nav--light').css('visibility','hidden');
+                    }
+                    break; 
+                
+            }   
                 e !== this.progress && (this.progress = e, this.emit("progress", {
                     progress: e,
                     currentTarget: this
