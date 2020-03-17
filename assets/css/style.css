@@ -661,7 +661,7 @@ html:not(.touch) .logo:hover .logo__line {
 .nav-toggle {
     position: fixed;
     top: 6vh;
-    right: 12vw;
+    /* right: 12vw; */
     font-size: 17px;
     color: #dadada;
     z-index: 10;

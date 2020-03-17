@@ -2576,10 +2576,10 @@
                 this.complete()
             }
         }
+        var isFirstCountUp = false;
+        var isSecondCountUp = false;
+        var isMapAnimate = false;
         class le extends s.a {
-            isFirstCountUp = false;
-            isSecondCountUp = false;
-            isMapAnimate = false;
             constructor(e) {
                 super(), this.id = e.id, this.element = e.element, this.index = e.index, this.owner = e.owner, this.isAjax = e.isAjax, this.progress = 0, this.color = this.element.classList.contains("about__section--dark") ? "dark" : "light", this.initScreenNavigator(), this.initHeader(), this.initContent(), this.initBackground()
             }
@@ -2664,15 +2664,15 @@
                 // .to(".sctitle", .2, { opacity: 1, ease: Power2.easeIn });
                 switch (this.index){
                 case 1:
-                    if(e > 0.5 && e < 0.6 && this.isFirstCountUp === false){
-                        this.isFirstCountUp = true;
+                    if(e > 0.5 && e < 0.6 && isFirstCountUp === false){
+                        isFirstCountUp = true;
                         debugger;
                         jQuery('#firstCounter counter').countUp();
                     } 
                     break;
                 case 2: 
-                    if(e > 0.35 && e < 0.6 && this.isSecondCountUp === false){
-                        this.isSecondCountUp = true;
+                    if(e > 0.35 && e < 0.6 && isSecondCountUp === false){
+                        isSecondCountUp = true;
                         debugger;
                         jQuery('#secondCounter counter').countUp();
                     }
@@ -2681,7 +2681,7 @@
                     if(e > 0.25 && e < 0.45){
                         jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
                         jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
-                        this.isMapAnimate = true;
+                        isMapAnimate = true;
                     }
                     if(e > 0.75){
                         jQuery('.about__nav--light').css('visibility','hidden');
