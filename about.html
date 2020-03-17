@@ -271,15 +271,12 @@
 
         <div class="main-loading__inner">
             <div class="main-loading__text">
-                <p>In a complex world the ability to see ahead, navigate, and seize opportunities can seem like a gift.
-                    At Decisive, everything we have lived and learned is distilled into certainty of action. Our
-                    instincts, our expertise, and our endeavours are your advantage. In an era of disruption where old
-                    models and standards fade away, we are your partner. </p>
+                <p></p>
             </div>
 
             <button class="main-loading__button" disabled>
                 <span class="main-loading__button__border"></span>
-                <span class="main-loading__button__label">Explore</span>
+                <span class="main-loading__button__label"></span>
             </button>
         </div>
     </section>
@@ -349,7 +346,7 @@
                         <div class="about__text__background" style="opacity:1"></div>
                         <div class="about__text__inner">
                             <div class="sc_about_text_title_div">
-                                <h2 class="sc_about_text_title">IN CHANGING TIMES… WHAT REMAINS
+                                <h2 class="sc_about_text_title sctitle" id="sc_about_text_title_1">IN CHANGING TIMES… WHAT REMAINS
                                     <br />UNCHNAGED IS OUR FOCUS.</h2>
                             </div>
                             <div class="sc_about_text_title_div row">
@@ -2622,6 +2619,7 @@
 
     </script>
     <script>
+        localStorage.setItem("skipIntro", "1");
         setTimeout(function() {
             var i = 1;
             $(".milestone_slider_part .milestone_slider_box").each(function(){

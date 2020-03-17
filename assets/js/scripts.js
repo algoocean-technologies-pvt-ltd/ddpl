@@ -346,6 +346,8 @@
                 super(),
                     this.element = e.element,
                     this.id = e.id, this.progress = 0,
+                    // this.onButtonClick();
+                    localStorage && localStorage.setItem("skipIntro", "1")
                     this.button = this.element.querySelector(".main-loading__button"),
                     this.button.addEventListener("click", this.onButtonClick.bind(this)),
                     this.buttonBorder = this.button.querySelector(".main-loading__button__border"),
@@ -2621,6 +2623,45 @@
             setProgress(e) {
                 console.log(e);
                 jQuery('.about__nav--light').css('visibility','visible');
+                
+                // const t = jQuery('#sc_about_text_title_1');
+                // this.splitText = new a(t, {
+                //     type: "lines"
+                // });
+                // const i = new r.a({
+                //     paused: !0,
+                //     onComplete: () => {
+                //         e()
+                //     }
+                // }).set(this.element, {
+                //     visibility: "inherit"
+                // }, 0).set(this.progressElement, {
+                //     scaleX: 0
+                // }, 0).set(this.buttonBorder, {
+                //     opacity: 0,
+                //     scale: .4
+                // }, 0).set(this.buttonLabel, {
+                //     opacity: 0
+                // }, 0);
+                // this.loadFont().then(() => {
+                //     i.play()
+                // })
+                
+                // here you will write a code
+                // this.timeline = (new r.a).set(this.element, {
+                //     visibility: "inherit"
+                // }),
+                // this.timeline.set(jQuery(".sctitle"),{
+                //     opacity: 1,
+                // }).add(".sctitle", this.owner.previousScreen ? .9 : .3).add(() => {
+                //     this.navigationEnabled = !0
+                // }, 2).fromTo(this.figure, 1, {
+                //     x: 1 === t ? i.width : -(app.windowWidth + this.figure.offsetLeft)
+                // }, {
+                //     x: 0,
+                //     ease: o.g.easeOut
+                // }, .5)
+                // .to(".sctitle", .2, { opacity: 1, ease: Power2.easeIn });
                 switch (this.index){
                 case 1:
                     if(e > 0.5 && e < 0.6 && this.isFirstCountUp === false){
@@ -4704,7 +4745,7 @@
             Ve && !Ve.isLoadingAssets && setTimeout(() => Ye(), 100)
         } ! function () {
             if (window.app = window.app || {}, app.screenXS = 480, app.screenS = 600, app.screenM = 900, app.screenL = 1280, app.screenXL = 1400, app.screenXXL = 1600, app.screenHD = 1920, app.windowWidth = 0, app.windowHeight = 0, app.hasTouch = "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch, app.hasTouch && document.documentElement.classList.add("touch"), app.debug && window.location.search && (app.skip = -1 !== window.location.search.indexOf("skip"), app.skipIn = -1 !== window.location.search.indexOf("skipIn")), "/" !== window.location.pathname && localStorage) {
-                const e = localStorage.getItem("skipIntro");
+                const e = "1";//localStorage.getItem("skipIntro");
                 "1" === e && (app.skip = !0)
             }
         }(), (qe = new s.d).transitionType = s.c.OutAndIn, qe.on("transitionStart", Fe), qe.on("transitionComplete", He), (Re = new b({

@@ -364,6 +364,7 @@
                 }
             }
             createAnimIn(e) {
+                // this text is usefull
                 const t = this.text.querySelector("p");
                 this.splitText = new a(t, {
                     type: "lines"
@@ -4369,7 +4370,7 @@
             Ve && !Ve.isLoadingAssets && setTimeout(() => Ye(), 100)
         }! function() {
             if (window.app = window.app || {}, app.screenXS = 480, app.screenS = 600, app.screenM = 900, app.screenL = 1280, app.screenXL = 1400, app.screenXXL = 1600, app.screenHD = 1920, app.windowWidth = 0, app.windowHeight = 0, app.hasTouch = "ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch, app.hasTouch && document.documentElement.classList.add("touch"), app.debug && window.location.search && (app.skip = -1 !== window.location.search.indexOf("skip"), app.skipIn = -1 !== window.location.search.indexOf("skipIn")), "/" !== window.location.pathname && localStorage) {
-                const e = localStorage.getItem("skipIntro");
+                const e = "1";//localStorage.getItem("skipIntro");
                 "1" === e && (app.skip = !0)
             }
         }(), (qe = new s.d).transitionType = s.c.OutAndIn, qe.on("transitionStart", Fe), qe.on("transitionComplete", He), (Re = new b({
