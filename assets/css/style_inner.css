@@ -112,6 +112,13 @@ b{
 padding-bottom: 4rem;
 }
 
+.sc-padding-0{
+  padding: 0px;
+}
+.sc-padding-18{
+  padding-bottom: 18px;
+}
+
 .emp{
   padding-top: 0%;
 }

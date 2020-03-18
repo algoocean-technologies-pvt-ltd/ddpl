@@ -372,8 +372,10 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a href="#" class="our_milestone">OUR Milestones</a>
+                                <a href="milestones.html" class="our_milestone">OUR Milestones</a>
                             </div>
+
+                            
 
                             <button class="arrow-button arrow-button--down about__text__next">
                                 <span class="arrow-button__border">
@@ -2636,12 +2638,6 @@
 
         
 
-        $(".our_milestone").click(function(){
-            $(this).parents('.about_box').addClass('openMilestone');
-            mouse_wheel_disable();
-
-            $('.about_section .vertical_nav').hide();
-        });
 
          $('.backbutton-close a').click(function(event) {
             $(this).parents('.about_box').removeClass('openMilestone');
@@ -2672,6 +2668,8 @@
     <script>
         jQuery(document).ready(function () {
             initFlexSliders();
+            $(this).parents('.about_box').addClass('openMilestone');
+            mouse_wheel_disable();
         });
 
 
