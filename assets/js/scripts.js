@@ -2644,9 +2644,9 @@
                             }).add({
                                 targets: '#testing_me',
                                 opacity: 1,
-                                duration: 1,
+                                duration: 500,
                                 easing: "easeOutExpo",
-                                delay: 1
+                                delay: 200
                             }).add({
                                 targets: '.ml1 .line',
                                 scaleX: [0, 1],
