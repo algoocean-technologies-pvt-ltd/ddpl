@@ -2663,6 +2663,7 @@
                                 delay: 1000
                             });
                         }
+                        break;
                     case 1:
                         if (e > 0.5 && e < 0.6 && isFirstCountUp === false) {
                             isFirstCountUp = true;

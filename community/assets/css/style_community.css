@@ -468,7 +468,7 @@ img {
     {
       width: 100px;
       height: 220px;
-
+      cursor: pointer;
      transform: translate(-50px, -173px)
    }
 
@@ -476,24 +476,28 @@ img {
     {
       width: 100px;
       height: 220px;
+      cursor: pointer;
       transform: translate(260px, -393px);
     }
       .pin-box3
     {
       width: 100px;
       height: 220px;
+      cursor: pointer;
       transform: translate(570px, -613px);
     }
       .pin-box4
     {
       width: 100px;
       height: 150px;
+      cursor: pointer;
       transform: translate(105px, -639px);
     }
     .pin-box5
     {
       width: 250px;
       height: 150px;
+      cursor: pointer;
       transform: translate(415px, -790px);
     }
     .pin-img img {
