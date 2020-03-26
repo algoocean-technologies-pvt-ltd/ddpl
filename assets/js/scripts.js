@@ -2580,7 +2580,13 @@
         var isFirstCountUp = false;
         var isSecondCountUp = false;
         var isMapAnimate = false;
-        var isFirstTextAnimation = false;
+        var isTextAnimation = false;
+        var isTextAnimation1 = false;
+        var isTextAnimation2 = false;
+        var isTextAnimation3 = false;
+        var isTextAnimation4 = false;
+        var isTextAnimation5 = false;
+
         class le extends s.a {
             constructor(e) {
                 super(), this.id = e.id, this.element = e.element, this.index = e.index, this.owner = e.owner, this.isAjax = e.isAjax, this.progress = 0, this.color = this.element.classList.contains("about__section--dark") ? "dark" : "light", this.initScreenNavigator(), this.initHeader(), this.initContent(), this.initBackground()
@@ -2628,13 +2634,13 @@
                 switch (this.index) {
                     case 0:
                         // Wrap every letter in a span
-                        if (e > 0.05 && !isFirstTextAnimation) {
-                        isFirstTextAnimation = true;
-                        var textWrapper = document.querySelector('.ml1 .letters');
+                        if (e > 0.05 && !isTextAnimation) {
+                        isTextAnimation = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_1');
                         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
                         anime.timeline({ loop: false })
                             .add({
-                                targets: '.ml1 .letter',
+                                targets: '#sc_about_text_title_1 .letter',
                                 scale: [0.3, 1],
                                 opacity: [0, 1],
                                 translateZ: 0,
@@ -2642,29 +2648,36 @@
                                 duration: 300,
                                 delay: (el, i) => 70 * (i + 1)
                             }).add({
-                                targets: '#testing_me',
+                                targets: '#slide1',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 50,
                                 easing: "easeOutExpo",
                                 delay: 200
-                            }).add({
-                                targets: '.ml1 .line',
-                                scaleX: [0, 1],
-                                opacity: [0.5, 1],
-                                easing: "easeOutExpo",
-                                duration: 400,
-                                offset: '-=875',
-                                delay: (el, i, l) => 80 * (l - i)
-                            }).add({
-                                targets: '.ml1',
-                                opacity: 1,
-                                duration: 1000,
-                                easing: "easeOutExpo",
-                                delay: 1000
                             });
                         }
                         break;
                     case 1:
+                        if(e > 0.05 && !isTextAnimation1){
+                            isTextAnimation1 = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_2');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: false })
+                            .add({
+                                targets: '#sc_about_text_title_2 .letter',
+                                scale: [0.3, 1],
+                                opacity: [0, 1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 300,
+                                delay: (el, i) => 70 * (i + 1)
+                            }).add({
+                                targets: '#slide2',
+                                opacity: 1,
+                                duration: 50,
+                                easing: "easeOutExpo",
+                                delay: 200
+                            });
+                        }
                         if (e > 0.5 && e < 0.6 && isFirstCountUp === false) {
                             isFirstCountUp = true;
                             debugger;
@@ -2672,10 +2685,100 @@
                         }
                         break;
                     case 2:
+                        if(e > 0.05 && !isTextAnimation2){
+                            isTextAnimation2 = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_3');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: false })
+                            .add({
+                                targets: '#sc_about_text_title_3 .letter',
+                                scale: [0.3, 1],
+                                opacity: [0, 1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 300,
+                                delay: (el, i) => 70 * (i + 1)
+                            }).add({
+                                targets: '#slide3',
+                                opacity: 1,
+                                duration: 50,
+                                easing: "easeOutExpo",
+                                delay: 200
+                            })
+                        }
                         if (e > 0.35 && e < 0.6 && isSecondCountUp === false) {
                             isSecondCountUp = true;
                             debugger;
                             jQuery('#secondCounter counter').countUp();
+                        }
+                        break;
+                    case 3:
+                        if(e > 0.05 && !isTextAnimation3){
+                            isTextAnimation3 = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_4');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: false })
+                            .add({
+                                targets: '#sc_about_text_title_4 .letter',
+                                scale: [0.3, 1],
+                                opacity: [0, 1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 300,
+                                delay: (el, i) => 70 * (i + 1)
+                            }).add({
+                                targets: '#slide4',
+                                opacity: 1,
+                                duration: 500,
+                                easing: "easeOutExpo",
+                                delay: 200
+                            })
+                        }
+                        break;
+                    case 4:
+                        if(e > 0.05 && !isTextAnimation4){
+                            isTextAnimation4 = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_5');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: false })
+                            .add({
+                                targets: '#sc_about_text_title_5 .letter',
+                                scale: [0.3, 1],
+                                opacity: [0, 1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 300,
+                                delay: (el, i) => 70 * (i + 1)
+                            }).add({
+                                targets: '#slide5',
+                                opacity: 1,
+                                duration: 500,
+                                easing: "easeOutExpo",
+                                delay: 200
+                            });
+                        }
+                        break;
+                    case 5:
+                        if(e > 0.05 && !isTextAnimation5){
+                            isTextAnimation5 = true;
+                        var textWrapper = document.querySelector('.ml1 #sc_about_text_title_6');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        anime.timeline({ loop: false })
+                            .add({
+                                targets: '#sc_about_text_title_6 .letter',
+                                scale: [0.3, 1],
+                                opacity: [0, 1],
+                                translateZ: 0,
+                                easing: "easeOutExpo",
+                                duration: 300,
+                                delay: (el, i) => 70 * (i + 1)
+                            }).add({
+                                targets: '#slide6',
+                                opacity: 1,
+                                duration: 500,
+                                easing: "easeOutExpo",
+                                delay: 200
+                            });
                         }
                         break;
                     case 6:
