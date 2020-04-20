@@ -2529,7 +2529,7 @@
                 this.timeline && 1 !== this.timeline.progress() && this.timeline.kill(), this.setProgress(0), this.timeline = (new r.a).set(this.element, {
                     visibility: "inherit"
                 }), this.changeBackgroundOpacity = !this.owner.previousScreen && "dark" === this.color, this.timeline.set(this.background, {
-                    opacity: this.changeBackgroundOpacity ? .5 : 1
+                    opacity: this.changeBackgroundOpacity ? 1 : 1
                 }), this.owner.previousScreen ? this.timeline.set(i, {
                     autoAlpha: 0
                 }, 0).set([s, n], {
