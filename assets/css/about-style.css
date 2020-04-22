@@ -3060,7 +3060,7 @@ html:not(.touch) .arrow-button--left:hover .arrow-button__picto {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 50vh 0;
+    padding: 20vh 0;
     text-align: center
 }
 
