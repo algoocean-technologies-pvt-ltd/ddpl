@@ -2561,7 +2561,8 @@
                 e < 0 ? e = 0 : e > 1 && (e = 1), this.setProgress(e)
             }
             checkScrollExceed() {
-                const e = app.isMobile ? 30 : 60;
+                // const e = app.isMobile ? 30 : 60;
+                const e = app.isMobile ? 30 : 1;
                 (this.scrollY < this.maxScrollY ? this.maxScrollY - this.scrollY : this.scrollY > 0 ? this.scrollY : 0) > e && this.complete(this.scrollY > 0 ? -1 : 1)
             }
             onScroll(e) {
