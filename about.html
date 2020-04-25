@@ -723,7 +723,8 @@
                                 <div class="col-md-6">
                                     <div class="collapse_part">
                                         <div class="collapse_box">
-                                            <a href="javascript:void(0)" class="sc_about_text_body collapse_box_heading">Quality we prove and
+                                            <a id="#mumbai" href="javascript:void(0)"
+                                                class="sc_about_text_body collapse_box_heading">Quality we prove and
                                                 improve</a>
 
                                             <div class="collapse_box_content">
@@ -2648,7 +2649,15 @@
             $(this).parent('.collapse_box').siblings('.collapse_box').removeClass('isOpen');
         });
 
-        $(".tabs_list li a").click(function() {
+        $(".icon-wrap").click(function () {
+            debugger;
+            $('#mumbai').parent('.collapse_box').find('.collapse_box_content').slideToggle();
+            $('#mumbai').parent('.collapse_box').toggleClass('isOpen');
+            $('#mumbai').parent('.collapse_box').siblings('.collapse_box').find('.collapse_box_content').slideUp();
+            $('#mumbai').parent('.collapse_box').siblings('.collapse_box').removeClass('isOpen');
+        });
+
+        $(".tabs_list li a").click(function () {
             var dataToggle = $(this).attr('data-toggle');
             $(".tabs_list li").removeClass('active');
             $(this).parent('li').addClass('active');

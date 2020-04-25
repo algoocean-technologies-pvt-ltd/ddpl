@@ -1954,7 +1954,7 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
 
 .vertical_nav {
     position: fixed;
-    top: 24rem;
+    top: 55%;
     left: 7.5vw;
     transform: rotate(-90deg);
     transform-origin: 0;

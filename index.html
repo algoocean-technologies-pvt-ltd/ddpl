@@ -39,7 +39,7 @@
         }
         
         #loader {
-            background: #000 url("assets/images/ddpl-loader.gif") no-repeat center center;
+            background: #000;
             position: absolute;
             top: 0;
             left: 0;
@@ -47,11 +47,24 @@
             width: 100%;
             z-index: 9999999;
         }
+
+        .sc-loading-image {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
     </style>
 </head>
 
 <body class="page-id-home">
-    <div id="loader"></div>
+    <div id="loader">
+        <img class="sc-loading-image" id="loading-image" src="assets/images/ddpl-loader.gif" />
+    </div>
     <div id="hhcontainer" style="opacity: 0;">
         <div class="hhcol">
             <button class="nav-toggle visible">
@@ -1418,9 +1431,9 @@
 
     <div id="orejime"></div>
     <script type="text/javascript">
-        var element = document.getElementById('loader');
-        element.style.backgroundImage = "none";
-        element.style.backgroundImage = "url(assets/images/ddpl-loader.gif?" + new Date().getTime() + ")";
+        var element = document.getElementById('loading-image');
+        element.src = "none";
+        element.src = "assets/images/ddpl-loader.gif?" + new Date().getTime();
     </script>
 
     <script src="assets/js/jquery.min.js"></script>
