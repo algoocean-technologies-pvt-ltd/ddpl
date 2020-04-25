@@ -889,7 +889,7 @@ picture.object-fit-polyfill {
 }
 
 .image-filter:before {
-    opacity: .4
+    opacity: .5
 }
 
 .image-filter:after {
