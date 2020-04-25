@@ -4327,6 +4327,7 @@ p.service_alt_txt{
     opacity: 0;
     margin-top: 1.8vw;
     margin-bottom: 1vw;
+    margin-left: 10px;
 }
 p.bigtxt{
     flex: 0 1 50%!important;
@@ -4338,6 +4339,7 @@ p.bigtxt{
     color: #D6D6D6!important;
     font-size: 14px;   
     opacity:0;
+    margin-left: 10px;
 }
 .home__screen__inner {
     padding-top: 22vh !important;
@@ -4412,6 +4414,7 @@ span.logo__inner {
     padding: 0 1em;
     border: 1px solid #C6910D;
     position: relative;
+    margin-left: 10px;
 }
 .service-title__cta:after {
     opacity: 0;
