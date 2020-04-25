@@ -2895,7 +2895,7 @@
                             }
                         };
                         this.setProgress(0), this.screenNavigator.showScreen("header", null, e), this.changeBackgroundOpacity && o.m.to(this.background, .9, {
-                            opacity: .5
+                            opacity: 1
                         })
                     }
             }
