@@ -2016,7 +2016,8 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
 /*.vertical_nav ul li a:hover:after{width: 100%;}*/
 
 .vertical_nav.technology-vetical {
-    bottom: -10rem;
+    top: 90%;
+
 }
 
 .vertical-menu-active {
