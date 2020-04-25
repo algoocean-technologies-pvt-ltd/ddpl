@@ -1175,9 +1175,9 @@ span.nav__link__label {
 
 
 .slides .slides--content {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
+    grid-gap: 1em; */
   }
 
 .flixslider--controls button{
