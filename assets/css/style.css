@@ -889,7 +889,7 @@ picture.object-fit-polyfill {
 }
 
 .image-filter:before {
-    opacity: .4
+    opacity: .5
 }
 
 .image-filter:after {
@@ -4327,6 +4327,7 @@ p.service_alt_txt{
     opacity: 0;
     margin-top: 1.8vw;
     margin-bottom: 1vw;
+    margin-left: 10px;
 }
 p.bigtxt{
     flex: 0 1 50%!important;
@@ -4338,6 +4339,7 @@ p.bigtxt{
     color: #D6D6D6!important;
     font-size: 14px;   
     opacity:0;
+    margin-left: 10px;
 }
 .home__screen__inner {
     padding-top: 22vh !important;
@@ -4412,6 +4414,7 @@ span.logo__inner {
     padding: 0 1em;
     border: 1px solid #C6910D;
     position: relative;
+    margin-left: 10px;
 }
 .service-title__cta:after {
     opacity: 0;
@@ -5129,8 +5132,8 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto{-webkit
 .info_part .detail_part .name{color: #fff;font-size: 20px;padding-bottom: 5px;line-height: 1;}
 .info_part .detail_part .category{font-size: 14px;line-height: 1;}
 
-.collapse_part .collapse_box{border-top: 1px solid#ACACAC;}
-.collapse_part .collapse_box:last-child{border-bottom: 1px solid#ACACAC;}
+.collapse_part .collapse_box{border-top: 1px solid#C6910D;}
+.collapse_part .collapse_box:last-child{border-bottom: 1px solid#C6910D;}
 .collapse_part .collapse_box .collapse_box_heading{color: #fff;font-size: 20px;line-height: 1;padding: 15px 0;display: block;font-weight: 500;line-height: 25px;position: relative;}
 .collapse_part .collapse_box .collapse_box_heading:after{content: "";display: block;width: 10px;height: 10px;border-style: solid;border-color: #ACACAC;border-width: 0 0 1.5px 1.5px;position: absolute;top: 50%;right: 0;transform: translateY(-50%) rotate(-45deg);}
 .collapse_part .collapse_box .collapse_box_content{display: none;}

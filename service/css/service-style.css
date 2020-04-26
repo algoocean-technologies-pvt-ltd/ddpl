@@ -1,7 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 h1 {
@@ -858,6 +859,11 @@ nav {
     padding-top: 50px;
     text-align: center;
 }
+
+.auction-sec3-row {
+    padding-top: 50px;
+}
+
 
 .auction-sec2-row img {
     width: 259px;
@@ -1989,7 +1995,7 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
 }
 
 .vertical_nav ul li a {
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     line-height: 1;
     font-weight: 500;
@@ -2016,7 +2022,8 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
 /*.vertical_nav ul li a:hover:after{width: 100%;}*/
 
 .vertical_nav.technology-vetical {
-    bottom: -10rem;
+    top: 90%;
+
 }
 
 .vertical-menu-active {

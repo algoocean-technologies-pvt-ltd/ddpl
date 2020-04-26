@@ -2542,7 +2542,7 @@
                 }, 0))
             }
             updateScrollHeight() {
-                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height + 80, this.maxScrollY = -1 * this.scrollHeight
+                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height - 150, this.maxScrollY = -1 * this.scrollHeight
             }
             startRenderScroll() {
                 this.scrollIsRendering || (this.scrollIsRendering = !0, o.m.ticker.addEventListener("tick", this.tickCallback), this.scroll.on(this.scrollCallback))
@@ -2651,7 +2651,7 @@
                             }).add({
                                 targets: '#slide1',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
@@ -2674,12 +2674,12 @@
                             }).add({
                                 targets: '#slide2',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
                         }
-                        if (e > 0.5 && e < 0.6 && isFirstCountUp === false) {
+                        if (e > 0.35 && e < 0.6 && isFirstCountUp === false) {
                             isFirstCountUp = true;
                             debugger;
                             jQuery('#firstCounter counter').countUp();
@@ -2702,7 +2702,7 @@
                             }).add({
                                 targets: '#slide3',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             })
@@ -2730,7 +2730,7 @@
                             }).add({
                                 targets: '#slide4',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             })
@@ -2753,7 +2753,7 @@
                             }).add({
                                 targets: '#slide5',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
@@ -2776,14 +2776,14 @@
                             }).add({
                                 targets: '#slide6',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
                         }
                         break;
                     case 6:
-                        if (e > 0.25 && e < 0.45) {
+                        if (e > 0.2 && e < 0.45) {
                             jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
                             jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
                             isMapAnimate = true;
@@ -2895,7 +2895,7 @@
                             }
                         };
                         this.setProgress(0), this.screenNavigator.showScreen("header", null, e), this.changeBackgroundOpacity && o.m.to(this.background, .9, {
-                            opacity: .5
+                            opacity: 1
                         })
                     }
             }
