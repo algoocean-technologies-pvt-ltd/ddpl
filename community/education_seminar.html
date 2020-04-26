@@ -245,21 +245,21 @@
                                 <li>
                                     <!-- slide content -->
                                     <div class="slides--content">
-                                        <img src="assets/images/80.png" alt="" class="img-fluid">
+                                        <img src="assets/images/80.png" alt="" class="img-fluid sc-img-cover">
 
                                     </div>
 
                                 </li>
                                 <li>
                                     <div class="slides--content">
-                                        <img src="assets/images/81.png" alt="" class="img-fluid">
+                                        <img src="assets/images/81.png" alt="" class="img-fluid sc-img-cover">
 
                                     </div>
 
                                 </li>
                                 <li>
                                     <div class="slides--content">
-                                        <img src="assets/images/82.png" alt="" class="img-fluid">
+                                        <img src="assets/images/82.png" alt="" class="img-fluid sc-img-cover">
                                     </div>
 
                                 </li>
@@ -810,11 +810,12 @@
                 animation: "slide",
                 controlNav: false,
                 slideshow: false,
-                maxItems: 2,
+                itemWidth: 530,
+                itemMargin: 20,
+                animationLoop: true,
                 directionNav: false,
                 animationLoop: true,
-                slideshowSpeed: 5000,
-                animationSpeed: 2000
+                easing: "linear",
             });
 
             $('.flixslider--controls___next').click(() => {

@@ -219,7 +219,7 @@ img {
 }
 .sc-img-cover{
   object-fit: cover;
-  height: 295px;
+  height: 295px!important;
   min-width: 100%;
 }
 .example-box {
