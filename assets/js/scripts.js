@@ -2651,7 +2651,7 @@
                             }).add({
                                 targets: '#slide1',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
@@ -2674,7 +2674,7 @@
                             }).add({
                                 targets: '#slide2',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
@@ -2702,7 +2702,7 @@
                             }).add({
                                 targets: '#slide3',
                                 opacity: 1,
-                                duration: 50,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             })
@@ -2730,7 +2730,7 @@
                             }).add({
                                 targets: '#slide4',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             })
@@ -2753,7 +2753,7 @@
                             }).add({
                                 targets: '#slide5',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
@@ -2776,7 +2776,7 @@
                             }).add({
                                 targets: '#slide6',
                                 opacity: 1,
-                                duration: 500,
+                                duration: 600,
                                 easing: "easeOutExpo",
                                 delay: 200
                             });
