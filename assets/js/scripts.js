@@ -2638,7 +2638,11 @@
                         if (e > 0.05 && !isTextAnimation) {
                         isTextAnimation = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_1');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_1 .letter',
@@ -2661,7 +2665,11 @@
                         if(e > 0.05 && !isTextAnimation1){
                             isTextAnimation1 = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_2');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_2 .letter',
@@ -2689,7 +2697,12 @@
                         if(e > 0.05 && !isTextAnimation2){
                             isTextAnimation2 = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_3');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
+                        
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_3 .letter',
@@ -2717,7 +2730,11 @@
                         if(e > 0.05 && !isTextAnimation3){
                             isTextAnimation3 = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_4');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_4 .letter',
@@ -2740,7 +2757,11 @@
                         if(e > 0.05 && !isTextAnimation4){
                             isTextAnimation4 = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_5');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_5 .letter',
@@ -2763,7 +2784,11 @@
                         if(e > 0.05 && !isTextAnimation5){
                             isTextAnimation5 = true;
                         var textWrapper = document.querySelector('.ml1 #sc_about_text_title_6');
-                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                        var contect = textWrapper.innerHTML.split("<br>");
+                        textWrapper.innerHTML = "";
+                        contect.forEach((tx)=>{
+                            textWrapper.innerHTML += '<br/>'+tx.replace(/\S/g, "<span class='letter'>$&</span>");
+                        })
                         anime.timeline({ loop: false })
                             .add({
                                 targets: '#sc_about_text_title_6 .letter',
