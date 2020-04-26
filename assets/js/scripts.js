@@ -2783,7 +2783,7 @@
                         }
                         break;
                     case 6:
-                        if (e > 0.25 && e < 0.45) {
+                        if (e > 0.2 && e < 0.45) {
                             jQuery('.map-icon_wrapper').addClass('mapdropad-animation map-dropad');
                             jQuery('.map-icon_wrapper').addClass('sc-opacity-1');
                             isMapAnimate = true;
