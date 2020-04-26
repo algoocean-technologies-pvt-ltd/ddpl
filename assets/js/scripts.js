@@ -1126,7 +1126,7 @@
                     .from(this.imageWrapper, 2, {
                         alpha: 0,
                         ease: o.d.easeNone
-                    }, 0).from(this.blurFilter, 2, {
+                    }, 0).from(this.blurFilter, 4, {
                         blur: 90,
                         ease: o.d.easeNone
                     }, 0).from(this.image.scale, 3.5, {
