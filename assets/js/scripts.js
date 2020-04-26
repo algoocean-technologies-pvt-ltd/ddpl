@@ -2679,7 +2679,7 @@
                                 delay: 200
                             });
                         }
-                        if (e > 0.5 && e < 0.6 && isFirstCountUp === false) {
+                        if (e > 0.35 && e < 0.6 && isFirstCountUp === false) {
                             isFirstCountUp = true;
                             debugger;
                             jQuery('#firstCounter counter').countUp();
