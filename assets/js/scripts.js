@@ -2542,7 +2542,7 @@
                 }, 0))
             }
             updateScrollHeight() {
-                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height + 80, this.maxScrollY = -1 * this.scrollHeight
+                this.scrollHeight = this.scrollTarget.getBoundingClientRect().height - 150, this.maxScrollY = -1 * this.scrollHeight
             }
             startRenderScroll() {
                 this.scrollIsRendering || (this.scrollIsRendering = !0, o.m.ticker.addEventListener("tick", this.tickCallback), this.scroll.on(this.scrollCallback))
