@@ -6,13 +6,11 @@
     text-align: center;
     overflow: scroll;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/bg.png") no-repeat center center fixed;
-
 }
 
 a {
     text-decoration: none;
 }
-
 
 .backg {
     width: 100%;
@@ -28,7 +26,7 @@ a {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 #media-img {
@@ -43,6 +41,7 @@ a {
     height: 120px;
     margin-top: 2rem;
 }
+
 .press_heading {
     /*width: 254px;*/
     line-height: 30px;
@@ -53,17 +52,18 @@ a {
     font-size: 1em;
     color: #fff;
 }
-#Group_952 {
 
+#Group_952 {
     width: 65px;
     height: 65px;
     background-color: #fff;
 }
+
 .Rectangle_230 {
     width: 68px;
     height: 75px;
-
 }
+
 #press_icon {
     padding: 5px;
     width: 46px;
@@ -88,7 +88,7 @@ a {
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .event-card {
@@ -101,7 +101,14 @@ a {
     max-height: 100%;
     /*border: 1px solid gray;*/
     background-color: #ACACAC;
+}
 
+.event-card-news {
+    margin: 10px 0px;
+    max-height: 386px;
+    background-color: black;
+    margin-top: -48px;
+    border: 2px solid #c6910d;
 }
 
 .card-text {
@@ -112,11 +119,26 @@ a {
     font-style: normal;
     font-weight: 700;
     font-size: 1em;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
+}
+
+.card-text-news {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 15px;
+    color: white;
+}
+
+.border-image {
+    border: 2px solid #c6910d;
 }
 
 .card-img-top {
-    border-radius:0;
+    border-radius: 0;
 }
 
 hr {
@@ -138,6 +160,7 @@ hr {
     width: 290px;
 }
 
+
 /* overlay */
 
 .hover-2 .hover-overlay {
@@ -153,8 +176,8 @@ hr {
     color: #fff;
     /*padding-left: auto;*/
     /*padding-right: auto;*/
-    left:auto;
-    right:auto;
+    left: auto;
+    right: auto;
     z-index: 99;
     opacity: 0;
     transition: all 0.3s;
@@ -165,11 +188,12 @@ hr {
     font-weight: 900;
     color: #fff;
     opacity: 1;
-    left:auto;
-    right:auto;
-    transform-origin:center;
+    left: auto;
+    right: auto;
+    transform-origin: center;
     transform: translateY(-1.5rem);
 }
+
 .hover-2:hover img {
     opacity: 0.15;
 }
@@ -177,14 +201,15 @@ hr {
 .grow {
     transition: all 0.2s ease-in-out;
 }
-.grow:hover {
-    transform: scale(1.05);
-}
 
+.grow:hover {
+    transform: scale(1.01);
+}
 
 .hover-2:hover .hover-overlay {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
 }
+
 
 /*products */
 
@@ -193,7 +218,7 @@ hr {
     text-align: left;
     font-size: 1rem;
     font-weight: 200;
-    line-height:27px;
+    line-height: 27px;
 }
 
 .Container65 {
@@ -208,7 +233,7 @@ hr {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .heading3 {
@@ -217,16 +242,17 @@ hr {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .media {
     position: relative;
     width: 100%;
     margin: 100px auto;
-    padding: 100px ,20px;
+    padding: 100px, 20px;
     color: #fff;
 }
+
 #news_title {
     padding-top: 4rem;
     line-height: 42px;
@@ -235,7 +261,7 @@ hr {
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .product {
@@ -249,10 +275,8 @@ hr {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
-
-
 
 #media-img {
     width: 100%;
@@ -263,21 +287,22 @@ hr {
     background-color: #fff;
     /* height: 78px;
     width: 197px; */
-    padding-left:0px;
-    margin-top:10px;
+    padding-left: 0px;
+    margin-top: 10px;
 }
-
 
 .row {
     padding-top: 4rem;
 }
-.imgmedia{
+
+.imgmedia {
     padding-top: 1rem;
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
 
+/*Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575.98px) {
     /*	.hr-event {
 		color: rgb(211, 158, 0);float: left; width: 100px;
 	}
@@ -285,23 +310,19 @@ hr {
 	.hr-mc {
 		color: rgb(211, 158, 0);float: left;width: 150px;
 	}*/
-
     .side-text1 {
         visibility: hidden;
     }
-
     .hr-event {
         color: rgb(211, 158, 0);
         float: left;
         width: 120px;
     }
-
     .hr-mc {
         color: rgb(211, 158, 0);
         float: left;
         width: 180px;
     }
-
     .page-id-home {
         font-family: 'Montserrat', sans-serif;
         position: relative;
@@ -311,13 +332,11 @@ hr {
         overflow: scroll;
         /*background-image: url("istockphoto_175525850_2048x204.png");*/
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg.png");
-
     }
     .backg {
         width: 100%;
         height: 100vh;
     }
-
     .Container70 {
         width: 100%;
         margin: auto;
@@ -328,15 +347,13 @@ hr {
         margin: auto;
         padding: 0 3rem;
     }
-
     .media {
         position: relative;
         width: 100%;
         margin: 100px auto;
-        padding: 100px ,20px;
+        padding: 100px, 20px;
         color: #fff;
     }
-
     #news_title {
         padding-top: 4rem;
         line-height: 42px;
@@ -345,17 +362,14 @@ hr {
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
     }
-
     #media-img {
         padding: 20px 0;
     }
-
     .hover-2-title {
         left: 50%;
     }
-
     .event {
         margin: 20px 0;
         width: 100%;
@@ -366,7 +380,6 @@ hr {
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-
     .page-id-home {
         font-family: 'Montserrat', sans-serif;
         position: relative;
@@ -375,13 +388,11 @@ hr {
         text-align: center;
         overflow: scroll;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/bg.png");
-
     }
     .backg {
         width: 100%;
         height: 100vh;
     }
-
     .Container {
         width: 100%;
         margin: auto;
@@ -391,6 +402,7 @@ hr {
         padding: 400px 0;
     }
 }
+
 .side-text1 {
     position: absolute;
     font-size: 0.55rem;
