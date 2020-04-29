@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -56,7 +57,9 @@ p {
     text-align: center;
 }
 
+
 /*=========sticky navbar=======*/
+
 nav#banner {
     background: gray;
 }
@@ -97,7 +100,9 @@ nav {
     transform: translate(-50%, -50%);
 }
 
+
 /*=========sticky navbar end=======*/
+
 #section_1 {
     padding-top: 20px;
 }
@@ -151,7 +156,6 @@ nav {
     background-size: 80px !important;
     background: #000 url('../images/circle.png') center no-repeat;
     position: relative;
-
 }
 
 .col-sm-2.right_col img {
@@ -177,6 +181,7 @@ nav {
 
 
 /*==============special cut===========*/
+
 #special-sec1 {
     background-image: url('../images/servicce-bg.jpg');
     background-repeat: repeat-y;
@@ -219,7 +224,6 @@ nav {
 }
 
 .row.special-sec1-row3 .col-sm-5 {
-
     height: 244px;
     background: black;
     background-repeat: no-repeat;
@@ -242,7 +246,10 @@ nav {
     animation-play-state: running;*/
 }
 
+
 /*==========special cut animation=============*/
+
+
 /*@keyframes bg {
     0% {
         background-size:    0 1px,
@@ -275,9 +282,9 @@ nav {
                             1px 100%;
     }
 }*/
+
+
 /*==========special cut animation end=============*/
-
-
 
 .special-sec1-row3-div1::before,
 .special-sec1-row3-div1::after {
@@ -311,6 +318,7 @@ nav {
 
 
 /*----- button 3 -----*/
+
 .special-sec1-row3-div1::after {
     left: 0;
     bottom: 0;
@@ -351,7 +359,9 @@ nav {
     transition-delay: 0.6s;
 }
 
+
 /*animation for second box*/
+
 .special-sec1-row3-div2::before,
 .special-sec1-row3-div2::after {
     content: "";
@@ -422,8 +432,6 @@ nav {
     transition-delay: 0.6s;
 }
 
-
-
 .special-sec1-row3 img {
     position: absolute;
     top: 50%;
@@ -461,6 +469,7 @@ nav {
     margin-left: 20px;
 }
 
+
 /*#special-sec1 .col-sm-10 {
     flex: 0 0 84.333333%;
     max-width: 84.333333%;
@@ -469,12 +478,13 @@ nav {
     flex: 0 0 10.333333%;
     max-width: 10.333333%;
 }*/
+
 .flip-card-inner {
     width: 56%;
     height: 100%;
     transition: ease .9s;
     /* margin-left: 29px; */
-    margin:auto;
+    margin: auto;
     transform-style: preserve-3d !important;
 }
 
@@ -486,7 +496,9 @@ nav {
     transform: rotateY(360deg) !important;
 }
 
+
 /*================natural-assurance===============*/
+
 #nat-assurance-sec1 {
     padding-top: 117px;
     background-image: url(../images/nat-assurance-header-bg.png);
@@ -500,7 +512,6 @@ nav {
 }
 
 .nat-heading h4 {
-
     font-weight: 600;
 }
 
@@ -557,7 +568,6 @@ nav {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
 }
 
 .time-lapse-parallax-sec .parallax-one {
@@ -573,7 +583,6 @@ nav {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
 }
 
 .service-parallax-sec .parallax-one {
@@ -590,7 +599,6 @@ nav {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
 }
 
 .sirius-parallax-sec .parallax-one {
@@ -606,19 +614,44 @@ nav {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
 }
 
+.sc-service-bg {
+    background-image: url('../images/servicce-bg.jpg') !important;
+    background-repeat: repeat-y;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.sc-tech-padding {
+    padding: 0px 0px 30px;
+}
+
+
 /* Extras */
+
+
 /**************************/
+
 .parallax-sec .line-break {
     border-bottom: 1px solid black;
     width: 150px;
     margin: 0 auto;
 }
 
+
 /* Media Queries */
+
+
 /**************************/
+
 @media screen and (max-width: 959px) and (min-width: 768px) {
     .parallax-sec .block {
         padding: 40px;
@@ -631,11 +664,9 @@ nav {
         padding: 30px;
         width: 420px;
     }
-
     .parallax-sec .block {
         padding: 30px;
     }
-
     .parallax-sec .parallax-one {
         padding-top: 70px;
         padding-bottom: 70px;
@@ -649,7 +680,9 @@ nav {
     }
 }
 
+
 /*=============bespoke============*/
+
 .bespoke-sec2-p {
     padding-top: 8px;
 }
@@ -678,6 +711,7 @@ nav {
     padding-top: 20px;
 }
 
+
 /*#bespoke-sec1 .col-sm-10 {
     flex: 0 0 86.333333%;
     max-width: 86.333333%;
@@ -686,6 +720,7 @@ nav {
     flex: 0 0 8.333333%;
     max-width: 6.333333%;
 }*/
+
 
 /*.flip-card-inner {
   position: relative;
@@ -698,6 +733,7 @@ nav {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(360deg);
 }*/
+
 
 /*==========technology & training===========*/
 
@@ -768,6 +804,7 @@ nav {
     padding-top: 50px;
 }
 
+
 /*============jewellery==============*/
 
 #jewellery-sec1 {
@@ -819,7 +856,9 @@ nav {
     padding-left: 26px;
 }
 
+
 /*=========auction============*/
+
 #auction-sec1 {
     padding-top: 117px;
     background-image: url(../images/auction-header-bg.png);
@@ -864,7 +903,6 @@ nav {
     padding-top: 50px;
 }
 
-
 .auction-sec2-row img {
     width: 259px;
 }
@@ -880,6 +918,7 @@ nav {
 .nat-assurance-sec2-col5-2 {
     padding-left: 30px;
 }
+
 
 /*=========time-lapse=========*/
 
@@ -908,7 +947,6 @@ nav {
     padding: 45px 33px;
     font-weight: 400;
     line-height: 36px;
-
 }
 
 #time-sec3 {
@@ -1009,6 +1047,7 @@ nav {
     padding-bottom: 0px !important;
     padding-top: 0px !important;
 }
+
 
 /*==============padma=============*/
 
@@ -1116,34 +1155,27 @@ nav {
     #padma-sec3 .testimonials {
         max-height: 700px;
     }
-
     #padma-sec3 .icon-overlay {
         height: 300px;
         top: calc(50% - 150px);
     }
-
     #padma-sec3 .carousel-controls .control {
         width: 25px;
         height: 25px;
         top: inherit;
     }
-
     #padma-sec3 .prev {
         left: 0;
     }
-
     #padma-sec3 .next {
         right: 0;
     }
-
     #padma-sec3 .control i {
         font-size: .7rem;
     }
-
     #padma-sec3 .testimonials .message {
         font-size: 1rem;
     }
-
     #padma-sec3 .testimonials h2 {
         font-size: 1.5rem;
     }
@@ -1209,18 +1241,14 @@ li.padma-li {
     padding-top: 30px;
     width: 100%;
     text-align: CENTER;
-    
 }
 
 .caption-div1:hover h6.img-nav-caption1 {
     display: block !important;
-
-
 }
 
 .caption-div2:hover h6.img-nav-caption2 {
     display: block !important;
-
 }
 
 .sirius-img-nav-caption {
@@ -1231,12 +1259,12 @@ li.padma-li {
 }
 
 .sirius-caption-div:hover .sirius-img-nav-caption {
-
     display: block !important;
-
 }
 
+
 /*==========change===========*/
+
 #change-sec1 {
     padding-top: 117px;
     background-image: url(../images/sirius-header-bg.png);
@@ -1275,27 +1303,29 @@ li.padma-li {
     height: 194px;
     margin-bottom: 30px;
     margin-left: 0px;
-
 }
+
 .sc-change-sec3-inner {
     border: 1px solid #c6910d;
     margin-bottom: 10px;
     align-items: center;
     min-height: 180px;
 }
-.sc-box-icon{
+
+.sc-box-icon {
     height: 100px;
     width: 100px;
     transform: translate(-50%);
     background: #c6910d;
 }
+
 .sc-box-font {
     font-weight: 200;
     font-size: 1.25rem;
     line-height: 27px;
 }
 
-.sc-box-font h6{
+.sc-box-font h6 {
     font-weight: 200;
     font-size: 1.25rem;
     line-height: 27px;
@@ -1318,7 +1348,6 @@ li.padma-li {
     height: 194px;
     margin-bottom: 30px;
     margin-left: 0px;
-
 }
 
 .change-sec3-row1-div2 {
@@ -1398,7 +1427,6 @@ li.padma-li {
 
 .change-sec4-row2 {
     padding-top: 0px;
-
 }
 
 #change-sec4 {
@@ -1462,7 +1490,6 @@ li.padma-li {
     transform: translateY(-50%);
     width: 98%;
     top: 48%;
-
 }
 
 .change-sec5-div3 {
@@ -1533,7 +1560,6 @@ li.padma-li {
     padding-top: 23px;
 }
 
-
 .modal-backdrop.show {
     opacity: -.5;
 }
@@ -1588,7 +1614,9 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
     transition: all 2s ease;
 }
 
+
 /*==============modal popup===========*/
+
 #myModal .modal-header .close {
     padding: 0rem;
     margin: 0rem;
@@ -1682,7 +1710,9 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
     }
 }
 
+
 /*======popup 2===========*/
+
 #myModal2 .modal-header .close {
     padding: 0rem;
     margin: 0rem;
@@ -1770,8 +1800,8 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
 }
 
 
-
 /*==============modal popup===========*/
+
 #myModal1 .modal-header .close {
     padding: 0rem;
     margin: 0rem;
@@ -1983,6 +2013,7 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
     }
 }
 
+
 /*==========vertical align nav==========*/
 
 .vertical_nav {
@@ -2014,7 +2045,6 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
     position: absolute;
     top: 3px;
     right: -5px;
-
 }
 
 .vertical_nav ul li:last-child:after {
@@ -2046,17 +2076,16 @@ i.fa.fa-arrows-alt.sirius-full-screen-icon {
     width: 100%;
 }
 
+
 /*.vertical_nav ul li a:hover:after{width: 100%;}*/
 
 .vertical_nav.technology-vetical {
     top: 90%;
-
 }
 
 .vertical-menu-active {
     text-decoration: underline;
 }
-
 
 .vertical_nav ul .straight:after {
     content: "";

@@ -649,3 +649,46 @@ img {
     margin-top: -48px;
     border: 2px solid #c6910d;
 }
+
+.grow:hover {
+    transform: scale(1.01);
+}
+
+.hover-2 .hover-overlay {
+    background: linear-gradient (to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.hover-2-title {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 80%;
+    font-size: 1em;
+    color: #fff;
+    /*padding-left: auto;*/
+    /*padding-right: auto;*/
+    left: auto;
+    right: auto;
+    z-index: 99;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.hover-2:hover .hover-2-title {
+    font-size: 1em;
+    font-weight: 900;
+    color: #fff;
+    opacity: 1;
+    left: auto;
+    right: auto;
+    transform-origin: center;
+    transform: translateY(-1.5rem);
+}
+
+.hover-2:hover img {
+    opacity: 0.15;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
