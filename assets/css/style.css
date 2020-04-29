@@ -6553,6 +6553,10 @@ html:not(.touch) .down_arrow_part .down_arrow:hover .arrow-button__picto {
     content: url('../images/designed-by.png');
 }
 
+#change-img {
+    margin-top: 14px;
+}
+
 #skype-hover:hover {
     content: url('../images/skype-hover.png');
     transition: all .5s ease;
